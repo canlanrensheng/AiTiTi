@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="download" rowHeight="89" id="KGk-i7-Jjw" customClass="ATDownloadCell">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年全国1卷第23题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4x-8U-MfY">
+                        <rect key="frame" x="16" y="21" width="151" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download_load" translatesAutoresizingMaskIntoConstraints="NO" id="Iyg-z1-XsF">
+                        <rect key="frame" x="333" y="32" width="25" height="25"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="download_icon" translatesAutoresizingMaskIntoConstraints="NO" id="wPS-fX-NKP">
+                        <rect key="frame" x="16" y="49" width="14" height="19"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已下载：60%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEA-8g-aKP">
+                        <rect key="frame" x="35" y="51" width="75" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大小：20M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at2-Q0-oT4">
+                        <rect key="frame" x="130" y="51" width="63" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L4x-8U-MfY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="7R8-he-Zb4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wPS-fX-NKP" secondAttribute="bottom" constant="10" id="D03-Nm-bbd"/>
+                    <constraint firstItem="L4x-8U-MfY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="LcH-9B-G1m"/>
+                    <constraint firstItem="wPS-fX-NKP" firstAttribute="top" secondItem="L4x-8U-MfY" secondAttribute="bottom" constant="10" id="TNX-ET-tVY"/>
+                    <constraint firstItem="at2-Q0-oT4" firstAttribute="leading" secondItem="lEA-8g-aKP" secondAttribute="trailing" constant="20" id="aZK-fM-5Sg"/>
+                    <constraint firstItem="at2-Q0-oT4" firstAttribute="centerY" secondItem="wPS-fX-NKP" secondAttribute="centerY" id="hRz-FL-6cw"/>
+                    <constraint firstItem="wPS-fX-NKP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="jj6-WJ-dng"/>
+                    <constraint firstItem="lEA-8g-aKP" firstAttribute="leading" secondItem="wPS-fX-NKP" secondAttribute="trailing" constant="5" id="qqe-8F-lx6"/>
+                    <constraint firstItem="Iyg-z1-XsF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tLM-jn-W3Q"/>
+                    <constraint firstItem="lEA-8g-aKP" firstAttribute="centerY" secondItem="wPS-fX-NKP" secondAttribute="centerY" id="xcT-yY-Yme"/>
+                    <constraint firstItem="Iyg-z1-XsF" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zBB-wF-eQc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="54" y="62.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="download_icon" width="14" height="14"/>
+        <image name="download_load" width="25" height="25"/>
+    </resources>
+</document>

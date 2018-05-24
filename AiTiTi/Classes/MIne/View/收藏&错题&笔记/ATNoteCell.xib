@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="note" rowHeight="113" id="KGk-i7-Jjw" customClass="ATNoteCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="错题笔记是绩优堂教育旗下一个智能的&quot;错题本&quot;与老师们经常倡导的&quot;将日常学习考试中的错题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU2-3d-wOP">
+                        <rect key="frame" x="16" y="11" width="290" height="56"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLw-Gu-eId">
+                        <rect key="frame" x="291" y="77" width="15" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good" translatesAutoresizingMaskIntoConstraints="NO" id="qNu-lM-iUR">
+                        <rect key="frame" x="273" y="78" width="13" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="题目：2018浙江文数第21题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwV-Sx-oxS">
+                        <rect key="frame" x="16" y="77" width="152" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RLw-Gu-eId" firstAttribute="leading" secondItem="qNu-lM-iUR" secondAttribute="trailing" constant="5" id="2xu-Cw-cmj"/>
+                    <constraint firstItem="gU2-3d-wOP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="39z-C2-KI0"/>
+                    <constraint firstItem="AwV-Sx-oxS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DhE-4o-aM4"/>
+                    <constraint firstItem="RLw-Gu-eId" firstAttribute="centerY" secondItem="AwV-Sx-oxS" secondAttribute="centerY" id="IPF-J8-acs"/>
+                    <constraint firstItem="qNu-lM-iUR" firstAttribute="centerY" secondItem="AwV-Sx-oxS" secondAttribute="centerY" id="M8c-Ok-VN3"/>
+                    <constraint firstItem="gU2-3d-wOP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Owi-K3-Vwa"/>
+                    <constraint firstItem="RLw-Gu-eId" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="VLQ-kY-dwb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AwV-Sx-oxS" secondAttribute="bottom" constant="10" id="aEc-Iy-asc"/>
+                    <constraint firstItem="AwV-Sx-oxS" firstAttribute="top" secondItem="gU2-3d-wOP" secondAttribute="bottom" constant="10" id="iK4-pe-dUQ"/>
+                    <constraint firstItem="gU2-3d-wOP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tZA-yB-0Yv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="26" y="86.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="good" width="13" height="13"/>
+    </resources>
+</document>
