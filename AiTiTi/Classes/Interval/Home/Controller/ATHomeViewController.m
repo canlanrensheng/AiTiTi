@@ -131,14 +131,11 @@ static NSString *const mainCellID = @"mainCell";
     }
     return 180;
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
+    ATMessagesViewController *messageVC = [[ATMessagesViewController alloc] init];
+    [self.navigationController pushViewController:messageVC animated:YES];
 }
-//你好经济案件涉及安徽大家
-// 你好为了测试加加加就
-/// fjkhahhshdishadjhasjidhsahjahjnjasnjsna
 #pragma mark - ATHomeHeaderBtnDelegate
 - (void)homeHeader:(ATHomeHeader *)homeHeader btnDidClicker:(UIButton *)btn {
     if ([btn.titleLabel.text isEqualToString:@"专题"]) {

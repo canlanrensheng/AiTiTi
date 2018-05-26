@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3C5ED520B8F6A200A61750 /* ATMessagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ECF20B8F69D00A61750 /* ATMessagesModel.m */; };
+		0B3C5ED620B8F6A200A61750 /* ATMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ED120B8F69F00A61750 /* ATMessagesViewController.m */; };
+		0B3C5ED720B8F6A200A61750 /* ATMessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ED220B8F6A000A61750 /* ATMessagesCell.m */; };
 		0C3DCE43284143D22087B13F /* libPods-AiTiTi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */; };
 		FBB884F320B6903100E15CA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F220B6903100E15CA5 /* AppDelegate.m */; };
 		FBB884F620B6903100E15CA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F520B6903100E15CA5 /* ViewController.m */; };
@@ -18,9 +21,6 @@
 		FBB8853020B6908A00E15CA5 /* ATSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8850C20B6908A00E15CA5 /* ATSearchViewController.m */; };
 		FBB8853120B6908A00E15CA5 /* ATQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8850F20B6908A00E15CA5 /* ATQRCodeViewController.m */; };
 		FBB8853220B6908A00E15CA5 /* ATNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8851320B6908A00E15CA5 /* ATNetWorking.m */; };
-		FBB8853320B6908A00E15CA5 /* ATMessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8851820B6908A00E15CA5 /* ATMessagesCell.m */; };
-		FBB8853420B6908A00E15CA5 /* ATMessagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8851920B6908A00E15CA5 /* ATMessagesModel.m */; };
-		FBB8853520B6908A00E15CA5 /* ATMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8851A20B6908A00E15CA5 /* ATMessagesViewController.m */; };
 		FBB8853620B6908A00E15CA5 /* MyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8851E20B6908A00E15CA5 /* MyTools.m */; };
 		FBB8853720B6908A00E15CA5 /* ATFriendPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB8852020B6908A00E15CA5 /* ATFriendPayViewController.xib */; };
 		FBB8853820B6908A00E15CA5 /* ATOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8852320B6908A00E15CA5 /* ATOrderCell.m */; };
@@ -164,6 +164,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3C5ECF20B8F69D00A61750 /* ATMessagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesModel.m; sourceTree = "<group>"; };
+		0B3C5ED020B8F69E00A61750 /* ATMessagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesModel.h; sourceTree = "<group>"; };
+		0B3C5ED120B8F69F00A61750 /* ATMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesViewController.m; sourceTree = "<group>"; };
+		0B3C5ED220B8F6A000A61750 /* ATMessagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesCell.m; sourceTree = "<group>"; };
+		0B3C5ED320B8F6A000A61750 /* ATMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesViewController.h; sourceTree = "<group>"; };
+		0B3C5ED420B8F6A200A61750 /* ATMessagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesCell.h; sourceTree = "<group>"; };
 		1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiTiTi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.debug.xcconfig"; sourceTree = "<group>"; };
 		F8EA3AACED2108C8F22901E8 /* Pods-AiTiTi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,12 +191,6 @@
 		FBB8851020B6908A00E15CA5 /* ATQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATQRCodeViewController.h; sourceTree = "<group>"; };
 		FBB8851220B6908A00E15CA5 /* ATNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNetWorking.h; sourceTree = "<group>"; };
 		FBB8851320B6908A00E15CA5 /* ATNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNetWorking.m; sourceTree = "<group>"; };
-		FBB8851520B6908A00E15CA5 /* ATMessagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesCell.h; sourceTree = "<group>"; };
-		FBB8851620B6908A00E15CA5 /* ATMessagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesModel.h; sourceTree = "<group>"; };
-		FBB8851720B6908A00E15CA5 /* ATMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesViewController.h; sourceTree = "<group>"; };
-		FBB8851820B6908A00E15CA5 /* ATMessagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesCell.m; sourceTree = "<group>"; };
-		FBB8851920B6908A00E15CA5 /* ATMessagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesModel.m; sourceTree = "<group>"; };
-		FBB8851A20B6908A00E15CA5 /* ATMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesViewController.m; sourceTree = "<group>"; };
 		FBB8851C20B6908A00E15CA5 /* MyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTools.h; sourceTree = "<group>"; };
 		FBB8851D20B6908A00E15CA5 /* AJSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSingleton.h; sourceTree = "<group>"; };
 		FBB8851E20B6908A00E15CA5 /* MyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTools.m; sourceTree = "<group>"; };
@@ -585,12 +585,12 @@
 		FBB8851420B6908A00E15CA5 /* 消息 */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8851520B6908A00E15CA5 /* ATMessagesCell.h */,
-				FBB8851820B6908A00E15CA5 /* ATMessagesCell.m */,
-				FBB8851620B6908A00E15CA5 /* ATMessagesModel.h */,
-				FBB8851920B6908A00E15CA5 /* ATMessagesModel.m */,
-				FBB8851720B6908A00E15CA5 /* ATMessagesViewController.h */,
-				FBB8851A20B6908A00E15CA5 /* ATMessagesViewController.m */,
+				0B3C5ED420B8F6A200A61750 /* ATMessagesCell.h */,
+				0B3C5ED220B8F6A000A61750 /* ATMessagesCell.m */,
+				0B3C5ED020B8F69E00A61750 /* ATMessagesModel.h */,
+				0B3C5ECF20B8F69D00A61750 /* ATMessagesModel.m */,
+				0B3C5ED320B8F6A000A61750 /* ATMessagesViewController.h */,
+				0B3C5ED120B8F69F00A61750 /* ATMessagesViewController.m */,
 			);
 			path = "消息";
 			sourceTree = "<group>";
@@ -646,8 +646,8 @@
 		FBB8854020B6909700E15CA5 /* MainModel */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8854120B6909700E15CA5 /* ATMainModel.m */,
 				FBB8854220B6909700E15CA5 /* ATMainModel.h */,
+				FBB8854120B6909700E15CA5 /* ATMainModel.m */,
 			);
 			path = MainModel;
 			sourceTree = "<group>";
@@ -656,10 +656,10 @@
 			isa = PBXGroup;
 			children = (
 				FBB8854420B6909700E15CA5 /* ATMainViewController.h */,
-				FBB8854520B6909700E15CA5 /* ATNavigationController.h */,
-				FBB8854620B6909700E15CA5 /* ATSuperViewController.h */,
 				FBB8854720B6909700E15CA5 /* ATMainViewController.m */,
+				FBB8854520B6909700E15CA5 /* ATNavigationController.h */,
 				FBB8854820B6909700E15CA5 /* ATNavigationController.m */,
+				FBB8854620B6909700E15CA5 /* ATSuperViewController.h */,
 				FBB8854920B6909700E15CA5 /* ATSuperViewController.m */,
 			);
 			path = MainController;
@@ -668,10 +668,10 @@
 		FBB8854A20B6909700E15CA5 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8854B20B6909700E15CA5 /* ATNavigationBar.h */,
 				FBB8854C20B6909700E15CA5 /* ATMainView.h */,
-				FBB8854D20B6909700E15CA5 /* ATNavigationBar.m */,
 				FBB8854E20B6909700E15CA5 /* ATMainView.m */,
+				FBB8854B20B6909700E15CA5 /* ATNavigationBar.h */,
+				FBB8854D20B6909700E15CA5 /* ATNavigationBar.m */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -680,10 +680,10 @@
 			isa = PBXGroup;
 			children = (
 				FBB8855020B6909700E15CA5 /* ATMacrosApi.h */,
-				FBB8855120B6909700E15CA5 /* MainHeader.h */,
+				FBB8855420B6909700E15CA5 /* ATMacrosKey.h */,
 				FBB8855220B6909700E15CA5 /* ATMacrosOther.h */,
 				FBB8855320B6909700E15CA5 /* ATMacrosUI.h */,
-				FBB8855420B6909700E15CA5 /* ATMacrosKey.h */,
+				FBB8855120B6909700E15CA5 /* MainHeader.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -791,11 +791,11 @@
 		FBB8858B20B6909700E15CA5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8859020B6909700E15CA5 /* ATIntervalViewController.h */,
-				FBB8858C20B6909700E15CA5 /* ATIntervalViewController.m */,
 				FBB8858D20B6909700E15CA5 /* 高考倒计时 */,
 				FBB8859120B6909700E15CA5 /* 励志语 */,
 				FBB8859620B6909700E15CA5 /* 学霸排行榜 */,
+				FBB8859020B6909700E15CA5 /* ATIntervalViewController.h */,
+				FBB8858C20B6909700E15CA5 /* ATIntervalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1288,8 +1288,8 @@
 		FBB8863820B6909700E15CA5 /* UIScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8863920B6909700E15CA5 /* UIScreen+Extension.m */,
 				FBB8863A20B6909700E15CA5 /* UIScreen+Extension.h */,
+				FBB8863920B6909700E15CA5 /* UIScreen+Extension.m */,
 			);
 			path = UIScreen;
 			sourceTree = "<group>";
@@ -1298,9 +1298,9 @@
 			isa = PBXGroup;
 			children = (
 				FBB8863C20B6909700E15CA5 /* UILabel+Click.h */,
-				FBB8863D20B6909700E15CA5 /* UILabel+Extension.m */,
 				FBB8863E20B6909700E15CA5 /* UILabel+Click.m */,
 				FBB8863F20B6909700E15CA5 /* UILabel+Extension.h */,
+				FBB8863D20B6909700E15CA5 /* UILabel+Extension.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -1326,8 +1326,8 @@
 		FBB8864620B6909700E15CA5 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8864720B6909700E15CA5 /* UIColor+Hex.m */,
 				FBB8864820B6909700E15CA5 /* UIColor+Hex.h */,
+				FBB8864720B6909700E15CA5 /* UIColor+Hex.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -1335,22 +1335,22 @@
 		FBB8864920B6909700E15CA5 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8864A20B6909700E15CA5 /* UIView+Shake.h */,
-				FBB8864B20B6909700E15CA5 /* UIView+Runtime.h */,
-				FBB8864C20B6909700E15CA5 /* UIView+SetRect.m */,
-				FBB8864D20B6909700E15CA5 /* UIView+Click.h */,
-				FBB8864E20B6909700E15CA5 /* UIView+Extension.h */,
-				FBB8864F20B6909700E15CA5 /* UIView+KRKit.m */,
-				FBB8865020B6909700E15CA5 /* UIView+AutoLayout.m */,
-				FBB8865120B6909700E15CA5 /* UIView+IBExtension.m */,
-				FBB8865220B6909700E15CA5 /* UIView+Shake.m */,
-				FBB8865320B6909700E15CA5 /* UIView+SetRect.h */,
-				FBB8865420B6909700E15CA5 /* UIView+Runtime.m */,
 				FBB8865520B6909700E15CA5 /* UIView+AutoLayout.h */,
-				FBB8865620B6909700E15CA5 /* UIView+KRKit.h */,
+				FBB8865020B6909700E15CA5 /* UIView+AutoLayout.m */,
+				FBB8864D20B6909700E15CA5 /* UIView+Click.h */,
 				FBB8865720B6909700E15CA5 /* UIView+Click.m */,
+				FBB8864E20B6909700E15CA5 /* UIView+Extension.h */,
 				FBB8865820B6909700E15CA5 /* UIView+Extension.m */,
 				FBB8865920B6909700E15CA5 /* UIView+IBExtension.h */,
+				FBB8865120B6909700E15CA5 /* UIView+IBExtension.m */,
+				FBB8865620B6909700E15CA5 /* UIView+KRKit.h */,
+				FBB8864F20B6909700E15CA5 /* UIView+KRKit.m */,
+				FBB8864B20B6909700E15CA5 /* UIView+Runtime.h */,
+				FBB8865420B6909700E15CA5 /* UIView+Runtime.m */,
+				FBB8865320B6909700E15CA5 /* UIView+SetRect.h */,
+				FBB8864C20B6909700E15CA5 /* UIView+SetRect.m */,
+				FBB8864A20B6909700E15CA5 /* UIView+Shake.h */,
+				FBB8865220B6909700E15CA5 /* UIView+Shake.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1367,8 +1367,8 @@
 		FBB8865E20B6909700E15CA5 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8865F20B6909700E15CA5 /* UIDevice+DeviceType.m */,
 				FBB8866020B6909700E15CA5 /* UIDevice+DeviceType.h */,
+				FBB8865F20B6909700E15CA5 /* UIDevice+DeviceType.m */,
 			);
 			path = UIDevice;
 			sourceTree = "<group>";
@@ -1385,8 +1385,8 @@
 		FBB8866420B6909700E15CA5 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8866520B6909700E15CA5 /* UIImageView+BXExtension.m */,
 				FBB8866620B6909700E15CA5 /* UIImageView+BXExtension.h */,
+				FBB8866520B6909700E15CA5 /* UIImageView+BXExtension.m */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -1394,8 +1394,8 @@
 		FBB8866720B6909700E15CA5 /* UINavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8866820B6909700E15CA5 /* UINavigationBar+Background.m */,
 				FBB8866920B6909700E15CA5 /* UINavigationBar+Background.h */,
+				FBB8866820B6909700E15CA5 /* UINavigationBar+Background.m */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -1403,11 +1403,11 @@
 		FBB8866A20B6909700E15CA5 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8866B20B6909700E15CA5 /* NSString+Times.h */,
+				FBB8866F20B6909700E15CA5 /* NSString+BXExtension.h */,
 				FBB8866C20B6909700E15CA5 /* NSString+BXExtension.m */,
 				FBB8866D20B6909700E15CA5 /* NSString+KRKit.h */,
 				FBB8866E20B6909700E15CA5 /* NSString+KRKit.m */,
-				FBB8866F20B6909700E15CA5 /* NSString+BXExtension.h */,
+				FBB8866B20B6909700E15CA5 /* NSString+Times.h */,
 				FBB8867020B6909700E15CA5 /* NSString+Times.m */,
 			);
 			path = NSString;
@@ -1466,11 +1466,11 @@
 		FBB8868220B6909700E15CA5 /* FSScrollContentViewLib */ = {
 			isa = PBXGroup;
 			children = (
-				FBB8868320B6909700E15CA5 /* FSSegmentTitleView.m */,
 				FBB8868420B6909700E15CA5 /* FSPageContentView.h */,
-				FBB8868520B6909700E15CA5 /* FSScrollContentView.h */,
 				FBB8868620B6909700E15CA5 /* FSPageContentView.m */,
+				FBB8868520B6909700E15CA5 /* FSScrollContentView.h */,
 				FBB8868720B6909700E15CA5 /* FSSegmentTitleView.h */,
+				FBB8868320B6909700E15CA5 /* FSSegmentTitleView.m */,
 			);
 			path = FSScrollContentViewLib;
 			sourceTree = "<group>";
@@ -1486,7 +1486,6 @@
 				FBB884EA20B6903100E15CA5 /* Sources */,
 				FBB884EB20B6903100E15CA5 /* Frameworks */,
 				FBB884EC20B6903100E15CA5 /* Resources */,
-				60C490DFA51FECE87498BB25 /* [CP] Embed Pods Frameworks */,
 				39D414803BA1C4EFEADCCDAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1588,21 +1587,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		60C490DFA51FECE87498BB25 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D1A7F2EA993F1741FBC47F1A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1633,7 +1617,6 @@
 				FBB8869E20B6909800E15CA5 /* ATHomeHeader.m in Sources */,
 				FBB886D120B6909800E15CA5 /* ATMineDownloadViewController.m in Sources */,
 				FBB8869A20B6909800E15CA5 /* ATSubjectSectionHeader.m in Sources */,
-				FBB8853320B6908A00E15CA5 /* ATMessagesCell.m in Sources */,
 				FBB886C620B6909800E15CA5 /* ATMineStudyViewController.m in Sources */,
 				FBB8869D20B6909800E15CA5 /* ATSelectGradeBtn.m in Sources */,
 				FBB8868820B6909700E15CA5 /* ATMainModel.m in Sources */,
@@ -1645,7 +1628,6 @@
 				FBB886F220B6909800E15CA5 /* UIColor+Hex.m in Sources */,
 				FBB886C020B6909800E15CA5 /* ATTeacherDetailTableView.m in Sources */,
 				FBB886FF20B6909800E15CA5 /* UINavigationBar+Background.m in Sources */,
-				FBB8853520B6908A00E15CA5 /* ATMessagesViewController.m in Sources */,
 				FBB886D820B6909800E15CA5 /* ATMineCommentCell.m in Sources */,
 				FBB8868A20B6909800E15CA5 /* ATNavigationController.m in Sources */,
 				FBB886AB20B6909800E15CA5 /* ATRankViewController.m in Sources */,
@@ -1684,10 +1666,12 @@
 				FBB886F020B6909800E15CA5 /* UIApplication+Extensions.m in Sources */,
 				FBB886C920B6909800E15CA5 /* ATRegisterViewController.m in Sources */,
 				FBB886AF20B6909800E15CA5 /* ATSubjectListCell.m in Sources */,
+				0B3C5ED620B8F6A200A61750 /* ATMessagesViewController.m in Sources */,
 				FBB8853120B6908A00E15CA5 /* ATQRCodeViewController.m in Sources */,
 				FBB8869520B6909800E15CA5 /* ATHomeModel.m in Sources */,
 				FBB886E620B6909800E15CA5 /* ATErrorView.m in Sources */,
 				FBB886B820B6909800E15CA5 /* ATSubjectModel.m in Sources */,
+				0B3C5ED520B8F6A200A61750 /* ATMessagesModel.m in Sources */,
 				FBB886EF20B6909800E15CA5 /* UILabel+Click.m in Sources */,
 				FBB886A320B6909800E15CA5 /* ATSubjectSelectBtn.m in Sources */,
 				FBB886F820B6909800E15CA5 /* UIView+Runtime.m in Sources */,
@@ -1726,7 +1710,6 @@
 				FBB8853920B6908A00E15CA5 /* ATRechargeListViewController.m in Sources */,
 				FBB8870120B6909800E15CA5 /* NSString+KRKit.m in Sources */,
 				FBB8870320B6909800E15CA5 /* UITableView+RemoveEmptyCell.m in Sources */,
-				FBB8853420B6908A00E15CA5 /* ATMessagesModel.m in Sources */,
 				FBB8869C20B6909800E15CA5 /* ATSectionHeader.m in Sources */,
 				FBB886AA20B6909800E15CA5 /* ATQuotaViewController.m in Sources */,
 				FBB886A620B6909800E15CA5 /* ATSubjectHeader.m in Sources */,
@@ -1744,6 +1727,7 @@
 				FBB886D420B6909800E15CA5 /* ATMineHelpViewController.m in Sources */,
 				FBB8868B20B6909800E15CA5 /* ATSuperViewController.m in Sources */,
 				FBB886EC20B6909800E15CA5 /* UIImage+Extension.m in Sources */,
+				0B3C5ED720B8F6A200A61750 /* ATMessagesCell.m in Sources */,
 				FBB886EB20B6909800E15CA5 /* UIImage+ScreenShot.m in Sources */,
 				FBB886B720B6909800E15CA5 /* ATTeacherItem.m in Sources */,
 				FBB886E520B6909800E15CA5 /* ATMineHeaderCell.m in Sources */,
