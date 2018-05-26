@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     
     self.window.rootViewController = [ATMainViewController new];
+    self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 
