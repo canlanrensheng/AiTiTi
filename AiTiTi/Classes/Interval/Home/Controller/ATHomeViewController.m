@@ -21,6 +21,7 @@
 #import "ATEvaluationViewController.h"
 #import "ATQRCodeViewController.h"
 #import "ATSelectGradeBtn.h"
+#import "ATSignViewController.h"
 @interface ATHomeViewController ()<UITableViewDelegate,UITableViewDataSource,ATHomeHeaderBtnDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -67,7 +68,8 @@ static NSString *const mainCellID = @"mainCell";
 - (void)setUpNav{
     //签到
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithTitle:@"" image:IMAGE(@"signIn") action:^(id sender) {
-        
+        ATSignViewController *signVC = [[ATSignViewController alloc] init];
+        [self.navigationController pushViewController:signVC  animated:YES];
     }];
     
     ATSelectGradeBtn *midBtn = [[ATSelectGradeBtn alloc] initWithFrame:CGRectMake((ATScreenWidth - 100) * 0.5, 20, 100, 30)];
