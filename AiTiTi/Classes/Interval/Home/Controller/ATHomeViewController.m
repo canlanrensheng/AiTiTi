@@ -42,11 +42,11 @@ static NSString *const mainCellID = @"mainCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //    self.navigationController.navigationBar.hidden = YES;
+//    self.navigationController.navigationBar.hidden = YES;
     
     //导航栏
-    //    ATHomeNavBar *homeBar = [ATHomeNavBar homeNavBar];
-    //    [self.view addSubview:homeBar];
+//        ATHomeNavBar *homeBar = [ATHomeNavBar homeNavBar];
+//        [self.view addSubview:homeBar];
     
     [self setUpNav];
     

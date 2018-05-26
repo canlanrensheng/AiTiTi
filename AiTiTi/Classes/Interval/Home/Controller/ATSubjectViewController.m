@@ -42,6 +42,7 @@ static NSString *cellID = @"ATSubjectMainCell";
     
     ATNavigationBar *navBar = [[ATNavigationBar alloc] initWithTitle:@"专题" leftName:nil rightName:nil delegate:self];
     _navBar = navBar;
+//    self.title = @"专题";
     
     // 配置CFDropDownMenuView
     [self.view addSubview:self.dropDownMenuView];
