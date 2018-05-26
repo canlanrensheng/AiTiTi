@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="ATSignRuleViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="247"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="246.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到规则：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-gI-ufw">
+                        <rect key="frame" x="15" y="44" width="72" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1、每日签到可获得0.2元余额；" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew4-9c-pvh">
+                        <rect key="frame" x="15" y="78" width="290" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2、" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQZ-26-9uY">
+                        <rect key="frame" x="15" y="102.5" width="20" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14.5" id="IiS-j4-g3g"/>
+                            <constraint firstAttribute="width" constant="20" id="TrJ-LC-vLs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到礼包活动一个自然月为一个周期，连续7天、14天、12天，满勤，可领取不同额度的礼包(包含补签天数)；" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWp-1T-mfh">
+                        <rect key="frame" x="35" y="102" width="270" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3、" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiM-tn-Od2">
+                        <rect key="frame" x="15" y="155" width="20" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="dxZ-WY-kUp"/>
+                            <constraint firstAttribute="height" constant="14.5" id="jAZ-0c-RDS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享签到到朋友圈可获得前1天的补签机会，每天仅有一次；" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAX-eR-opM">
+                        <rect key="frame" x="35" y="155" width="270" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到所得金额可用于购买爱提提的服务，但不支持提现。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRs-Xw-rk0">
+                        <rect key="frame" x="35" y="194" width="270" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4、" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KD-CH-w0b">
+                        <rect key="frame" x="15" y="194" width="20" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="cDW-Ze-DwH"/>
+                            <constraint firstAttribute="height" constant="14.5" id="oUf-Ed-BSm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i4d-gI-ufw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="44" id="3Zu-gx-YCD"/>
+                    <constraint firstItem="mWp-1T-mfh" firstAttribute="top" secondItem="HQZ-26-9uY" secondAttribute="top" id="4Uo-sr-OPC"/>
+                    <constraint firstItem="hAX-eR-opM" firstAttribute="top" secondItem="xiM-tn-Od2" secondAttribute="top" id="4WK-SX-s2V"/>
+                    <constraint firstItem="hAX-eR-opM" firstAttribute="trailing" secondItem="mWp-1T-mfh" secondAttribute="trailing" id="7s4-Ov-HXG"/>
+                    <constraint firstItem="bRs-Xw-rk0" firstAttribute="leading" secondItem="0KD-CH-w0b" secondAttribute="trailing" id="9FD-vS-HEY"/>
+                    <constraint firstItem="xiM-tn-Od2" firstAttribute="leading" secondItem="HQZ-26-9uY" secondAttribute="leading" id="9wQ-ni-K7s"/>
+                    <constraint firstAttribute="trailing" secondItem="ew4-9c-pvh" secondAttribute="trailing" constant="15" id="Al2-Sd-tPY"/>
+                    <constraint firstItem="HQZ-26-9uY" firstAttribute="leading" secondItem="ew4-9c-pvh" secondAttribute="leading" id="JBf-lW-aQE"/>
+                    <constraint firstItem="0KD-CH-w0b" firstAttribute="top" secondItem="hAX-eR-opM" secondAttribute="bottom" constant="10" id="Kku-uh-pNb"/>
+                    <constraint firstItem="HQZ-26-9uY" firstAttribute="top" secondItem="ew4-9c-pvh" secondAttribute="bottom" constant="10" id="QRH-MS-qiz"/>
+                    <constraint firstItem="i4d-gI-ufw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="W2d-aw-Xiq"/>
+                    <constraint firstItem="ew4-9c-pvh" firstAttribute="leading" secondItem="i4d-gI-ufw" secondAttribute="leading" id="ZDm-Xe-gOV"/>
+                    <constraint firstItem="bRs-Xw-rk0" firstAttribute="top" secondItem="0KD-CH-w0b" secondAttribute="top" id="eXi-rV-cc9"/>
+                    <constraint firstItem="hAX-eR-opM" firstAttribute="leading" secondItem="xiM-tn-Od2" secondAttribute="trailing" id="hBS-fX-hDS"/>
+                    <constraint firstItem="xiM-tn-Od2" firstAttribute="top" secondItem="mWp-1T-mfh" secondAttribute="bottom" constant="10" id="hOW-Lk-cYU"/>
+                    <constraint firstItem="0KD-CH-w0b" firstAttribute="leading" secondItem="xiM-tn-Od2" secondAttribute="leading" id="hQB-3D-XEV"/>
+                    <constraint firstItem="bRs-Xw-rk0" firstAttribute="trailing" secondItem="hAX-eR-opM" secondAttribute="trailing" id="hVc-eQ-ZED"/>
+                    <constraint firstItem="ew4-9c-pvh" firstAttribute="top" secondItem="i4d-gI-ufw" secondAttribute="bottom" constant="17" id="nSq-o4-rj9"/>
+                    <constraint firstItem="mWp-1T-mfh" firstAttribute="trailing" secondItem="ew4-9c-pvh" secondAttribute="trailing" id="o68-Og-ZqX"/>
+                    <constraint firstItem="mWp-1T-mfh" firstAttribute="leading" secondItem="HQZ-26-9uY" secondAttribute="trailing" id="ygE-IJ-esY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="signTextMoneyLabel" destination="bRs-Xw-rk0" id="lw3-cE-nVT"/>
+                <outlet property="signTextPageLabel" destination="mWp-1T-mfh" id="RNG-xj-Oz7"/>
+                <outlet property="signTextShareLabel" destination="hAX-eR-opM" id="LKa-Su-gus"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="57"/>
+        </tableViewCell>
+    </objects>
+</document>

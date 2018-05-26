@@ -19,9 +19,10 @@
 #import "ATTeacherExplainController.h"
 #import "ATKOViewController.h"
 #import "ATEvaluationViewController.h"
-#import "ATQRCodeViewController.h"
+#import "ATQRCodeScanViewController.h"
 #import "ATSelectGradeBtn.h"
 #import "ATSignViewController.h"
+#import <AVFoundation/AVFoundation.h>
 @interface ATHomeViewController ()<UITableViewDelegate,UITableViewDataSource,ATHomeHeaderBtnDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -81,7 +82,7 @@ static NSString *const mainCellID = @"mainCell";
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithTitle:@"" image:IMAGE(@"header_add") action:^(id sender) {
         
         NSArray *titles = @[@"  搜索",@"  消息",@"  扫一扫"];
-        NSArray *images = @[@"hot",@"message_logo",@"hot"];
+        NSArray *images = @[@"搜索",@"弹窗消息",@"扫一扫"];
         MLMenuView *menuView = [[MLMenuView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 100 - 10, 0, 100, 44 * titles.count) WithTitles:titles WithImageNames:images WithMenuViewOffsetTop:k_StatusBarAndNavigationBarHeight WithTriangleOffsetLeft:80];
         menuView.didSelectBlock = ^(NSInteger index) {
             switch (index) {
@@ -99,8 +100,8 @@ static NSString *const mainCellID = @"mainCell";
                     break;
                 default:{
                     //扫一扫
-                    ATQRCodeViewController *searchVC = [[ATQRCodeViewController alloc] init];
-                    [self.navigationController pushViewController:searchVC animated:YES];
+                    ATQRCodeScanViewController *searchVC = [[ATQRCodeScanViewController alloc] init];
+                    [self QRCodeScanVC:searchVC];
                 }
                     break;
             }
@@ -212,6 +213,58 @@ static NSString *const mainCellID = @"mainCell";
         ATEvaluationViewController *evaluationVC = [[ATEvaluationViewController alloc] init];
         [self.navigationController pushViewController:evaluationVC animated:YES];
     }
+}
+
+- (void)QRCodeScanVC:(UIViewController *)scanVC {
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if (device) {
+        AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        switch (status) {
+            case AVAuthorizationStatusNotDetermined: {
+                [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+                    if (granted) {
+                        dispatch_sync(dispatch_get_main_queue(), ^{
+                            [self.navigationController pushViewController:scanVC animated:YES];
+                        });
+                        NSLog(@"用户第一次同意了访问相机权限 - - %@", [NSThread currentThread]);
+                    } else {
+                        NSLog(@"用户第一次拒绝了访问相机权限 - - %@", [NSThread currentThread]);
+                    }
+                }];
+                break;
+            }
+            case AVAuthorizationStatusAuthorized: {
+                [self.navigationController pushViewController:scanVC animated:YES];
+                break;
+            }
+            case AVAuthorizationStatusDenied: {
+                UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"请去-> [设置 - 隐私 - 相机 - SGQRCodeExample] 打开访问开关" preferredStyle:(UIAlertControllerStyleAlert)];
+                UIAlertAction *alertA = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+                    
+                }];
+                
+                [alertC addAction:alertA];
+                [self presentViewController:alertC animated:YES completion:nil];
+                break;
+            }
+            case AVAuthorizationStatusRestricted: {
+                NSLog(@"因为系统原因, 无法访问相册");
+                break;
+            }
+                
+            default:
+                break;
+        }
+        return;
+    }
+    
+    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"未检测到您的摄像头" preferredStyle:(UIAlertControllerStyleAlert)];
+    UIAlertAction *alertA = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alertC addAction:alertA];
+    [self presentViewController:alertC animated:YES completion:nil];
 }
 
 

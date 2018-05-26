@@ -11,6 +11,15 @@
 		0B3C5ED620B8F6A200A61750 /* ATMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ED120B8F69F00A61750 /* ATMessagesViewController.m */; };
 		0B3C5ED720B8F6A200A61750 /* ATMessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ED220B8F6A000A61750 /* ATMessagesCell.m */; };
 		0C3DCE43284143D22087B13F /* libPods-AiTiTi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */; };
+		1353AAD420B9923300FAF591 /* UINavigationBar+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAD220B9923300FAF591 /* UINavigationBar+Extention.m */; };
+		1353AAD820B994A000FAF591 /* ATQRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAD720B994A000FAF591 /* ATQRCodeScanViewController.m */; };
+		1353AADD20B99F9F00FAF591 /* ATSignScheduleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AADB20B99F9F00FAF591 /* ATSignScheduleViewCell.m */; };
+		1353AADE20B99F9F00FAF591 /* ATSignScheduleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353AADC20B99F9F00FAF591 /* ATSignScheduleViewCell.xib */; };
+		1353AAE220B9A3A100FAF591 /* ATSignRuleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAE020B9A3A100FAF591 /* ATSignRuleViewCell.m */; };
+		1353AAE320B9A3A100FAF591 /* ATSignRuleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353AAE120B9A3A100FAF591 /* ATSignRuleViewCell.xib */; };
+		1353AAE620B9AEE100FAF591 /* ATSignAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAE520B9AEE100FAF591 /* ATSignAlertView.m */; };
+		1353AAE820B9AF0000FAF591 /* ATSignAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353AAE720B9AF0000FAF591 /* ATSignAlertView.xib */; };
+		1353AAEC20B9B19600FAF591 /* ATSignSuccessALertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAEB20B9B19600FAF591 /* ATSignSuccessALertView.m */; };
 		136EEEF420B9181700CCE0B0 /* MLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEEC620B9181700CCE0B0 /* MLMenuItem.m */; };
 		136EEEF520B9181700CCE0B0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 136EEEC720B9181700CCE0B0 /* .gitkeep */; };
 		136EEEF620B9181700CCE0B0 /* MLMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEEC820B9181700CCE0B0 /* MLMenuCell.m */; };
@@ -29,6 +38,18 @@
 		136EEF0320B9181700CCE0B0 /* TXHudTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEEF220B9181700CCE0B0 /* TXHudTool.m */; };
 		136EEF0420B9181700CCE0B0 /* UILabel+LJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEEF320B9181700CCE0B0 /* UILabel+LJLabel.m */; };
 		136EEF0820B9199100CCE0B0 /* ATSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF0720B9199100CCE0B0 /* ATSignViewController.m */; };
+		136EEF1A20B9359800CCE0B0 /* SGQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 136EEF0C20B9359800CCE0B0 /* SGQRCode.bundle */; };
+		136EEF1B20B9359800CCE0B0 /* UIImage+SGImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF0E20B9359800CCE0B0 /* UIImage+SGImageSize.m */; };
+		136EEF1C20B9359800CCE0B0 /* SGQRCodeHelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF1020B9359800CCE0B0 /* SGQRCodeHelperTool.m */; };
+		136EEF1D20B9359800CCE0B0 /* SGQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF1120B9359800CCE0B0 /* SGQRCodeScanningView.m */; };
+		136EEF1E20B9359800CCE0B0 /* SGQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF1220B9359800CCE0B0 /* SGQRCodeScanManager.m */; };
+		136EEF1F20B9359800CCE0B0 /* SGQRCodeGenerateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF1320B9359800CCE0B0 /* SGQRCodeGenerateManager.m */; };
+		136EEF2020B9359800CCE0B0 /* SGQRCodeAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF1820B9359800CCE0B0 /* SGQRCodeAlbumManager.m */; };
+		136EEF2520B9435000CCE0B0 /* ATSignStatisticsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF2320B9435000CCE0B0 /* ATSignStatisticsCell.m */; };
+		136EEF2620B9435000CCE0B0 /* ATSignStatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136EEF2420B9435000CCE0B0 /* ATSignStatisticsCell.xib */; };
+		136EEF2920B9445800CCE0B0 /* ATSignViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF2820B9445800CCE0B0 /* ATSignViewModel.m */; };
+		136EEF2E20B948F500CCE0B0 /* ATSignCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF2C20B948F500CCE0B0 /* ATSignCalendarCell.m */; };
+		136EEF2F20B948F500CCE0B0 /* ATSignCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136EEF2D20B948F500CCE0B0 /* ATSignCalendarCell.xib */; };
 		FBB884F320B6903100E15CA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F220B6903100E15CA5 /* AppDelegate.m */; };
 		FBB884F620B6903100E15CA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F520B6903100E15CA5 /* ViewController.m */; };
 		FBB884F920B6903100E15CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB884F720B6903100E15CA5 /* Main.storyboard */; };
@@ -188,6 +209,21 @@
 		0B3C5ED220B8F6A000A61750 /* ATMessagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesCell.m; sourceTree = "<group>"; };
 		0B3C5ED320B8F6A000A61750 /* ATMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesViewController.h; sourceTree = "<group>"; };
 		0B3C5ED420B8F6A200A61750 /* ATMessagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesCell.h; sourceTree = "<group>"; };
+		1353AAD220B9923300FAF591 /* UINavigationBar+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extention.m"; sourceTree = "<group>"; };
+		1353AAD320B9923300FAF591 /* UINavigationBar+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extention.h"; sourceTree = "<group>"; };
+		1353AAD620B994A000FAF591 /* ATQRCodeScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATQRCodeScanViewController.h; sourceTree = "<group>"; };
+		1353AAD720B994A000FAF591 /* ATQRCodeScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATQRCodeScanViewController.m; sourceTree = "<group>"; };
+		1353AADA20B99F9F00FAF591 /* ATSignScheduleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignScheduleViewCell.h; sourceTree = "<group>"; };
+		1353AADB20B99F9F00FAF591 /* ATSignScheduleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignScheduleViewCell.m; sourceTree = "<group>"; };
+		1353AADC20B99F9F00FAF591 /* ATSignScheduleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSignScheduleViewCell.xib; sourceTree = "<group>"; };
+		1353AADF20B9A3A100FAF591 /* ATSignRuleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignRuleViewCell.h; sourceTree = "<group>"; };
+		1353AAE020B9A3A100FAF591 /* ATSignRuleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignRuleViewCell.m; sourceTree = "<group>"; };
+		1353AAE120B9A3A100FAF591 /* ATSignRuleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSignRuleViewCell.xib; sourceTree = "<group>"; };
+		1353AAE420B9AEE100FAF591 /* ATSignAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignAlertView.h; sourceTree = "<group>"; };
+		1353AAE520B9AEE100FAF591 /* ATSignAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignAlertView.m; sourceTree = "<group>"; };
+		1353AAE720B9AF0000FAF591 /* ATSignAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSignAlertView.xib; sourceTree = "<group>"; };
+		1353AAEA20B9B19600FAF591 /* ATSignSuccessALertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignSuccessALertView.h; sourceTree = "<group>"; };
+		1353AAEB20B9B19600FAF591 /* ATSignSuccessALertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignSuccessALertView.m; sourceTree = "<group>"; };
 		136EEEC620B9181700CCE0B0 /* MLMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMenuItem.m; sourceTree = "<group>"; };
 		136EEEC720B9181700CCE0B0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		136EEEC820B9181700CCE0B0 /* MLMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMenuCell.m; sourceTree = "<group>"; };
@@ -232,6 +268,28 @@
 		136EEEF320B9181700CCE0B0 /* UILabel+LJLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LJLabel.m"; sourceTree = "<group>"; };
 		136EEF0620B9199100CCE0B0 /* ATSignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignViewController.h; sourceTree = "<group>"; };
 		136EEF0720B9199100CCE0B0 /* ATSignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignViewController.m; sourceTree = "<group>"; };
+		136EEF0B20B9359800CCE0B0 /* SGQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCode.h; sourceTree = "<group>"; };
+		136EEF0C20B9359800CCE0B0 /* SGQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGQRCode.bundle; sourceTree = "<group>"; };
+		136EEF0E20B9359800CCE0B0 /* UIImage+SGImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGImageSize.m"; sourceTree = "<group>"; };
+		136EEF0F20B9359800CCE0B0 /* UIImage+SGImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGImageSize.h"; sourceTree = "<group>"; };
+		136EEF1020B9359800CCE0B0 /* SGQRCodeHelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeHelperTool.m; sourceTree = "<group>"; };
+		136EEF1120B9359800CCE0B0 /* SGQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningView.m; sourceTree = "<group>"; };
+		136EEF1220B9359800CCE0B0 /* SGQRCodeScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanManager.m; sourceTree = "<group>"; };
+		136EEF1320B9359800CCE0B0 /* SGQRCodeGenerateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeGenerateManager.m; sourceTree = "<group>"; };
+		136EEF1420B9359800CCE0B0 /* SGQRCodeAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeAlbumManager.h; sourceTree = "<group>"; };
+		136EEF1520B9359800CCE0B0 /* SGQRCodeHelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeHelperTool.h; sourceTree = "<group>"; };
+		136EEF1620B9359800CCE0B0 /* SGQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningView.h; sourceTree = "<group>"; };
+		136EEF1720B9359800CCE0B0 /* SGQRCodeScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanManager.h; sourceTree = "<group>"; };
+		136EEF1820B9359800CCE0B0 /* SGQRCodeAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeAlbumManager.m; sourceTree = "<group>"; };
+		136EEF1920B9359800CCE0B0 /* SGQRCodeGenerateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeGenerateManager.h; sourceTree = "<group>"; };
+		136EEF2220B9435000CCE0B0 /* ATSignStatisticsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignStatisticsCell.h; sourceTree = "<group>"; };
+		136EEF2320B9435000CCE0B0 /* ATSignStatisticsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignStatisticsCell.m; sourceTree = "<group>"; };
+		136EEF2420B9435000CCE0B0 /* ATSignStatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSignStatisticsCell.xib; sourceTree = "<group>"; };
+		136EEF2720B9445800CCE0B0 /* ATSignViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignViewModel.h; sourceTree = "<group>"; };
+		136EEF2820B9445800CCE0B0 /* ATSignViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignViewModel.m; sourceTree = "<group>"; };
+		136EEF2B20B948F500CCE0B0 /* ATSignCalendarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignCalendarCell.h; sourceTree = "<group>"; };
+		136EEF2C20B948F500CCE0B0 /* ATSignCalendarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignCalendarCell.m; sourceTree = "<group>"; };
+		136EEF2D20B948F500CCE0B0 /* ATSignCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSignCalendarCell.xib; sourceTree = "<group>"; };
 		1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiTiTi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.debug.xcconfig"; sourceTree = "<group>"; };
 		F8EA3AACED2108C8F22901E8 /* Pods-AiTiTi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.release.xcconfig"; sourceTree = "<group>"; };
@@ -537,6 +595,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1353AAD520B9948800FAF591 /* 扫一扫 */ = {
+			isa = PBXGroup;
+			children = (
+				1353AAD620B994A000FAF591 /* ATQRCodeScanViewController.h */,
+				1353AAD720B994A000FAF591 /* ATQRCodeScanViewController.m */,
+			);
+			path = "扫一扫";
+			sourceTree = "<group>";
+		};
 		136EEDF920B8FE4B00CCE0B0 /* ZJSTasks */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +617,7 @@
 		136EEE9C20B90CDD00CCE0B0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1353AAD520B9948800FAF591 /* 扫一扫 */,
 				136EEE9D20B90CDD00CCE0B0 /* 签到 */,
 			);
 			path = Classes;
@@ -569,6 +637,8 @@
 		136EEE9E20B90CDD00CCE0B0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				136EEF2720B9445800CCE0B0 /* ATSignViewModel.h */,
+				136EEF2820B9445800CCE0B0 /* ATSignViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -585,6 +655,23 @@
 		136EEEA020B90CDD00CCE0B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				136EEF2220B9435000CCE0B0 /* ATSignStatisticsCell.h */,
+				136EEF2320B9435000CCE0B0 /* ATSignStatisticsCell.m */,
+				136EEF2420B9435000CCE0B0 /* ATSignStatisticsCell.xib */,
+				136EEF2B20B948F500CCE0B0 /* ATSignCalendarCell.h */,
+				136EEF2C20B948F500CCE0B0 /* ATSignCalendarCell.m */,
+				136EEF2D20B948F500CCE0B0 /* ATSignCalendarCell.xib */,
+				1353AADA20B99F9F00FAF591 /* ATSignScheduleViewCell.h */,
+				1353AADB20B99F9F00FAF591 /* ATSignScheduleViewCell.m */,
+				1353AADC20B99F9F00FAF591 /* ATSignScheduleViewCell.xib */,
+				1353AADF20B9A3A100FAF591 /* ATSignRuleViewCell.h */,
+				1353AAE020B9A3A100FAF591 /* ATSignRuleViewCell.m */,
+				1353AAE120B9A3A100FAF591 /* ATSignRuleViewCell.xib */,
+				1353AAE420B9AEE100FAF591 /* ATSignAlertView.h */,
+				1353AAE520B9AEE100FAF591 /* ATSignAlertView.m */,
+				1353AAE720B9AF0000FAF591 /* ATSignAlertView.xib */,
+				1353AAEA20B9B19600FAF591 /* ATSignSuccessALertView.h */,
+				1353AAEB20B9B19600FAF591 /* ATSignSuccessALertView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -610,6 +697,7 @@
 		136EEEC320B9181700CCE0B0 /* LIbrary */ = {
 			isa = PBXGroup;
 			children = (
+				136EEF0A20B9359800CCE0B0 /* SGQRCode */,
 				136EEEC420B9181700CCE0B0 /* MLMenu */,
 			);
 			path = LIbrary;
@@ -689,6 +777,8 @@
 		136EEEEB20B9181700CCE0B0 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				1353AAD320B9923300FAF591 /* UINavigationBar+Extention.h */,
+				1353AAD220B9923300FAF591 /* UINavigationBar+Extention.m */,
 				136EEEEC20B9181700CCE0B0 /* UIBarButtonItem+TXAdditions.h */,
 				136EEEED20B9181700CCE0B0 /* UIButton+LJButton.m */,
 				136EEEEE20B9181700CCE0B0 /* UILabel+LJLabel.h */,
@@ -699,6 +789,35 @@
 				136EEEF320B9181700CCE0B0 /* UILabel+LJLabel.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		136EEF0A20B9359800CCE0B0 /* SGQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				136EEF0B20B9359800CCE0B0 /* SGQRCode.h */,
+				136EEF0C20B9359800CCE0B0 /* SGQRCode.bundle */,
+				136EEF0D20B9359800CCE0B0 /* Category */,
+				136EEF1020B9359800CCE0B0 /* SGQRCodeHelperTool.m */,
+				136EEF1120B9359800CCE0B0 /* SGQRCodeScanningView.m */,
+				136EEF1220B9359800CCE0B0 /* SGQRCodeScanManager.m */,
+				136EEF1320B9359800CCE0B0 /* SGQRCodeGenerateManager.m */,
+				136EEF1420B9359800CCE0B0 /* SGQRCodeAlbumManager.h */,
+				136EEF1520B9359800CCE0B0 /* SGQRCodeHelperTool.h */,
+				136EEF1620B9359800CCE0B0 /* SGQRCodeScanningView.h */,
+				136EEF1720B9359800CCE0B0 /* SGQRCodeScanManager.h */,
+				136EEF1820B9359800CCE0B0 /* SGQRCodeAlbumManager.m */,
+				136EEF1920B9359800CCE0B0 /* SGQRCodeGenerateManager.h */,
+			);
+			path = SGQRCode;
+			sourceTree = "<group>";
+		};
+		136EEF0D20B9359800CCE0B0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				136EEF0E20B9359800CCE0B0 /* UIImage+SGImageSize.m */,
+				136EEF0F20B9359800CCE0B0 /* UIImage+SGImageSize.h */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		B88917E7FBA933900A193511 /* Frameworks */ = {
@@ -1762,10 +1881,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136EEF1A20B9359800CCE0B0 /* SGQRCode.bundle in Resources */,
 				FBB8869920B6909800E15CA5 /* ATHomeRecommendCell.xib in Resources */,
 				FBB886C720B6909800E15CA5 /* ATGetbackPwdViewController.xib in Resources */,
 				FBB886BA20B6909800E15CA5 /* ATTeacherCell.xib in Resources */,
 				FBB8853C20B6908A00E15CA5 /* ATOrderCell.xib in Resources */,
+				136EEF2F20B948F500CCE0B0 /* ATSignCalendarCell.xib in Resources */,
 				FBB8853720B6908A00E15CA5 /* ATFriendPayViewController.xib in Resources */,
 				FBB886A120B6909800E15CA5 /* ATSubjectMainCell.xib in Resources */,
 				FBB886E320B6909800E15CA5 /* ATCouponCell.xib in Resources */,
@@ -1773,14 +1894,18 @@
 				FBB886DF20B6909800E15CA5 /* ATDownloadCell.xib in Resources */,
 				FBB886CE20B6909800E15CA5 /* ATRegisterViewController.xib in Resources */,
 				FBB886CD20B6909800E15CA5 /* ATLoginViewController.xib in Resources */,
+				1353AAE820B9AF0000FAF591 /* ATSignAlertView.xib in Resources */,
+				1353AADE20B99F9F00FAF591 /* ATSignScheduleViewCell.xib in Resources */,
 				FBB886BD20B6909800E15CA5 /* ATTeacherDetailHeaderView.xib in Resources */,
 				FBB886C120B6909800E15CA5 /* ATTeacherDetailCell.xib in Resources */,
 				FBB8869F20B6909800E15CA5 /* ATSubjectSpreadCell.xib in Resources */,
 				FBB886CB20B6909800E15CA5 /* ATBindPhoneViewController.xib in Resources */,
 				136EEEF820B9181700CCE0B0 /* .gitkeep in Resources */,
 				FBB886D720B6909800E15CA5 /* ATMineCommentCell.xib in Resources */,
+				136EEF2620B9435000CCE0B0 /* ATSignStatisticsCell.xib in Resources */,
 				FBB884FE20B6903300E15CA5 /* LaunchScreen.storyboard in Resources */,
 				136EEEF520B9181700CCE0B0 /* .gitkeep in Resources */,
+				1353AAE320B9A3A100FAF591 /* ATSignRuleViewCell.xib in Resources */,
 				FBB886EA20B6909800E15CA5 /* ATNoteCell.xib in Resources */,
 				FBB884FB20B6903300E15CA5 /* Assets.xcassets in Resources */,
 				FBB8870820B6909800E15CA5 /* CFDropDownMenuView.bundle in Resources */,
@@ -1841,16 +1966,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136EEF2520B9435000CCE0B0 /* ATSignStatisticsCell.m in Sources */,
 				FBB8870220B6909800E15CA5 /* NSString+Times.m in Sources */,
 				FBB886AC20B6909800E15CA5 /* ATRankListModel.m in Sources */,
 				FBB8869E20B6909800E15CA5 /* ATHomeHeader.m in Sources */,
+				136EEF2020B9359800CCE0B0 /* SGQRCodeAlbumManager.m in Sources */,
 				FBB886D120B6909800E15CA5 /* ATMineDownloadViewController.m in Sources */,
 				FBB8869A20B6909800E15CA5 /* ATSubjectSectionHeader.m in Sources */,
 				FBB886C620B6909800E15CA5 /* ATMineStudyViewController.m in Sources */,
 				FBB8869D20B6909800E15CA5 /* ATSelectGradeBtn.m in Sources */,
+				1353AAD820B994A000FAF591 /* ATQRCodeScanViewController.m in Sources */,
 				FBB8868820B6909700E15CA5 /* ATMainModel.m in Sources */,
 				FBB886C520B6909800E15CA5 /* ATMineViewController.m in Sources */,
+				1353AAD420B9923300FAF591 /* UINavigationBar+Extention.m in Sources */,
 				FBB8869120B6909800E15CA5 /* ATTeacherExplainController.m in Sources */,
+				136EEF1E20B9359800CCE0B0 /* SGQRCodeScanManager.m in Sources */,
 				FBB886AD20B6909800E15CA5 /* ATIntervalHeaderView.m in Sources */,
 				FBB8853E20B6908A00E15CA5 /* FNTipsView.m in Sources */,
 				FBB886BF20B6909800E15CA5 /* ATTeacherDetailBottomCell.m in Sources */,
@@ -1862,6 +1992,7 @@
 				FBB8868A20B6909800E15CA5 /* ATNavigationController.m in Sources */,
 				FBB886AB20B6909800E15CA5 /* ATRankViewController.m in Sources */,
 				FBB8870620B6909800E15CA5 /* CFDropDownMenuView.m in Sources */,
+				1353AAE620B9AEE100FAF591 /* ATSignAlertView.m in Sources */,
 				FBB886F120B6909800E15CA5 /* UIButton+Extension.m in Sources */,
 				136EEEF620B9181700CCE0B0 /* MLMenuCell.m in Sources */,
 				FBB886E920B6909800E15CA5 /* ATNoteCell.m in Sources */,
@@ -1873,16 +2004,20 @@
 				FBB886B920B6909800E15CA5 /* ATTeacherCell.m in Sources */,
 				FBB886FC20B6909800E15CA5 /* UIDevice+DeviceType.m in Sources */,
 				136EEEFE20B9181700CCE0B0 /* BaseTableViewModel.m in Sources */,
+				136EEF2E20B948F500CCE0B0 /* ATSignCalendarCell.m in Sources */,
 				FBB886D320B6909800E15CA5 /* ATMineCourceViewController.m in Sources */,
 				FBB886B620B6909800E15CA5 /* ATHotSubjectController.m in Sources */,
+				1353AAE220B9A3A100FAF591 /* ATSignRuleViewCell.m in Sources */,
 				FBB8869420B6909800E15CA5 /* ATKOViewController.m in Sources */,
 				FBB886A820B6909800E15CA5 /* ATIntervalExamViewController.m in Sources */,
 				FBB886E420B6909800E15CA5 /* ATCouponCell.m in Sources */,
 				FBB886F520B6909800E15CA5 /* UIView+AutoLayout.m in Sources */,
 				FBB886CC20B6909800E15CA5 /* ATLoginViewController.m in Sources */,
+				136EEF2920B9445800CCE0B0 /* ATSignViewModel.m in Sources */,
 				FBB886F920B6909800E15CA5 /* UIView+Click.m in Sources */,
 				136EEF0120B9181700CCE0B0 /* UIButton+LJButton.m in Sources */,
 				FBB8868D20B6909800E15CA5 /* ATMainView.m in Sources */,
+				1353AAEC20B9B19600FAF591 /* ATSignSuccessALertView.m in Sources */,
 				FBB886A220B6909800E15CA5 /* ATSubjectSpreadCell.m in Sources */,
 				136EEEFC20B9181700CCE0B0 /* BaseTableViewController.m in Sources */,
 				FBB886F720B6909800E15CA5 /* UIView+Shake.m in Sources */,
@@ -1898,12 +2033,14 @@
 				FBB886D920B6909800E15CA5 /* ATMineVIPFourthCell.m in Sources */,
 				FBB8868920B6909700E15CA5 /* ATMainViewController.m in Sources */,
 				FBB886E820B6909800E15CA5 /* ATCollectView.m in Sources */,
+				136EEF1F20B9359800CCE0B0 /* SGQRCodeGenerateManager.m in Sources */,
 				136EEEFD20B9181700CCE0B0 /* BaseViewController.m in Sources */,
 				FBB886F020B6909800E15CA5 /* UIApplication+Extensions.m in Sources */,
 				FBB886C920B6909800E15CA5 /* ATRegisterViewController.m in Sources */,
 				FBB886AF20B6909800E15CA5 /* ATSubjectListCell.m in Sources */,
 				0B3C5ED620B8F6A200A61750 /* ATMessagesViewController.m in Sources */,
 				FBB8853120B6908A00E15CA5 /* ATQRCodeViewController.m in Sources */,
+				1353AADD20B99F9F00FAF591 /* ATSignScheduleViewCell.m in Sources */,
 				FBB8869520B6909800E15CA5 /* ATHomeModel.m in Sources */,
 				FBB886E620B6909800E15CA5 /* ATErrorView.m in Sources */,
 				FBB886B820B6909800E15CA5 /* ATSubjectModel.m in Sources */,
@@ -1941,10 +2078,12 @@
 				FBB8870520B6909800E15CA5 /* CFLabelOnLeftButton.m in Sources */,
 				136EEEF920B9181700CCE0B0 /* BaseTableViewCell.m in Sources */,
 				FBB886BE20B6909800E15CA5 /* ATTeacherDetailCell.m in Sources */,
+				136EEF1B20B9359800CCE0B0 /* UIImage+SGImageSize.m in Sources */,
 				FBB886C220B6909800E15CA5 /* ATTeacherNavBar.m in Sources */,
 				FBB886A420B6909800E15CA5 /* ATKeyPointView.m in Sources */,
 				FBB886ED20B6909800E15CA5 /* UIScreen+Extension.m in Sources */,
 				FBB8853820B6908A00E15CA5 /* ATOrderCell.m in Sources */,
+				136EEF1C20B9359800CCE0B0 /* SGQRCodeHelperTool.m in Sources */,
 				FBB886AE20B6909800E15CA5 /* ATRankMineView.m in Sources */,
 				FBB886F420B6909800E15CA5 /* UIView+KRKit.m in Sources */,
 				FBB8853920B6908A00E15CA5 /* ATRechargeListViewController.m in Sources */,
@@ -1954,6 +2093,7 @@
 				FBB886AA20B6909800E15CA5 /* ATQuotaViewController.m in Sources */,
 				FBB886A620B6909800E15CA5 /* ATSubjectHeader.m in Sources */,
 				FBB886A020B6909800E15CA5 /* ATHomeRecommendCell.m in Sources */,
+				136EEF1D20B9359800CCE0B0 /* SGQRCodeScanningView.m in Sources */,
 				136EEF0320B9181700CCE0B0 /* TXHudTool.m in Sources */,
 				FBB8870420B6909800E15CA5 /* NSDate+Extension.m in Sources */,
 				FBB8853A20B6908A00E15CA5 /* ATOrderViewController.m in Sources */,
@@ -2128,17 +2268,20 @@
 			baseConfigurationReference = 660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6663GR9NHK;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q47FFAHNF9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTiTi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lima.ITelematics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ecca802-df57-4048-b10e-a6cd50bacf67";
+				PROVISIONING_PROFILE_SPECIFIER = ITelematicsDevelopment;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2148,17 +2291,19 @@
 			baseConfigurationReference = F8EA3AACED2108C8F22901E8 /* Pods-AiTiTi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6663GR9NHK;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTiTi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lima.ITelematics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

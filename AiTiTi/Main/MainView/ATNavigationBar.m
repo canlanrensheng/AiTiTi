@@ -9,18 +9,7 @@
 #import "ATNavigationBar.h"
 
 @interface ATNavigationBar ()
-/**
- *  左侧button
- */
-@property (nonatomic,strong)  UIButton *leftBtn;
-/**
- *  右侧button
- */
-@property (nonatomic,strong)  UIButton *rightBtn;
-/**
- *  中间title
- */
-@property (nonatomic,strong) UILabel *titleLabel;
+
 
 @end
 

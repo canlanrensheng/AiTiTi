@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜你，签到成功~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fK-9K-VlT">
+                    <rect key="frame" x="108.5" y="42" width="158" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="签到成功" translatesAutoresizingMaskIntoConstraints="NO" id="kBG-DY-NlV">
+                    <rect key="frame" x="135.5" y="87" width="104" height="104"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜获得10积分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha8-F5-3cP">
+                    <rect key="frame" x="133" y="214" width="108" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日积月累成学霸，继续加油" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuD-nT-wQk">
+                    <rect key="frame" x="95.5" y="237" width="184" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OuD-nT-wQk" firstAttribute="centerX" secondItem="kBG-DY-NlV" secondAttribute="centerX" id="8oy-xB-wJJ"/>
+                <constraint firstItem="0fK-9K-VlT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="42" id="8xC-ZO-6ck"/>
+                <constraint firstItem="Ha8-F5-3cP" firstAttribute="centerX" secondItem="kBG-DY-NlV" secondAttribute="centerX" id="9YB-BK-Q4F"/>
+                <constraint firstItem="kBG-DY-NlV" firstAttribute="top" secondItem="0fK-9K-VlT" secondAttribute="bottom" constant="23" id="JnD-NO-TB0"/>
+                <constraint firstItem="Ha8-F5-3cP" firstAttribute="top" secondItem="kBG-DY-NlV" secondAttribute="bottom" constant="23" id="gGa-DT-TOj"/>
+                <constraint firstItem="0fK-9K-VlT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="kO7-dq-qZM"/>
+                <constraint firstItem="OuD-nT-wQk" firstAttribute="top" secondItem="Ha8-F5-3cP" secondAttribute="bottom" constant="5" id="mKe-ib-9zA"/>
+                <constraint firstItem="kBG-DY-NlV" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="zwB-Zf-Wxf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="55.5" y="-203.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="签到成功" width="104" height="104"/>
+    </resources>
+</document>
