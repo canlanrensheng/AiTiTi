@@ -131,12 +131,11 @@ static NSString *const mainCellID = @"mainCell";
     }
     return 180;
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
+    ATMessagesViewController *messageVC = [[ATMessagesViewController alloc] init];
+    [self.navigationController pushViewController:messageVC animated:YES];
 }
-
 #pragma mark - ATHomeHeaderBtnDelegate
 - (void)homeHeader:(ATHomeHeader *)homeHeader btnDidClicker:(UIButton *)btn {
     if ([btn.titleLabel.text isEqualToString:@"专题"]) {

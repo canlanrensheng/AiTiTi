@@ -16,4 +16,5 @@ pod 'LBXScan/UI','~> 2.3'
 pod 'SKTagView'
 pod 'SDCycleScrollView'
 pod 'Masonry'
+pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
 end
