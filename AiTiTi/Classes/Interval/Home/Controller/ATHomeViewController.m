@@ -19,7 +19,8 @@
 #import "ATTeacherExplainController.h"
 #import "ATKOViewController.h"
 #import "ATEvaluationViewController.h"
-
+#import "ATQRCodeViewController.h"
+#import "ATSelectGradeBtn.h"
 @interface ATHomeViewController ()<UITableViewDelegate,UITableViewDataSource,ATHomeHeaderBtnDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -34,18 +35,20 @@ static NSString *const mainCellID = @"mainCell";
     if (!_dataArr) {
         _dataArr = [NSMutableArray array];
     }
-    return _dataArr;    
+    return _dataArr;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden = YES;
+    //    self.navigationController.navigationBar.hidden = YES;
     
     //导航栏
-    ATHomeNavBar *homeBar = [ATHomeNavBar homeNavBar];
-    [self.view addSubview:homeBar];
+    //    ATHomeNavBar *homeBar = [ATHomeNavBar homeNavBar];
+    //    [self.view addSubview:homeBar];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, homeBar.bottom, ATScreenWidth, ATScreenHeight - homeBar.height) style:UITableViewStylePlain];
+    [self setUpNav];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavigationBarHeight, ATScreenWidth, ATScreenHeight - kNavigationBarHeight) style:UITableViewStylePlain];
     self.tableView = tableView;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.backgroundColor = [UIColor whiteColor];
@@ -58,8 +61,60 @@ static NSString *const mainCellID = @"mainCell";
     tableView.tableHeaderView = header;
     
     [self.view addSubview:tableView];
+}
+
+
+- (void)setUpNav{
+    //签到
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithTitle:@"" image:IMAGE(@"signIn") action:^(id sender) {
+        
+    }];
     
-//    [self requestData]; 
+    ATSelectGradeBtn *midBtn = [[ATSelectGradeBtn alloc] initWithFrame:CGRectMake((ATScreenWidth - 100) * 0.5, 20, 100, 30)];
+    [midBtn setTitle:@"高一" forState:UIControlStateNormal];
+    [midBtn addTarget:self action:@selector(selectGarde:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = midBtn;
+    
+    //+号
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithTitle:@"" image:IMAGE(@"header_add") action:^(id sender) {
+        
+        NSArray *titles = @[@"  搜索",@"  消息",@"  扫一扫"];
+        NSArray *images = @[@"hot",@"message_logo",@"hot"];
+        MLMenuView *menuView = [[MLMenuView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 100 - 10, 0, 100, 44 * titles.count) WithTitles:titles WithImageNames:images WithMenuViewOffsetTop:k_StatusBarAndNavigationBarHeight WithTriangleOffsetLeft:80];
+        menuView.didSelectBlock = ^(NSInteger index) {
+            switch (index) {
+                case 0:{
+                    //搜索
+                    ATSearchViewController *searchVC = [[ATSearchViewController alloc] init];
+                    [self.navigationController pushViewController:searchVC animated:YES];
+                }
+                    break;
+                case 1:{
+                    //消息
+                    ATMessagesViewController *searchVC = [[ATMessagesViewController alloc] init];
+                    [self.navigationController pushViewController:searchVC animated:YES];
+                }
+                    break;
+                default:{
+                    //扫一扫
+                    ATQRCodeViewController *searchVC = [[ATQRCodeViewController alloc] init];
+                    [self.navigationController pushViewController:searchVC animated:YES];
+                }
+                    break;
+            }
+        };
+        [menuView showMenuEnterAnimation:MLEnterAnimationStyleRight];
+    }];
+}
+
+//高一弹窗
+- (void)selectGarde:(UIButton *)button{
+    NSArray *titles = @[@"高一",@"高二",@"高三"];
+    MLMenuView *menuView = [[MLMenuView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width / 2 - 50, 0, 100, 44 * titles.count) WithTitles:titles WithImageNames:nil WithMenuViewOffsetTop:k_StatusBarAndNavigationBarHeight WithTriangleOffsetLeft:52];;
+    menuView.didSelectBlock = ^(NSInteger index) {
+        NSLog(@"%zd",index);
+    };
+    [menuView showMenuEnterAnimation:MLEnterAnimationStyleNone];
 }
 
 - (void)requestData {
@@ -131,11 +186,12 @@ static NSString *const mainCellID = @"mainCell";
     }
     return 180;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    ATMessagesViewController *messageVC = [[ATMessagesViewController alloc] init];
-    [self.navigationController pushViewController:messageVC animated:YES];
+    
 }
+
 #pragma mark - ATHomeHeaderBtnDelegate
 - (void)homeHeader:(ATHomeHeader *)homeHeader btnDidClicker:(UIButton *)btn {
     if ([btn.titleLabel.text isEqualToString:@"专题"]) {
@@ -155,5 +211,6 @@ static NSString *const mainCellID = @"mainCell";
         [self.navigationController pushViewController:evaluationVC animated:YES];
     }
 }
+
 
 @end
