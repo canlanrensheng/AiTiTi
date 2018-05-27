@@ -20,6 +20,8 @@
 		1353AAE620B9AEE100FAF591 /* ATSignAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAE520B9AEE100FAF591 /* ATSignAlertView.m */; };
 		1353AAE820B9AF0000FAF591 /* ATSignAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353AAE720B9AF0000FAF591 /* ATSignAlertView.xib */; };
 		1353AAEC20B9B19600FAF591 /* ATSignSuccessALertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAEB20B9B19600FAF591 /* ATSignSuccessALertView.m */; };
+		1353AAF520BA471800FAF591 /* LPCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAF320BA471700FAF591 /* LPCalendarDate.m */; };
+		1353AAF620BA471800FAF591 /* LPCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAF420BA471800FAF591 /* LPCalendarView.m */; };
 		136EEEF420B9181700CCE0B0 /* MLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEEC620B9181700CCE0B0 /* MLMenuItem.m */; };
 		136EEEF520B9181700CCE0B0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 136EEEC720B9181700CCE0B0 /* .gitkeep */; };
 		136EEEF620B9181700CCE0B0 /* MLMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEEC820B9181700CCE0B0 /* MLMenuCell.m */; };
@@ -224,6 +226,10 @@
 		1353AAE720B9AF0000FAF591 /* ATSignAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSignAlertView.xib; sourceTree = "<group>"; };
 		1353AAEA20B9B19600FAF591 /* ATSignSuccessALertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSignSuccessALertView.h; sourceTree = "<group>"; };
 		1353AAEB20B9B19600FAF591 /* ATSignSuccessALertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSignSuccessALertView.m; sourceTree = "<group>"; };
+		1353AAF120BA471700FAF591 /* LPCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCalendarDate.h; sourceTree = "<group>"; };
+		1353AAF220BA471700FAF591 /* LPCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCalendarView.h; sourceTree = "<group>"; };
+		1353AAF320BA471700FAF591 /* LPCalendarDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCalendarDate.m; sourceTree = "<group>"; };
+		1353AAF420BA471800FAF591 /* LPCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCalendarView.m; sourceTree = "<group>"; };
 		136EEEC620B9181700CCE0B0 /* MLMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMenuItem.m; sourceTree = "<group>"; };
 		136EEEC720B9181700CCE0B0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		136EEEC820B9181700CCE0B0 /* MLMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMenuCell.m; sourceTree = "<group>"; };
@@ -655,6 +661,10 @@
 		136EEEA020B90CDD00CCE0B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1353AAF120BA471700FAF591 /* LPCalendarDate.h */,
+				1353AAF320BA471700FAF591 /* LPCalendarDate.m */,
+				1353AAF220BA471700FAF591 /* LPCalendarView.h */,
+				1353AAF420BA471800FAF591 /* LPCalendarView.m */,
 				136EEF2220B9435000CCE0B0 /* ATSignStatisticsCell.h */,
 				136EEF2320B9435000CCE0B0 /* ATSignStatisticsCell.m */,
 				136EEF2420B9435000CCE0B0 /* ATSignStatisticsCell.xib */,
@@ -2054,6 +2064,7 @@
 				FBB886E720B6909800E15CA5 /* ATNoteView.m in Sources */,
 				FBB886DA20B6909800E15CA5 /* ATMineVIPHeaderCell.m in Sources */,
 				FBB886B420B6909800E15CA5 /* ATDetailContentController.m in Sources */,
+				1353AAF520BA471800FAF591 /* LPCalendarDate.m in Sources */,
 				FBB8869320B6909800E15CA5 /* ATHomeViewController.m in Sources */,
 				FBB8870A20B6909800E15CA5 /* FSPageContentView.m in Sources */,
 				FBB8869620B6909800E15CA5 /* ATHomeMainCell.m in Sources */,
@@ -2077,6 +2088,7 @@
 				FBB886B320B6909800E15CA5 /* ATHotTopicController.m in Sources */,
 				FBB8870520B6909800E15CA5 /* CFLabelOnLeftButton.m in Sources */,
 				136EEEF920B9181700CCE0B0 /* BaseTableViewCell.m in Sources */,
+				1353AAF620BA471800FAF591 /* LPCalendarView.m in Sources */,
 				FBB886BE20B6909800E15CA5 /* ATTeacherDetailCell.m in Sources */,
 				136EEF1B20B9359800CCE0B0 /* UIImage+SGImageSize.m in Sources */,
 				FBB886C220B6909800E15CA5 /* ATTeacherNavBar.m in Sources */,
@@ -2268,7 +2280,6 @@
 			baseConfigurationReference = 660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRLYZGKLQD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2279,7 +2290,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTiT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5ecca802-df57-4048-b10e-a6cd50bacf67";

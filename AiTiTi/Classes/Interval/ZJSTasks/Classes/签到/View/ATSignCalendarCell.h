@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIView *backView;
 @property (weak, nonatomic) IBOutlet UIButton *signButton;
 - (IBAction)signButtonClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *calendarBackView;
 
 @end

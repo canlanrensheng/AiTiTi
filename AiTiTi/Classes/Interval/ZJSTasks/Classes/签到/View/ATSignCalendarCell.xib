@@ -19,10 +19,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz4-uL-cFL">
-                        <rect key="frame" x="15" y="56" width="290" height="330"/>
+                        <rect key="frame" x="15" y="56" width="290" height="331.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8j-IV-9zt">
+                                <rect key="frame" x="0.0" y="57" width="290" height="274.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="330" id="kpy-Uj-6kW"/>
+                            <constraint firstAttribute="bottom" secondItem="X8j-IV-9zt" secondAttribute="bottom" id="5VO-rf-89j"/>
+                            <constraint firstItem="X8j-IV-9zt" firstAttribute="leading" secondItem="Vz4-uL-cFL" secondAttribute="leading" id="79W-C9-OR5"/>
+                            <constraint firstItem="X8j-IV-9zt" firstAttribute="top" secondItem="Vz4-uL-cFL" secondAttribute="top" constant="57" id="AcJ-Ir-3Lz"/>
+                            <constraint firstAttribute="trailing" secondItem="X8j-IV-9zt" secondAttribute="trailing" id="zo7-Ty-PN2"/>
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpi-pK-UhT">
@@ -45,12 +54,14 @@
                     <constraint firstItem="Vpi-pK-UhT" firstAttribute="centerX" secondItem="Vz4-uL-cFL" secondAttribute="centerX" id="CvP-ar-eyI"/>
                     <constraint firstItem="Vz4-uL-cFL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gCG-WX-Gps"/>
                     <constraint firstAttribute="trailing" secondItem="Vz4-uL-cFL" secondAttribute="trailing" constant="15" id="iXE-wG-Lkv"/>
+                    <constraint firstAttribute="bottom" secondItem="Vz4-uL-cFL" secondAttribute="bottom" id="n6E-uu-vbX"/>
                     <constraint firstItem="Vz4-uL-cFL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="56" id="owU-rb-Mye"/>
                     <constraint firstItem="Vz4-uL-cFL" firstAttribute="top" secondItem="Vpi-pK-UhT" secondAttribute="bottom" constant="-37" id="ysI-CC-wWx"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="backView" destination="Vz4-uL-cFL" id="jLF-0U-SXZ"/>
+                <outlet property="calendarBackView" destination="X8j-IV-9zt" id="Gse-Fp-u4g"/>
                 <outlet property="signButton" destination="Vpi-pK-UhT" id="orX-Tq-h4R"/>
             </connections>
             <point key="canvasLocation" x="-89" y="-26"/>

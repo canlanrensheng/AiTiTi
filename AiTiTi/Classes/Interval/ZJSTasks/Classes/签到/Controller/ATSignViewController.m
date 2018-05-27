@@ -70,7 +70,9 @@
         return 112;
     }
     if(indexPath.row == 1){
-        return 388;
+//        CGFloat itemH  = (self.view.bounds.size.width - 30) / 7;
+//        CGFloat itemH = 40 * 6 + 80 + 113;
+        return (30 + 10) * 6 + 80 + 113;
     }
     if(indexPath.row == 2){
         CGFloat imgHeight = (Screen_Width - 30 - (4 - 1) * 10) / 4;
@@ -97,6 +99,8 @@
         self.tableView.separatorColor = RGBCOLOR(225, 225, 225);
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         //    [cell setViewModel:self.viewModel indexPath:indexPath];
+        
+//        cell.backgroundColor = [UIColor yellowColor];
         return cell;
     }
     if(indexPath.row == 2){
