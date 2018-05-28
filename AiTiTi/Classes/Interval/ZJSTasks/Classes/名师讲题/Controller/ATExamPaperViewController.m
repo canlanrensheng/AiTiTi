@@ -11,9 +11,12 @@
 #import "ATExamPaperViewModel.h"
 #import "ATExamPaperListCell.h"
 #import "ATExamPaperModel.h"
-@interface ATExamPaperViewController ()
+#import "CFDropDownMenuView.h"
+#define kSubjectHeaderHeight 47
+@interface ATExamPaperViewController ()<CFDropDownMenuViewDelegate>
 
 @property (nonatomic,strong) ATExamPaperViewModel *viewModel;
+@property (nonatomic, strong) CFDropDownMenuView *dropDownMenuView;
 
 @end
 
@@ -34,11 +37,12 @@
     self.tableViewRowHeight = 55;
     
     self.tableView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.dropDownMenuView];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ATExamPaperListCell" bundle:nil] forCellReuseIdentifier:@"ATExamPaperListCell"];
     
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(kSubjectHeaderHeight, 0, 0, 0));
     }];
 }
 
@@ -123,6 +127,34 @@
         _viewModel = [[ATExamPaperViewModel alloc] init];
     }
     return _viewModel;
+}
+
+- (CFDropDownMenuView *)dropDownMenuView{
+    // DEMO
+    _dropDownMenuView = [[CFDropDownMenuView alloc] initWithFrame:CGRectMake(0, 0, ATScreenWidth, kSubjectHeaderHeight)];
+    // 注:  需先 赋值数据源dataSourceArr二维数组  再赋值defaulTitleArray一维数组
+    _dropDownMenuView.dataSourceArr = @[
+                                        @[@"选择题", @"填空题", @"大题", @"精品推荐", @"重点推荐"],
+                                        @[@"高一", @"高二", @"高三"],
+                                        @[@"1年以内", @"1-3年", @"3-5年", @"5年以上"]
+                                        ].mutableCopy;
+    
+    _dropDownMenuView.defaulTitleArray = [NSArray arrayWithObjects:@"数学",@"年份", @"地区", nil];
+    
+    _dropDownMenuView.delegate = self;
+    
+    // 下拉列表 起始y
+    _dropDownMenuView.startY = CGRectGetMaxY(_dropDownMenuView.frame);
+    
+    /**
+     *  回调方式一: block
+     */
+    //    __weak typeof(self) weakSelf = self;
+    _dropDownMenuView.chooseConditionBlock = ^(NSString *currentTitle, NSArray *currentTitleArray){
+        
+    };
+    return _dropDownMenuView;
+    
 }
 
 @end
