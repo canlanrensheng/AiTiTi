@@ -72,14 +72,14 @@
     leftButton.frame=CGRectMake(30, 0, 21, 36);
     [leftButton addTarget:self action:@selector(clickMonth:) forControlEvents:UIControlEventTouchUpInside];
     leftButton.centerY = headlabel.centerY;
-    [leftButton setImage:[UIImage imageNamed:@"return"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"日历左"] forState:UIControlStateNormal];
     [self addSubview:leftButton];
     
 
     rightButton=[UIButton buttonWithType:UIButtonTypeCustom];
     rightButton.frame=CGRectMake(self.bounds.size.width - 30 - leftButton.frame.size.width, leftButton.frame.origin.y, leftButton.frame.size.width, leftButton.frame.size.height);
     rightButton.centerY = headlabel.centerY;
-    [rightButton setImage:[UIImage imageNamed:@"arrow_right"] forState:UIControlStateNormal];
+    [rightButton setImage:[UIImage imageNamed:@"日历右"] forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(clickMonth:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:rightButton];
     

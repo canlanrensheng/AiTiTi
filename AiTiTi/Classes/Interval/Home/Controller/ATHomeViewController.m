@@ -23,6 +23,7 @@
 #import "ATSelectGradeBtn.h"
 #import "ATSignViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "ATTeacherTalkViewController.h"
 @interface ATHomeViewController ()<UITableViewDelegate,UITableViewDataSource,ATHomeHeaderBtnDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -204,7 +205,7 @@ static NSString *const mainCellID = @"mainCell";
         ATCourseController *courseVC = [[ATCourseController alloc] init];
         [self.navigationController pushViewController:courseVC animated:YES];
     }else if ([btn.titleLabel.text isEqualToString:@"名师讲题"]) {
-        ATTeacherExplainController *teacherExplainVC = [[ATTeacherExplainController alloc] init];
+        ATTeacherTalkViewController *teacherExplainVC = [[ATTeacherTalkViewController alloc] init];
         [self.navigationController pushViewController:teacherExplainVC animated:YES];
     }else if ([btn.titleLabel.text isEqualToString:@"K.O计划"]) {
         ATKOViewController *koVC = [[ATKOViewController alloc] init];

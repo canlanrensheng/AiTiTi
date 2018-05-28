@@ -13,6 +13,7 @@
 #define RGBCOLOR(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define Background_Color RGBCOLOR(240,240,240)
 #define NavigationBar_Color RGBCOLOR(240,240,240)
+#define DEFAULTCOLOR RGBCOLOR(45,180,255)
 #define Screen_Height      [[UIScreen mainScreen] bounds].size.height
 #define Screen_Width       [[UIScreen mainScreen] bounds].size.width
 

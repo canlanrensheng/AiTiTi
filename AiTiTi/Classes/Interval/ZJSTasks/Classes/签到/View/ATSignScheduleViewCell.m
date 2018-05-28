@@ -14,8 +14,8 @@
     [super awakeFromNib];
     // Initialization code
     
-    NSArray *imgArr = @[@"",@"",@"",@""];
-    NSArray *titleArr = @[@"未激活",@"已激活",@"已激活",@"已激活"];
+    NSArray *imgArr = @[@"10倍1",@"会员",@"VIP",@"勋章"];
+    NSArray *titleArr = @[@"未激活",@"未激活",@"未激活",@"未激活"];
     [self reloadImgScrollViewWithImgArr:imgArr titleArr:titleArr];
 }
 
@@ -36,6 +36,7 @@
         imageV.backgroundColor = Background_Color;
         imageV.clipsToBounds = YES;
         imageV.layer.cornerRadius = width / 2.0;
+        imageV.image = IMAGE(imgArr[i]);
 //        [imageV sd_setImageWithURL:[NSURL URLWithString:[imgArr[i]addUrlImgScalePropertyWithUrlIconScaleType:UrlIconScaleTypeHalfScreen]] placeholderImage:[UIImage imageNamed:@"nologo"]];
         imageV.userInteractionEnabled = NO;
         imageV.tag = i;
