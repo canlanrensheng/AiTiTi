@@ -24,7 +24,6 @@
 + (ATSubjectSectionHeader *)subjectSectionHeaderWithModel {
     ATSubjectSectionHeader *sectionHeader = [[ATSubjectSectionHeader alloc] init];
     sectionHeader.frame = CGRectMake(0, 0, ATScreenWidth, 64);
-    sectionHeader.backgroundColor = [UIColor cyanColor];
     
    UILabel *titleLabel = [UILabel labelWithTitle:@"集合与函数" color:RGB(51, 51, 51) fontSize:17.0 alignment:NSTextAlignmentLeft];
     [sectionHeader addSubview:titleLabel];
@@ -47,6 +46,15 @@
     [numLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(arrow.mas_left).offset(-15);
         make.centerY.mas_equalTo(sectionHeader.mas_centerY);
+    }];
+    
+    UIView *bottomView = [[UIView alloc] init];
+    bottomView.backgroundColor = [UIColor grayColor];
+    [sectionHeader addSubview:bottomView];
+    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(sectionHeader);
+        make.bottom.equalTo(sectionHeader);
+        make.height.mas_equalTo(onePixel);
     }];
     
     return sectionHeader;

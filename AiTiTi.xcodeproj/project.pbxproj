@@ -10,6 +10,19 @@
 		0B3C5ED520B8F6A200A61750 /* ATMessagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ECF20B8F69D00A61750 /* ATMessagesModel.m */; };
 		0B3C5ED620B8F6A200A61750 /* ATMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ED120B8F69F00A61750 /* ATMessagesViewController.m */; };
 		0B3C5ED720B8F6A200A61750 /* ATMessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C5ED220B8F6A000A61750 /* ATMessagesCell.m */; };
+		0BF9116520BD952E00559135 /* ATBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115420BD952E00559135 /* ATBaseTableViewController.m */; };
+		0BF9116620BD952E00559135 /* ATDirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115520BD952E00559135 /* ATDirectoryViewController.m */; };
+		0BF9116720BD952E00559135 /* ATCourseDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115620BD952E00559135 /* ATCourseDescriptionViewController.m */; };
+		0BF9116820BD952E00559135 /* ATCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115720BD952E00559135 /* ATCommentViewController.m */; };
+		0BF9116920BD952E00559135 /* ATDirectoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF9115A20BD952E00559135 /* ATDirectoryCell.xib */; };
+		0BF9116A20BD952E00559135 /* ATSubjectDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115B20BD952E00559135 /* ATSubjectDetailView.m */; };
+		0BF9116B20BD952E00559135 /* ATDirectoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115C20BD952E00559135 /* ATDirectoryCell.m */; };
+		0BF9116C20BD952F00559135 /* ATBottomViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115D20BD952E00559135 /* ATBottomViewTool.m */; };
+		0BF9116D20BD952F00559135 /* ATContentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9115E20BD952E00559135 /* ATContentViewCell.m */; };
+		0BF9116E20BD952F00559135 /* ATBottomViewTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF9116020BD952E00559135 /* ATBottomViewTool.xib */; };
+		0BF9116F20BD952F00559135 /* ATSubjectDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF9116120BD952E00559135 /* ATSubjectDetailView.xib */; };
+		0BF9117A20BD967000559135 /* UITableView+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9117820BD966F00559135 /* UITableView+Register.m */; };
+		0BF9118020BD9A1F00559135 /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9117F20BD9A1D00559135 /* Storyboard+Extension.swift */; };
 		0C3DCE43284143D22087B13F /* libPods-AiTiTi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */; };
 		1353AAD420B9923300FAF591 /* UINavigationBar+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAD220B9923300FAF591 /* UINavigationBar+Extention.m */; };
 		1353AAD820B994A000FAF591 /* ATQRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1353AAD720B994A000FAF591 /* ATQRCodeScanViewController.m */; };
@@ -228,6 +241,31 @@
 		0B3C5ED220B8F6A000A61750 /* ATMessagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMessagesCell.m; sourceTree = "<group>"; };
 		0B3C5ED320B8F6A000A61750 /* ATMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesViewController.h; sourceTree = "<group>"; };
 		0B3C5ED420B8F6A200A61750 /* ATMessagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMessagesCell.h; sourceTree = "<group>"; };
+		0BF9115020BD952E00559135 /* ATDirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDirectoryViewController.h; sourceTree = "<group>"; };
+		0BF9115120BD952E00559135 /* ATBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBaseTableViewController.h; sourceTree = "<group>"; };
+		0BF9115220BD952E00559135 /* ATCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCommentViewController.h; sourceTree = "<group>"; };
+		0BF9115320BD952E00559135 /* ATCourseDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCourseDescriptionViewController.h; sourceTree = "<group>"; };
+		0BF9115420BD952E00559135 /* ATBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBaseTableViewController.m; sourceTree = "<group>"; };
+		0BF9115520BD952E00559135 /* ATDirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDirectoryViewController.m; sourceTree = "<group>"; };
+		0BF9115620BD952E00559135 /* ATCourseDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCourseDescriptionViewController.m; sourceTree = "<group>"; };
+		0BF9115720BD952E00559135 /* ATCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCommentViewController.m; sourceTree = "<group>"; };
+		0BF9115A20BD952E00559135 /* ATDirectoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATDirectoryCell.xib; sourceTree = "<group>"; };
+		0BF9115B20BD952E00559135 /* ATSubjectDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSubjectDetailView.m; sourceTree = "<group>"; };
+		0BF9115C20BD952E00559135 /* ATDirectoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDirectoryCell.m; sourceTree = "<group>"; };
+		0BF9115D20BD952E00559135 /* ATBottomViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBottomViewTool.m; sourceTree = "<group>"; };
+		0BF9115E20BD952E00559135 /* ATContentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATContentViewCell.m; sourceTree = "<group>"; };
+		0BF9115F20BD952E00559135 /* ATSubjectDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSubjectDetailView.h; sourceTree = "<group>"; };
+		0BF9116020BD952E00559135 /* ATBottomViewTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATBottomViewTool.xib; sourceTree = "<group>"; };
+		0BF9116120BD952E00559135 /* ATSubjectDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATSubjectDetailView.xib; sourceTree = "<group>"; };
+		0BF9116220BD952E00559135 /* ATContentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATContentViewCell.h; sourceTree = "<group>"; };
+		0BF9116320BD952E00559135 /* ATBottomViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBottomViewTool.h; sourceTree = "<group>"; };
+		0BF9116420BD952E00559135 /* ATDirectoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDirectoryCell.h; sourceTree = "<group>"; };
+		0BF9117820BD966F00559135 /* UITableView+Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Register.m"; sourceTree = "<group>"; };
+		0BF9117920BD967000559135 /* UITableView+Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Register.h"; sourceTree = "<group>"; };
+		0BF9117C20BD96F800559135 /* LAMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAMacroHeader.h; sourceTree = "<group>"; };
+		0BF9117D20BD995D00559135 /* LAToolHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAToolHeader.h; sourceTree = "<group>"; };
+		0BF9117E20BD9A1B00559135 /* AiTiTi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AiTiTi-Bridging-Header.h"; sourceTree = "<group>"; };
+		0BF9117F20BD9A1D00559135 /* Storyboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
 		1353AAD220B9923300FAF591 /* UINavigationBar+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extention.m"; sourceTree = "<group>"; };
 		1353AAD320B9923300FAF591 /* UINavigationBar+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extention.h"; sourceTree = "<group>"; };
 		1353AAD620B994A000FAF591 /* ATQRCodeScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATQRCodeScanViewController.h; sourceTree = "<group>"; };
@@ -649,6 +687,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF9114B20BD952E00559135 /* LATasks */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9117120BD95A200559135 /* Public */,
+				0BF9114C20BD952E00559135 /* Classes */,
+			);
+			path = LATasks;
+			sourceTree = "<group>";
+		};
+		0BF9114C20BD952E00559135 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9114D20BD952E00559135 /* 专题详情 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0BF9114D20BD952E00559135 /* 专题详情 */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9114E20BD952E00559135 /* ViewModel */,
+				0BF9114F20BD952E00559135 /* Controller */,
+				0BF9115820BD952E00559135 /* Model */,
+				0BF9115920BD952E00559135 /* View */,
+			);
+			path = "专题详情";
+			sourceTree = "<group>";
+		};
+		0BF9114E20BD952E00559135 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BF9114F20BD952E00559135 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9115120BD952E00559135 /* ATBaseTableViewController.h */,
+				0BF9115420BD952E00559135 /* ATBaseTableViewController.m */,
+				0BF9115220BD952E00559135 /* ATCommentViewController.h */,
+				0BF9115720BD952E00559135 /* ATCommentViewController.m */,
+				0BF9115320BD952E00559135 /* ATCourseDescriptionViewController.h */,
+				0BF9115620BD952E00559135 /* ATCourseDescriptionViewController.m */,
+				0BF9115020BD952E00559135 /* ATDirectoryViewController.h */,
+				0BF9115520BD952E00559135 /* ATDirectoryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0BF9115820BD952E00559135 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BF9115920BD952E00559135 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9116320BD952E00559135 /* ATBottomViewTool.h */,
+				0BF9115D20BD952E00559135 /* ATBottomViewTool.m */,
+				0BF9116020BD952E00559135 /* ATBottomViewTool.xib */,
+				0BF9116220BD952E00559135 /* ATContentViewCell.h */,
+				0BF9115E20BD952E00559135 /* ATContentViewCell.m */,
+				0BF9116420BD952E00559135 /* ATDirectoryCell.h */,
+				0BF9115C20BD952E00559135 /* ATDirectoryCell.m */,
+				0BF9115A20BD952E00559135 /* ATDirectoryCell.xib */,
+				0BF9115F20BD952E00559135 /* ATSubjectDetailView.h */,
+				0BF9115B20BD952E00559135 /* ATSubjectDetailView.m */,
+				0BF9116120BD952E00559135 /* ATSubjectDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BF9117120BD95A200559135 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9117B20BD96AF00559135 /* Macros */,
+				0BF9117220BD95B300559135 /* Category */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		0BF9117220BD95B300559135 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9117720BD964A00559135 /* LAUITableView */,
+				0BF9117320BD95C500559135 /* LayerCorner */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0BF9117320BD95C500559135 /* LayerCorner */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9117F20BD9A1D00559135 /* Storyboard+Extension.swift */,
+				0BF9117E20BD9A1B00559135 /* AiTiTi-Bridging-Header.h */,
+			);
+			path = LayerCorner;
+			sourceTree = "<group>";
+		};
+		0BF9117720BD964A00559135 /* LAUITableView */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9117920BD967000559135 /* UITableView+Register.h */,
+				0BF9117820BD966F00559135 /* UITableView+Register.m */,
+			);
+			path = LAUITableView;
+			sourceTree = "<group>";
+		};
+		0BF9117B20BD96AF00559135 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9117C20BD96F800559135 /* LAMacroHeader.h */,
+				0BF9117D20BD995D00559135 /* LAToolHeader.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
 		1353AAD520B9948800FAF591 /* 扫一扫 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1195,6 +1353,7 @@
 		FBB8855920B6909700E15CA5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0BF9114B20BD952E00559135 /* LATasks */,
 				136EEDF920B8FE4B00CCE0B0 /* ZJSTasks */,
 				FBB8855A20B6909700E15CA5 /* Controller */,
 				FBB8856920B6909700E15CA5 /* Model */,
@@ -1992,6 +2151,7 @@
 				TargetAttributes = {
 					FBB884ED20B6903100E15CA5 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -2019,9 +2179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				136EEF1A20B9359800CCE0B0 /* SGQRCode.bundle in Resources */,
+				0BF9116F20BD952F00559135 /* ATSubjectDetailView.xib in Resources */,
 				FBB8869920B6909800E15CA5 /* ATHomeRecommendCell.xib in Resources */,
 				FBB886C720B6909800E15CA5 /* ATGetbackPwdViewController.xib in Resources */,
 				FBB886BA20B6909800E15CA5 /* ATTeacherCell.xib in Resources */,
+				0BF9116E20BD952F00559135 /* ATBottomViewTool.xib in Resources */,
 				FBB8853C20B6908A00E15CA5 /* ATOrderCell.xib in Resources */,
 				136EEF2F20B948F500CCE0B0 /* ATSignCalendarCell.xib in Resources */,
 				1353AB2520BC33F700FAF591 /* ATExamClasssifySectionView.xib in Resources */,
@@ -2039,6 +2201,7 @@
 				FBB886C120B6909800E15CA5 /* ATTeacherDetailCell.xib in Resources */,
 				FBB8869F20B6909800E15CA5 /* ATSubjectSpreadCell.xib in Resources */,
 				FBB886CB20B6909800E15CA5 /* ATBindPhoneViewController.xib in Resources */,
+				0BF9116920BD952E00559135 /* ATDirectoryCell.xib in Resources */,
 				136EEEF820B9181700CCE0B0 /* .gitkeep in Resources */,
 				FBB886D720B6909800E15CA5 /* ATMineCommentCell.xib in Resources */,
 				136EEF2620B9435000CCE0B0 /* ATSignStatisticsCell.xib in Resources */,
@@ -2109,6 +2272,7 @@
 			files = (
 				136EEF2520B9435000CCE0B0 /* ATSignStatisticsCell.m in Sources */,
 				FBB8870220B6909800E15CA5 /* NSString+Times.m in Sources */,
+				0BF9118020BD9A1F00559135 /* Storyboard+Extension.swift in Sources */,
 				FBB886AC20B6909800E15CA5 /* ATRankListModel.m in Sources */,
 				FBB8869E20B6909800E15CA5 /* ATHomeHeader.m in Sources */,
 				136EEF2020B9359800CCE0B0 /* SGQRCodeAlbumManager.m in Sources */,
@@ -2138,6 +2302,8 @@
 				1353AB3420BC414600FAF591 /* ATExamPaperModel.m in Sources */,
 				FBB8868A20B6909800E15CA5 /* ATNavigationController.m in Sources */,
 				FBB886AB20B6909800E15CA5 /* ATRankViewController.m in Sources */,
+				0BF9116720BD952E00559135 /* ATCourseDescriptionViewController.m in Sources */,
+				0BF9116620BD952E00559135 /* ATDirectoryViewController.m in Sources */,
 				FBB8870620B6909800E15CA5 /* CFDropDownMenuView.m in Sources */,
 				1353AAE620B9AEE100FAF591 /* ATSignAlertView.m in Sources */,
 				FBB886F120B6909800E15CA5 /* UIButton+Extension.m in Sources */,
@@ -2177,10 +2343,12 @@
 				FBB886D020B6909800E15CA5 /* ATMineSettingViewController.m in Sources */,
 				136EEF0820B9199100CCE0B0 /* ATSignViewController.m in Sources */,
 				FBB886C820B6909800E15CA5 /* ATBindPhoneViewController.m in Sources */,
+				0BF9116820BD952E00559135 /* ATCommentViewController.m in Sources */,
 				FBB886A520B6909800E15CA5 /* ATHomeNavBar.m in Sources */,
 				FBB886B120B6909800E15CA5 /* ATTeacherViewController.m in Sources */,
 				FBB886D920B6909800E15CA5 /* ATMineVIPFourthCell.m in Sources */,
 				FBB8868920B6909700E15CA5 /* ATMainViewController.m in Sources */,
+				0BF9116B20BD952E00559135 /* ATDirectoryCell.m in Sources */,
 				FBB886E820B6909800E15CA5 /* ATCollectView.m in Sources */,
 				136EEF1F20B9359800CCE0B0 /* SGQRCodeGenerateManager.m in Sources */,
 				136EEEFD20B9181700CCE0B0 /* BaseViewController.m in Sources */,
@@ -2207,6 +2375,7 @@
 				FBB886B420B6909800E15CA5 /* ATDetailContentController.m in Sources */,
 				FBB8869320B6909800E15CA5 /* ATHomeViewController.m in Sources */,
 				FBB8870A20B6909800E15CA5 /* FSPageContentView.m in Sources */,
+				0BF9116C20BD952F00559135 /* ATBottomViewTool.m in Sources */,
 				FBB8869620B6909800E15CA5 /* ATHomeMainCell.m in Sources */,
 				FBB886E120B6909800E15CA5 /* ATMineCourceCell.m in Sources */,
 				FBB886B520B6909800E15CA5 /* ATSystemCourseController.m in Sources */,
@@ -2214,6 +2383,8 @@
 				FBB8870920B6909800E15CA5 /* FSSegmentTitleView.m in Sources */,
 				FBB8850120B6903300E15CA5 /* main.m in Sources */,
 				FBB8868C20B6909800E15CA5 /* ATNavigationBar.m in Sources */,
+				0BF9116520BD952E00559135 /* ATBaseTableViewController.m in Sources */,
+				0BF9116A20BD952E00559135 /* ATSubjectDetailView.m in Sources */,
 				1353AB1320BC31F600FAF591 /* ATExamClasssifyViewModel.m in Sources */,
 				FBB886EE20B6909800E15CA5 /* UILabel+Extension.m in Sources */,
 				136EEF0420B9181700CCE0B0 /* UILabel+LJLabel.m in Sources */,
@@ -2246,6 +2417,7 @@
 				FBB886AA20B6909800E15CA5 /* ATQuotaViewController.m in Sources */,
 				FBB886A620B6909800E15CA5 /* ATSubjectHeader.m in Sources */,
 				FBB886A020B6909800E15CA5 /* ATHomeRecommendCell.m in Sources */,
+				0BF9117A20BD967000559135 /* UITableView+Register.m in Sources */,
 				136EEF1D20B9359800CCE0B0 /* SGQRCodeScanningView.m in Sources */,
 				136EEF0320B9181700CCE0B0 /* TXHudTool.m in Sources */,
 				FBB8870420B6909800E15CA5 /* NSDate+Extension.m in Sources */,
@@ -2263,6 +2435,7 @@
 				FBB8869720B6909800E15CA5 /* ATSubjectMainCell.m in Sources */,
 				FBB886D420B6909800E15CA5 /* ATMineHelpViewController.m in Sources */,
 				136EEF0220B9181700CCE0B0 /* UIBarButtonItem+TXAdditions.m in Sources */,
+				0BF9116D20BD952F00559135 /* ATContentViewCell.m in Sources */,
 				FBB8868B20B6909800E15CA5 /* ATSuperViewController.m in Sources */,
 				FBB886EC20B6909800E15CA5 /* UIImage+Extension.m in Sources */,
 				0B3C5ED720B8F6A200A61750 /* ATMessagesCell.m in Sources */,
@@ -2424,6 +2597,7 @@
 			baseConfigurationReference = 660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRLYZGKLQD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2438,6 +2612,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5ecca802-df57-4048-b10e-a6cd50bacf67";
 				PROVISIONING_PROFILE_SPECIFIER = ITelematicsDevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "AiTiTi/Classes/Interval/Home/LATasks/Public/Category/LayerCorner/AiTiTi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2447,6 +2624,7 @@
 			baseConfigurationReference = F8EA3AACED2108C8F22901E8 /* Pods-AiTiTi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRLYZGKLQD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2460,6 +2638,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTiT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AiTiTi/Classes/Interval/Home/LATasks/Public/Category/LayerCorner/AiTiTi-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
