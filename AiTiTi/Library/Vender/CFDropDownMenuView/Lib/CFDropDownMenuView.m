@@ -10,7 +10,7 @@
 #import "CFMacro.h"
 #import "UIView+CFFrame.h"
 
-#define kTitleBarHeight 45
+#define kTitleBarHeight 30  // 默认是45
 #define kViewTagConstant 1  // 所有tag都加上这个 防止出现为0的tag
 
 @interface CFDropDownMenuView ()
@@ -67,15 +67,21 @@
     _dataSourceArr = dataSourceArr;
     
     self.titleBtnArr = [[NSMutableArray alloc] init];
-    
-    CGFloat btnW = CFScreenWidth/dataSourceArr.count;
+    // 屏幕宽度
+    CGFloat btnW = (CFScreenWidth - 90)/dataSourceArr.count;
     CGFloat btnH = kTitleBarHeight;
     
     for (NSInteger i=0; i<dataSourceArr.count; i++) {
         
         CFLabelOnLeftButton *titleBtn = nil;
-        
-        titleBtn = [CFLabelOnLeftButton createButtonWithImageName:CFDrowMenuViewSrcName(@"灰箭头.png")?:CFDrowMenuViewFrameworkSrcName(@"灰箭头.png") title:@"" titleColor:CF_Color_TextDarkGrayColor frame:CGRectMake(i*btnW, 0, btnW, btnH) target:self action:@selector(titleBtnClicked:)];
+        // 计算间隔宽度 (屏幕宽度-btn数量*btnW)/(btn数量+1)
+        CGFloat btnSpace = (CFScreenWidth - dataSourceArr.count * btnW)/(dataSourceArr.count + 1);
+        titleBtn = [CFLabelOnLeftButton createButtonWithImageName:CFDrowMenuViewSrcName(@"灰箭头.png")?:CFDrowMenuViewFrameworkSrcName(@"灰箭头.png") title:@"" titleColor:CF_Color_TextDarkGrayColor frame:CGRectMake(btnSpace + i * (btnSpace + btnW), 0, btnW, btnH) target:self action:@selector(titleBtnClicked:)];
+        //        (i*btnW, 0, btnW, btnH)
+        titleBtn.layer.borderColor = RGB(153, 153, 153).CGColor;
+        titleBtn.layer.borderWidth = 1.0f;
+        titleBtn.layer.cornerRadius = 5.0f;
+        titleBtn.layer.masksToBounds = YES;
         
         titleBtn.tag = i+kViewTagConstant;  // 所有tag都加上这个, 防止出现为0的tag
         
@@ -85,11 +91,11 @@
     }
     
     /*
-    // 中间分割竖线
-    for (NSInteger i=0; i<dataSourceArr.count-1; i++) {
-        UIView *line = [UIView viewWithFrame:CGRectMake(btnW*(i+1), 9, 1, btnH-18) backgroundColor:CF_Color_SepertLineColor];
-        [self.titleBar addSubview:line];
-    }
+     // 中间分割竖线
+     for (NSInteger i=0; i<dataSourceArr.count-1; i++) {
+     UIView *line = [UIView viewWithFrame:CGRectMake(btnW*(i+1), 9, 1, btnH-18) backgroundColor:CF_Color_SepertLineColor];
+     [self.titleBar addSubview:line];
+     }
      */
 }
 
@@ -139,10 +145,10 @@
     /**
      *  0.0.2版本 bug  当没有把当前分类的菜单退出时 就点其他分类  会导致 箭头方向错了
      */
-//    [UIView animateWithDuration:0.25 animations:^{
-//        btn.imageView.transform = CGAffineTransformMakeRotation(M_PI);
-//        btn.enabled = NO;
-//    }];
+    //    [UIView animateWithDuration:0.25 animations:^{
+    //        btn.imageView.transform = CGAffineTransformMakeRotation(M_PI);
+    //        btn.enabled = NO;
+    //    }];
     
     _lastClickedBtn = btn;
     

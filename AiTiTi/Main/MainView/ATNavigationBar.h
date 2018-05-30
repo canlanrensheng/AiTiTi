@@ -21,6 +21,19 @@
 @property (nonatomic, assign) BOOL leftBtnHiden;
 @property (nonatomic, assign) BOOL rightBtnHiden;
 
+/**
+ *  左侧button
+ */
+@property (nonatomic,strong)  UIButton *leftBtn;
+/**
+ *  右侧button
+ */
+@property (nonatomic,strong)  UIButton *rightBtn;
+/**
+ *  中间title
+ */
+@property (nonatomic,strong) UILabel *titleLabel;
+
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title leftName:(NSString *)leftName rightName:(NSString *)rightName;
 
 
