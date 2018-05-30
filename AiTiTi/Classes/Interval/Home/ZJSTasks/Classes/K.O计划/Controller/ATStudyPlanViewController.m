@@ -10,6 +10,7 @@
 #import "ATStudyPlanListCell.h"
 #import "ATStudyHeaderView.h"
 #import "ATStudyPlanReusableView.h"
+#import "ATStudyPlanSectionFooterView.h"
 #define HeaderViewHeight 254
 @interface ATStudyPlanViewController()
 
@@ -42,6 +43,8 @@
     [self.collectionView registerNibHeaderFooter:[ATStudyPlanReusableView class]];
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudyPlanReusableView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ATStudyPlanReusableView"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudyPlanSectionFooterView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"ATStudyPlanSectionFooterView"];
+    
     
     self.collectionView.contentInset = UIEdgeInsetsMake(HeaderViewHeight, 0, 0, 0);
     
@@ -59,6 +62,10 @@
 
 //    self.viewModel.titleViewType = BMTitleViewTypeLoadingTitle;
 //    [self.viewModel.JMBrandCommomd execute:nil];
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 2;
 }
 
 #pragma mark UICollectionViewDelegate
@@ -95,7 +102,7 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
            viewForSupplementaryElementOfKind:(NSString *)kind
                                  atIndexPath:(NSIndexPath *)indexPath{
-    static NSString *footerIdentifier = @"ATStudyPlanReusableView";
+    static NSString *footerIdentifier = @"ATStudyPlanSectionFooterView";
     static NSString *headerIdentifier = @"ATStudyPlanReusableView";
     NSString *reuseIdentifier;
     if ([kind isEqualToString: UICollectionElementKindSectionFooter ]){
@@ -103,18 +110,22 @@
     }else{
         reuseIdentifier = headerIdentifier;
     }
-    ATStudyPlanReusableView *view =  [collectionView dequeueReusableSupplementaryViewOfKind :kind   withReuseIdentifier:reuseIdentifier   forIndexPath:indexPath];
+    
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
-        
+        ATStudyPlanReusableView *view =  [collectionView dequeueReusableSupplementaryViewOfKind :kind   withReuseIdentifier:reuseIdentifier   forIndexPath:indexPath];
+        return view;
     }else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
+        ATStudyPlanSectionFooterView *view =  [collectionView dequeueReusableSupplementaryViewOfKind :kind   withReuseIdentifier:reuseIdentifier   forIndexPath:indexPath];
+        return view;
     }
-    return view;
+    return nil;
 }
 
 //Collection 区头的高度
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
     return CGSizeMake(0, 70);
 }
+
 
 
 @end

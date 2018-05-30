@@ -22,6 +22,13 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="due-Sf-Qz3">
                         <rect key="frame" x="0.0" y="0.0" width="241" height="99"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfV-0V-3h5">
+                                <rect key="frame" x="0.0" y="0.0" width="241" height="99"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.81176470588235294" blue="0.0" alpha="0.10110766267123288" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k.o" translatesAutoresizingMaskIntoConstraints="NO" id="GmH-QY-dVf">
+                                <rect key="frame" x="57" y="20" width="127" height="59"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数学" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-tw-NJA">
                                 <rect key="frame" x="12" y="22" width="27" height="14"/>
                                 <color key="backgroundColor" red="0.090196078430000007" green="0.81176470590000005" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,13 +47,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YO7-pO-7At" firstAttribute="leading" secondItem="due-Sf-Qz3" secondAttribute="leading" constant="12" id="8S6-bV-u1x"/>
+                            <constraint firstItem="GmH-QY-dVf" firstAttribute="centerY" secondItem="due-Sf-Qz3" secondAttribute="centerY" id="MQT-sw-9SL"/>
                             <constraint firstAttribute="trailing" secondItem="YO7-pO-7At" secondAttribute="trailing" constant="8" id="NVX-hw-DSK"/>
+                            <constraint firstItem="bfV-0V-3h5" firstAttribute="top" secondItem="due-Sf-Qz3" secondAttribute="top" id="Naa-gP-yZw"/>
                             <constraint firstAttribute="height" constant="99" id="Wva-eb-Tbe"/>
+                            <constraint firstItem="bfV-0V-3h5" firstAttribute="leading" secondItem="due-Sf-Qz3" secondAttribute="leading" id="cpH-hn-mHk"/>
+                            <constraint firstAttribute="trailing" secondItem="bfV-0V-3h5" secondAttribute="trailing" id="cpQ-tO-mhb"/>
+                            <constraint firstItem="GmH-QY-dVf" firstAttribute="centerX" secondItem="due-Sf-Qz3" secondAttribute="centerX" id="gfN-zc-Dld"/>
                             <constraint firstItem="IRf-tw-NJA" firstAttribute="top" secondItem="due-Sf-Qz3" secondAttribute="top" constant="22" id="h5V-wB-xQ1"/>
                             <constraint firstItem="YO7-pO-7At" firstAttribute="top" secondItem="IRf-tw-NJA" secondAttribute="top" id="hzb-f4-xOy"/>
+                            <constraint firstAttribute="bottom" secondItem="bfV-0V-3h5" secondAttribute="bottom" id="lo3-UM-DJg"/>
                             <constraint firstItem="IRf-tw-NJA" firstAttribute="leading" secondItem="due-Sf-Qz3" secondAttribute="leading" constant="12" id="ysW-ij-0Y0"/>
                         </constraints>
                     </view>
@@ -91,6 +104,7 @@
                     </imageView>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="mYW-2J-RNb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="1UC-Ju-56c"/>
                 <constraint firstItem="7ay-Fy-JTG" firstAttribute="leading" secondItem="Y8y-wZ-ud3" secondAttribute="leading" id="31Z-ep-eED"/>
@@ -118,6 +132,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="k.o" width="127" height="59"/>
         <image name="人" width="13" height="13"/>
         <image name="时间" width="11" height="11"/>
         <image name="赞" width="15" height="14"/>
