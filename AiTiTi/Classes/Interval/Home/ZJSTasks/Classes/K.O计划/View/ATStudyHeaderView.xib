@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ATStudyHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="K.O计划背景图" translatesAutoresizingMaskIntoConstraints="NO" id="8Z9-ZF-Fyf">
+                    <rect key="frame" x="23" y="0.0" width="329" height="259"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oev-Jr-A86">
+                    <rect key="frame" x="225" y="159" width="107" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="8le-fX-Tdk"/>
+                        <constraint firstAttribute="width" constant="107" id="xXW-gi-7xR"/>
+                    </constraints>
+                    <state key="normal" title=" 新建计划" image="新建计划">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-9g-4oI">
+                    <rect key="frame" x="264.5" y="98" width="27" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="P0m-ko-4ul"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkB-EA-1d4">
+                    <rect key="frame" x="92" y="98" width="28" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="t6T-kZ-ICD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日课程" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-c7-fin">
+                    <rect key="frame" x="79.5" y="64" width="53.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在进行的计划" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDj-ij-Ii5">
+                    <rect key="frame" x="231.5" y="64" width="93" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018.05.11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPl-aO-NuH">
+                    <rect key="frame" x="153" y="23" width="68.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI6-SY-k5a">
+                    <rect key="frame" x="53" y="159" width="107" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="107" id="Bgj-Km-lMO"/>
+                        <constraint firstAttribute="height" constant="27" id="oSe-0y-qrn"/>
+                    </constraints>
+                    <state key="normal" title=" 计划安排" image="计划安排">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-E4-roJ">
+                    <rect key="frame" x="120" y="203" width="135" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="Ce8-uS-lut"/>
+                        <constraint firstAttribute="height" constant="36" id="Eig-gY-6wL"/>
+                    </constraints>
+                    <state key="normal" title="开始学习">
+                        <color key="titleColor" red="0.035294117649999998" green="0.80000000000000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YDj-ij-Ii5" firstAttribute="top" secondItem="dPl-aO-NuH" secondAttribute="bottom" constant="24" id="0hL-XZ-cot"/>
+                <constraint firstItem="dPl-aO-NuH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="0vq-Ah-sxV"/>
+                <constraint firstItem="efZ-c7-fin" firstAttribute="top" secondItem="YDj-ij-Ii5" secondAttribute="top" id="55w-25-xv3"/>
+                <constraint firstItem="dPl-aO-NuH" firstAttribute="leading" secondItem="efZ-c7-fin" secondAttribute="trailing" constant="20" id="5xo-CN-TWb"/>
+                <constraint firstItem="dPl-aO-NuH" firstAttribute="centerX" secondItem="8Z9-ZF-Fyf" secondAttribute="centerX" id="BQw-0R-Dn4"/>
+                <constraint firstItem="4gr-E4-roJ" firstAttribute="centerX" secondItem="8Z9-ZF-Fyf" secondAttribute="centerX" id="FH4-oG-RV7"/>
+                <constraint firstItem="oev-Jr-A86" firstAttribute="centerX" secondItem="HYZ-9g-4oI" secondAttribute="centerX" id="FN9-cv-DFq"/>
+                <constraint firstItem="XkB-EA-1d4" firstAttribute="top" secondItem="efZ-c7-fin" secondAttribute="bottom" constant="18" id="HMT-eM-27A"/>
+                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="M4t-th-Dox"/>
+                <constraint firstItem="oev-Jr-A86" firstAttribute="width" secondItem="SI6-SY-k5a" secondAttribute="width" id="OzQ-KB-Snw"/>
+                <constraint firstItem="oev-Jr-A86" firstAttribute="centerY" secondItem="SI6-SY-k5a" secondAttribute="centerY" id="PCP-tf-lUw"/>
+                <constraint firstItem="YDj-ij-Ii5" firstAttribute="leading" secondItem="dPl-aO-NuH" secondAttribute="trailing" constant="10" id="Pwg-Pm-nH0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Z9-ZF-Fyf" secondAttribute="trailing" constant="23" id="TdI-Rz-5mt"/>
+                <constraint firstItem="HYZ-9g-4oI" firstAttribute="centerY" secondItem="XkB-EA-1d4" secondAttribute="centerY" id="Wnp-lz-G8j"/>
+                <constraint firstItem="SI6-SY-k5a" firstAttribute="centerX" secondItem="XkB-EA-1d4" secondAttribute="centerX" id="XI7-a3-JWD"/>
+                <constraint firstItem="SI6-SY-k5a" firstAttribute="top" secondItem="XkB-EA-1d4" secondAttribute="bottom" constant="16" id="Zac-ZX-1YW"/>
+                <constraint firstItem="4gr-E4-roJ" firstAttribute="top" secondItem="SI6-SY-k5a" secondAttribute="bottom" constant="17" id="des-mO-APm"/>
+                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="fHe-1a-k3u"/>
+                <constraint firstItem="HYZ-9g-4oI" firstAttribute="centerX" secondItem="YDj-ij-Ii5" secondAttribute="centerX" id="mQj-Jn-d4P"/>
+                <constraint firstItem="XkB-EA-1d4" firstAttribute="centerX" secondItem="efZ-c7-fin" secondAttribute="centerX" id="rS7-Dc-Ic1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8Z9-ZF-Fyf" secondAttribute="bottom" id="tK3-Vq-fRk"/>
+                <constraint firstItem="oev-Jr-A86" firstAttribute="height" secondItem="SI6-SY-k5a" secondAttribute="height" id="zWe-gw-3X1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="createPlanButton" destination="oev-Jr-A86" id="FTs-pb-ud7"/>
+                <outlet property="planButton" destination="SI6-SY-k5a" id="Lfa-f7-67h"/>
+                <outlet property="startStudyButton" destination="4gr-E4-roJ" id="WPB-0G-7fR"/>
+            </connections>
+            <point key="canvasLocation" x="-11.5" y="-60.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="K.O计划背景图" width="330" height="233"/>
+        <image name="新建计划" width="12" height="12"/>
+        <image name="计划安排" width="12" height="13"/>
+    </resources>
+</document>

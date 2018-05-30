@@ -24,6 +24,7 @@
 #import "ATSignViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "ATTeacherTalkViewController.h"
+#import "ATStudyPlanViewController.h"
 @interface ATHomeViewController ()<UITableViewDelegate,UITableViewDataSource,ATHomeHeaderBtnDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -208,7 +209,7 @@ static NSString *const mainCellID = @"mainCell";
         ATTeacherTalkViewController *teacherExplainVC = [[ATTeacherTalkViewController alloc] init];
         [self.navigationController pushViewController:teacherExplainVC animated:YES];
     }else if ([btn.titleLabel.text isEqualToString:@"K.O计划"]) {
-        ATKOViewController *koVC = [[ATKOViewController alloc] init];
+        ATStudyPlanViewController *koVC = [[ATStudyPlanViewController alloc] init];
         [self.navigationController pushViewController:koVC animated:YES];
     }else if ([btn.titleLabel.text isEqualToString:@"评测"]) {
         ATEvaluationViewController *evaluationVC = [[ATEvaluationViewController alloc] init];
