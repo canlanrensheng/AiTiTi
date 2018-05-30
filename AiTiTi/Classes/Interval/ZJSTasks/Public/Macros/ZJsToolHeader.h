@@ -15,6 +15,8 @@
 #import "UIButton+LJButton.h"
 #import "UIBarButtonItem+TXAdditions.h"
 #import "UILabel+LJLabel.h"
+#import "UILabel+TXInit.h"
+#import "UIButton+TXInit.h"
 
 #import "MLMenu.h"
 

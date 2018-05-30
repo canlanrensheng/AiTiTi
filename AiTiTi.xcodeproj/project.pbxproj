@@ -82,6 +82,20 @@
 		136EEF2920B9445800CCE0B0 /* ATSignViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF2820B9445800CCE0B0 /* ATSignViewModel.m */; };
 		136EEF2E20B948F500CCE0B0 /* ATSignCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 136EEF2C20B948F500CCE0B0 /* ATSignCalendarCell.m */; };
 		136EEF2F20B948F500CCE0B0 /* ATSignCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136EEF2D20B948F500CCE0B0 /* ATSignCalendarCell.xib */; };
+		929B018420BE33CA00FDF8B6 /* ATTestAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B016F20BE33CA00FDF8B6 /* ATTestAnalysisViewController.m */; };
+		929B018520BE33CA00FDF8B6 /* ATDifficultyDistributionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B017320BE33CA00FDF8B6 /* ATDifficultyDistributionCell.m */; };
+		929B018620BE33CA00FDF8B6 /* ATDifficultyDistributionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929B017420BE33CA00FDF8B6 /* ATDifficultyDistributionCell.xib */; };
+		929B018720BE33CA00FDF8B6 /* ATTestAnalysisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B017620BE33CA00FDF8B6 /* ATTestAnalysisCell.m */; };
+		929B018820BE33CA00FDF8B6 /* ATTestAnalysisCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929B017720BE33CA00FDF8B6 /* ATTestAnalysisCell.xib */; };
+		929B018920BE33CA00FDF8B6 /* ATTestDirectionItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B017920BE33CA00FDF8B6 /* ATTestDirectionItemCell.m */; };
+		929B018A20BE33CA00FDF8B6 /* ATTestDirectionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929B017A20BE33CA00FDF8B6 /* ATTestDirectionItemCell.xib */; };
+		929B018B20BE33CA00FDF8B6 /* ATTestDirrectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B017C20BE33CA00FDF8B6 /* ATTestDirrectionCell.m */; };
+		929B018C20BE33CA00FDF8B6 /* ATTestDirrectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929B017D20BE33CA00FDF8B6 /* ATTestDirrectionCell.xib */; };
+		929B018D20BE33CA00FDF8B6 /* ATTestFrequencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B017F20BE33CA00FDF8B6 /* ATTestFrequencyCell.m */; };
+		929B018E20BE33CA00FDF8B6 /* ATTestFrequencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929B018020BE33CA00FDF8B6 /* ATTestFrequencyCell.xib */; };
+		929B018F20BE33CA00FDF8B6 /* ATTestAnalysisViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B018320BE33CA00FDF8B6 /* ATTestAnalysisViewModel.m */; };
+		929B019420BE354700FDF8B6 /* UILabel+TXInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B019120BE354600FDF8B6 /* UILabel+TXInit.m */; };
+		929B019520BE354700FDF8B6 /* UIButton+TXInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B019220BE354600FDF8B6 /* UIButton+TXInit.m */; };
 		FBB884F320B6903100E15CA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F220B6903100E15CA5 /* AppDelegate.m */; };
 		FBB884F620B6903100E15CA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F520B6903100E15CA5 /* ViewController.m */; };
 		FBB884F920B6903100E15CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB884F720B6903100E15CA5 /* Main.storyboard */; };
@@ -384,6 +398,29 @@
 		136EEF2D20B948F500CCE0B0 /* ATSignCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSignCalendarCell.xib; sourceTree = "<group>"; };
 		1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiTiTi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.debug.xcconfig"; sourceTree = "<group>"; };
+		929B016E20BE33CA00FDF8B6 /* ATTestAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTestAnalysisViewController.h; sourceTree = "<group>"; };
+		929B016F20BE33CA00FDF8B6 /* ATTestAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTestAnalysisViewController.m; sourceTree = "<group>"; };
+		929B017220BE33CA00FDF8B6 /* ATDifficultyDistributionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDifficultyDistributionCell.h; sourceTree = "<group>"; };
+		929B017320BE33CA00FDF8B6 /* ATDifficultyDistributionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDifficultyDistributionCell.m; sourceTree = "<group>"; };
+		929B017420BE33CA00FDF8B6 /* ATDifficultyDistributionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATDifficultyDistributionCell.xib; sourceTree = "<group>"; };
+		929B017520BE33CA00FDF8B6 /* ATTestAnalysisCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTestAnalysisCell.h; sourceTree = "<group>"; };
+		929B017620BE33CA00FDF8B6 /* ATTestAnalysisCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTestAnalysisCell.m; sourceTree = "<group>"; };
+		929B017720BE33CA00FDF8B6 /* ATTestAnalysisCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATTestAnalysisCell.xib; sourceTree = "<group>"; };
+		929B017820BE33CA00FDF8B6 /* ATTestDirectionItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTestDirectionItemCell.h; sourceTree = "<group>"; };
+		929B017920BE33CA00FDF8B6 /* ATTestDirectionItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTestDirectionItemCell.m; sourceTree = "<group>"; };
+		929B017A20BE33CA00FDF8B6 /* ATTestDirectionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATTestDirectionItemCell.xib; sourceTree = "<group>"; };
+		929B017B20BE33CA00FDF8B6 /* ATTestDirrectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTestDirrectionCell.h; sourceTree = "<group>"; };
+		929B017C20BE33CA00FDF8B6 /* ATTestDirrectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTestDirrectionCell.m; sourceTree = "<group>"; };
+		929B017D20BE33CA00FDF8B6 /* ATTestDirrectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATTestDirrectionCell.xib; sourceTree = "<group>"; };
+		929B017E20BE33CA00FDF8B6 /* ATTestFrequencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTestFrequencyCell.h; sourceTree = "<group>"; };
+		929B017F20BE33CA00FDF8B6 /* ATTestFrequencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTestFrequencyCell.m; sourceTree = "<group>"; };
+		929B018020BE33CA00FDF8B6 /* ATTestFrequencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATTestFrequencyCell.xib; sourceTree = "<group>"; };
+		929B018220BE33CA00FDF8B6 /* ATTestAnalysisViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTestAnalysisViewModel.h; sourceTree = "<group>"; };
+		929B018320BE33CA00FDF8B6 /* ATTestAnalysisViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTestAnalysisViewModel.m; sourceTree = "<group>"; };
+		929B019020BE354600FDF8B6 /* UIButton+TXInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TXInit.h"; sourceTree = "<group>"; };
+		929B019120BE354600FDF8B6 /* UILabel+TXInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TXInit.m"; sourceTree = "<group>"; };
+		929B019220BE354600FDF8B6 /* UIButton+TXInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TXInit.m"; sourceTree = "<group>"; };
+		929B019320BE354700FDF8B6 /* UILabel+TXInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TXInit.h"; sourceTree = "<group>"; };
 		F8EA3AACED2108C8F22901E8 /* Pods-AiTiTi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.release.xcconfig"; sourceTree = "<group>"; };
 		FBB884EE20B6903100E15CA5 /* AiTiTi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiTiTi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB884F120B6903100E15CA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -830,6 +867,7 @@
 		1353AAFF20BC299A00FAF591 /* 名师讲题 */ = {
 			isa = PBXGroup;
 			children = (
+				929B016C20BE33CA00FDF8B6 /* 考点分析 */,
 				1353AB0120BC299A00FAF591 /* Controller */,
 				1353AB0020BC299A00FAF591 /* ViewModel */,
 				1353AB0220BC299A00FAF591 /* View */,
@@ -1070,16 +1108,20 @@
 		136EEEEB20B9181700CCE0B0 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				929B019020BE354600FDF8B6 /* UIButton+TXInit.h */,
+				929B019220BE354600FDF8B6 /* UIButton+TXInit.m */,
+				929B019320BE354700FDF8B6 /* UILabel+TXInit.h */,
+				929B019120BE354600FDF8B6 /* UILabel+TXInit.m */,
+				136EEEEC20B9181700CCE0B0 /* UIBarButtonItem+TXAdditions.h */,
+				136EEEF120B9181700CCE0B0 /* UIBarButtonItem+TXAdditions.m */,
 				1353AB0F20BC2F1A00FAF591 /* UIImage+ZJSImageColor.h */,
 				1353AB0E20BC2F1A00FAF591 /* UIImage+ZJSImageColor.m */,
 				1353AAD320B9923300FAF591 /* UINavigationBar+Extention.h */,
 				1353AAD220B9923300FAF591 /* UINavigationBar+Extention.m */,
-				136EEEEC20B9181700CCE0B0 /* UIBarButtonItem+TXAdditions.h */,
 				136EEEED20B9181700CCE0B0 /* UIButton+LJButton.m */,
 				136EEEEE20B9181700CCE0B0 /* UILabel+LJLabel.h */,
 				136EEEEF20B9181700CCE0B0 /* TXHudTool.h */,
 				136EEEF020B9181700CCE0B0 /* UIButton+LJButton.h */,
-				136EEEF120B9181700CCE0B0 /* UIBarButtonItem+TXAdditions.m */,
 				136EEEF220B9181700CCE0B0 /* TXHudTool.m */,
 				136EEEF320B9181700CCE0B0 /* UILabel+LJLabel.m */,
 			);
@@ -1113,6 +1155,64 @@
 				136EEF0F20B9359800CCE0B0 /* UIImage+SGImageSize.h */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		929B016C20BE33CA00FDF8B6 /* 考点分析 */ = {
+			isa = PBXGroup;
+			children = (
+				929B016D20BE33CA00FDF8B6 /* Controller */,
+				929B017020BE33CA00FDF8B6 /* Model */,
+				929B017120BE33CA00FDF8B6 /* View */,
+				929B018120BE33CA00FDF8B6 /* ViewModel */,
+			);
+			path = "考点分析";
+			sourceTree = "<group>";
+		};
+		929B016D20BE33CA00FDF8B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				929B016E20BE33CA00FDF8B6 /* ATTestAnalysisViewController.h */,
+				929B016F20BE33CA00FDF8B6 /* ATTestAnalysisViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		929B017020BE33CA00FDF8B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		929B017120BE33CA00FDF8B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				929B017220BE33CA00FDF8B6 /* ATDifficultyDistributionCell.h */,
+				929B017320BE33CA00FDF8B6 /* ATDifficultyDistributionCell.m */,
+				929B017420BE33CA00FDF8B6 /* ATDifficultyDistributionCell.xib */,
+				929B017520BE33CA00FDF8B6 /* ATTestAnalysisCell.h */,
+				929B017620BE33CA00FDF8B6 /* ATTestAnalysisCell.m */,
+				929B017720BE33CA00FDF8B6 /* ATTestAnalysisCell.xib */,
+				929B017820BE33CA00FDF8B6 /* ATTestDirectionItemCell.h */,
+				929B017920BE33CA00FDF8B6 /* ATTestDirectionItemCell.m */,
+				929B017A20BE33CA00FDF8B6 /* ATTestDirectionItemCell.xib */,
+				929B017B20BE33CA00FDF8B6 /* ATTestDirrectionCell.h */,
+				929B017C20BE33CA00FDF8B6 /* ATTestDirrectionCell.m */,
+				929B017D20BE33CA00FDF8B6 /* ATTestDirrectionCell.xib */,
+				929B017E20BE33CA00FDF8B6 /* ATTestFrequencyCell.h */,
+				929B017F20BE33CA00FDF8B6 /* ATTestFrequencyCell.m */,
+				929B018020BE33CA00FDF8B6 /* ATTestFrequencyCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		929B018120BE33CA00FDF8B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				929B018220BE33CA00FDF8B6 /* ATTestAnalysisViewModel.h */,
+				929B018320BE33CA00FDF8B6 /* ATTestAnalysisViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B88917E7FBA933900A193511 /* Frameworks */ = {
@@ -2187,6 +2287,7 @@
 				FBB8853C20B6908A00E15CA5 /* ATOrderCell.xib in Resources */,
 				136EEF2F20B948F500CCE0B0 /* ATSignCalendarCell.xib in Resources */,
 				1353AB2520BC33F700FAF591 /* ATExamClasssifySectionView.xib in Resources */,
+				929B018820BE33CA00FDF8B6 /* ATTestAnalysisCell.xib in Resources */,
 				FBB8853720B6908A00E15CA5 /* ATFriendPayViewController.xib in Resources */,
 				FBB886A120B6909800E15CA5 /* ATSubjectMainCell.xib in Resources */,
 				1353AB2A20BC364100FAF591 /* ATExamPaperSectionView.xib in Resources */,
@@ -2194,11 +2295,15 @@
 				FBB8869820B6909800E15CA5 /* ATHomeMainCell.xib in Resources */,
 				FBB886DF20B6909800E15CA5 /* ATDownloadCell.xib in Resources */,
 				FBB886CE20B6909800E15CA5 /* ATRegisterViewController.xib in Resources */,
+				929B018A20BE33CA00FDF8B6 /* ATTestDirectionItemCell.xib in Resources */,
+				929B018620BE33CA00FDF8B6 /* ATDifficultyDistributionCell.xib in Resources */,
 				FBB886CD20B6909800E15CA5 /* ATLoginViewController.xib in Resources */,
 				1353AAE820B9AF0000FAF591 /* ATSignAlertView.xib in Resources */,
 				1353AADE20B99F9F00FAF591 /* ATSignScheduleViewCell.xib in Resources */,
 				FBB886BD20B6909800E15CA5 /* ATTeacherDetailHeaderView.xib in Resources */,
+				929B018E20BE33CA00FDF8B6 /* ATTestFrequencyCell.xib in Resources */,
 				FBB886C120B6909800E15CA5 /* ATTeacherDetailCell.xib in Resources */,
+				929B018C20BE33CA00FDF8B6 /* ATTestDirrectionCell.xib in Resources */,
 				FBB8869F20B6909800E15CA5 /* ATSubjectSpreadCell.xib in Resources */,
 				FBB886CB20B6909800E15CA5 /* ATBindPhoneViewController.xib in Resources */,
 				0BF9116920BD952E00559135 /* ATDirectoryCell.xib in Resources */,
@@ -2291,6 +2396,7 @@
 				136EEF1E20B9359800CCE0B0 /* SGQRCodeScanManager.m in Sources */,
 				1353AAFD20BC28B800FAF591 /* LPCalendarView.m in Sources */,
 				FBB886AD20B6909800E15CA5 /* ATIntervalHeaderView.m in Sources */,
+				929B018D20BE33CA00FDF8B6 /* ATTestFrequencyCell.m in Sources */,
 				FBB8853E20B6908A00E15CA5 /* FNTipsView.m in Sources */,
 				FBB886BF20B6909800E15CA5 /* ATTeacherDetailBottomCell.m in Sources */,
 				1353AB2320BC33E700FAF591 /* ATExamClasssifySectionView.m in Sources */,
@@ -2320,6 +2426,7 @@
 				136EEF2E20B948F500CCE0B0 /* ATSignCalendarCell.m in Sources */,
 				FBB886D320B6909800E15CA5 /* ATMineCourceViewController.m in Sources */,
 				1353AB2820BC363000FAF591 /* ATExamPaperSectionView.m in Sources */,
+				929B019420BE354700FDF8B6 /* UILabel+TXInit.m in Sources */,
 				FBB886B620B6909800E15CA5 /* ATHotSubjectController.m in Sources */,
 				1353AAE220B9A3A100FAF591 /* ATSignRuleViewCell.m in Sources */,
 				FBB8869420B6909800E15CA5 /* ATKOViewController.m in Sources */,
@@ -2344,6 +2451,7 @@
 				136EEF0820B9199100CCE0B0 /* ATSignViewController.m in Sources */,
 				FBB886C820B6909800E15CA5 /* ATBindPhoneViewController.m in Sources */,
 				0BF9116820BD952E00559135 /* ATCommentViewController.m in Sources */,
+				929B018920BE33CA00FDF8B6 /* ATTestDirectionItemCell.m in Sources */,
 				FBB886A520B6909800E15CA5 /* ATHomeNavBar.m in Sources */,
 				FBB886B120B6909800E15CA5 /* ATTeacherViewController.m in Sources */,
 				FBB886D920B6909800E15CA5 /* ATMineVIPFourthCell.m in Sources */,
@@ -2381,14 +2489,17 @@
 				FBB886B520B6909800E15CA5 /* ATSystemCourseController.m in Sources */,
 				FBB8870020B6909800E15CA5 /* NSString+BXExtension.m in Sources */,
 				FBB8870920B6909800E15CA5 /* FSSegmentTitleView.m in Sources */,
+				929B018520BE33CA00FDF8B6 /* ATDifficultyDistributionCell.m in Sources */,
 				FBB8850120B6903300E15CA5 /* main.m in Sources */,
 				FBB8868C20B6909800E15CA5 /* ATNavigationBar.m in Sources */,
+				929B019520BE354700FDF8B6 /* UIButton+TXInit.m in Sources */,
 				0BF9116520BD952E00559135 /* ATBaseTableViewController.m in Sources */,
 				0BF9116A20BD952E00559135 /* ATSubjectDetailView.m in Sources */,
 				1353AB1320BC31F600FAF591 /* ATExamClasssifyViewModel.m in Sources */,
 				FBB886EE20B6909800E15CA5 /* UILabel+Extension.m in Sources */,
 				136EEF0420B9181700CCE0B0 /* UILabel+LJLabel.m in Sources */,
 				FBB8868F20B6909800E15CA5 /* ATEvaluationViewController.m in Sources */,
+				929B018B20BE33CA00FDF8B6 /* ATTestDirrectionCell.m in Sources */,
 				136EEF0020B9181700CCE0B0 /* BaseCollectionViewController.m in Sources */,
 				136EEEF420B9181700CCE0B0 /* MLMenuItem.m in Sources */,
 				FBB886FE20B6909800E15CA5 /* UIImageView+BXExtension.m in Sources */,
@@ -2399,6 +2510,7 @@
 				FBB886C420B6909800E15CA5 /* ATVIPViewController.m in Sources */,
 				FBB886B320B6909800E15CA5 /* ATHotTopicController.m in Sources */,
 				FBB8870520B6909800E15CA5 /* CFLabelOnLeftButton.m in Sources */,
+				929B018720BE33CA00FDF8B6 /* ATTestAnalysisCell.m in Sources */,
 				136EEEF920B9181700CCE0B0 /* BaseTableViewCell.m in Sources */,
 				1353AB0D20BC2AEE00FAF591 /* ATExamPaperViewController.m in Sources */,
 				FBB886BE20B6909800E15CA5 /* ATTeacherDetailCell.m in Sources */,
@@ -2407,6 +2519,7 @@
 				FBB886A420B6909800E15CA5 /* ATKeyPointView.m in Sources */,
 				FBB886ED20B6909800E15CA5 /* UIScreen+Extension.m in Sources */,
 				FBB8853820B6908A00E15CA5 /* ATOrderCell.m in Sources */,
+				929B018420BE33CA00FDF8B6 /* ATTestAnalysisViewController.m in Sources */,
 				136EEF1C20B9359800CCE0B0 /* SGQRCodeHelperTool.m in Sources */,
 				FBB886AE20B6909800E15CA5 /* ATRankMineView.m in Sources */,
 				FBB886F420B6909800E15CA5 /* UIView+KRKit.m in Sources */,
@@ -2429,6 +2542,7 @@
 				1353AB3120BC3BE900FAF591 /* BaseModel.m in Sources */,
 				FBB8868E20B6909800E15CA5 /* ATCourseController.m in Sources */,
 				FBB886F620B6909800E15CA5 /* UIView+IBExtension.m in Sources */,
+				929B018F20BE33CA00FDF8B6 /* ATTestAnalysisViewModel.m in Sources */,
 				136EEEFA20B9181700CCE0B0 /* BaseViewModel.m in Sources */,
 				FBB8852F20B6908A00E15CA5 /* ATSubSelectView.m in Sources */,
 				FBB8853D20B6908A00E15CA5 /* ATFriendPayViewController.m in Sources */,
@@ -2598,20 +2712,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RRLYZGKLQD;
+				DEVELOPMENT_TEAM = Q47FFAHNF9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTiT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ecca802-df57-4048-b10e-a6cd50bacf67";
-				PROVISIONING_PROFILE_SPECIFIER = ITelematicsDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AiTiTi/Classes/Interval/Home/LATasks/Public/Category/LayerCorner/AiTiTi-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2625,12 +2740,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RRLYZGKLQD;
+				DEVELOPMENT_TEAM = Q47FFAHNF9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

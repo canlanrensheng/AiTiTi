@@ -12,6 +12,7 @@
 #import "ATExamPaperListCell.h"
 #import "ATExamPaperModel.h"
 #import "CFDropDownMenuView.h"
+#import "ATTestAnalysisViewController.h"
 #define kSubjectHeaderHeight 47
 @interface ATExamPaperViewController ()<CFDropDownMenuViewDelegate>
 
@@ -88,6 +89,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ATTestAnalysisViewController *attestAnalysisVC = [[ATTestAnalysisViewController alloc] init];
+    [self.navigationController pushViewController:attestAnalysisVC animated:YES];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{

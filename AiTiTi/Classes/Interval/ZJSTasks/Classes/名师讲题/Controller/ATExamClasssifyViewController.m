@@ -12,7 +12,8 @@
 #import "ATExamClasssifyListCell.h"
 #import "ATExamClasssifyListModel.h"
 #import "CFDropDownMenuView.h"
-#define kSubjectHeaderHeight 47
+#import "ATTestAnalysisViewController.h"
+#define kSubjectHeaderHeight 57
 @interface ATExamClasssifyViewController ()<CFDropDownMenuViewDelegate>
 
 @property (nonatomic,strong) ATExamClasssifyViewModel *viewModel;
@@ -98,6 +99,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    ATTestAnalysisViewController *attestAnalysisVC = [[ATTestAnalysisViewController alloc] init];
+    [self.navigationController pushViewController:attestAnalysisVC animated:YES];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
