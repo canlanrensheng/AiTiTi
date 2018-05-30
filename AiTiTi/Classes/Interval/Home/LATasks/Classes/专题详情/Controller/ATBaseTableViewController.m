@@ -20,8 +20,10 @@
     
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = RGB(251, 251, 251);
+    self.tableView.tableFooterView = [UIView new];
     [self setupSubViews];
-
+    
 }
 
 - (void)setupSubViews {
@@ -33,7 +35,7 @@
 
 - (void)insertRowAtTop {
     for (int i = 0; i < 5; i++) {
-//        [self.data insertObject:RandomData atIndex:0];
+        //        [self.data insertObject:RandomData atIndex:0];
     }
     __weak UITableView *tableView = self.tableView;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -43,7 +45,7 @@
 
 - (void)insertRowAtBottom {
     for (int i  = 0; i < 5; i++) {
-//        [self.data addObject:RandomData];
+        //        [self.data addObject:RandomData];
     }
     __weak UITableView *tableView = self.tableView;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -88,9 +90,6 @@
 
 
 #pragma mark - Table view data source
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 0;
