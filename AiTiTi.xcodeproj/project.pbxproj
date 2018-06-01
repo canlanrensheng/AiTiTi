@@ -27,6 +27,10 @@
 		0BF9117A20BD967000559135 /* UITableView+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9117820BD966F00559135 /* UITableView+Register.m */; };
 		0BF9118020BD9A1F00559135 /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9117F20BD9A1D00559135 /* Storyboard+Extension.swift */; };
 		0C3DCE43284143D22087B13F /* libPods-AiTiTi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */; };
+		92A69DAC20C12AD700A70203 /* ATFinishedPlanStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DAA20C12AD700A70203 /* ATFinishedPlanStateCell.m */; };
+		92A69DAD20C12AD700A70203 /* ATFinishedPlanStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A69DAB20C12AD700A70203 /* ATFinishedPlanStateCell.xib */; };
+		92A69DB020C1308200A70203 /* ATStudyPlanCalenderAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DAF20C1308200A70203 /* ATStudyPlanCalenderAlertView.m */; };
+		92A69DB320C1322500A70203 /* ATStudyPlanCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DB220C1322500A70203 /* ATStudyPlanCalendarView.m */; };
 		92ACD63C20C0EDF700BA45D1 /* ATStudyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD55A20C0EDF700BA45D1 /* ATStudyPlanViewController.m */; };
 		92ACD63D20C0EDF700BA45D1 /* ATStudentRecommondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD55E20C0EDF700BA45D1 /* ATStudentRecommondCell.m */; };
 		92ACD63E20C0EDF700BA45D1 /* ATStudentRecommondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ACD55F20C0EDF700BA45D1 /* ATStudentRecommondCell.xib */; };
@@ -318,6 +322,13 @@
 		0BF9117F20BD9A1D00559135 /* Storyboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
 		1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiTiTi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.debug.xcconfig"; sourceTree = "<group>"; };
+		92A69DA920C12AD700A70203 /* ATFinishedPlanStateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATFinishedPlanStateCell.h; sourceTree = "<group>"; };
+		92A69DAA20C12AD700A70203 /* ATFinishedPlanStateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATFinishedPlanStateCell.m; sourceTree = "<group>"; };
+		92A69DAB20C12AD700A70203 /* ATFinishedPlanStateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATFinishedPlanStateCell.xib; sourceTree = "<group>"; };
+		92A69DAE20C1308200A70203 /* ATStudyPlanCalenderAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStudyPlanCalenderAlertView.h; sourceTree = "<group>"; };
+		92A69DAF20C1308200A70203 /* ATStudyPlanCalenderAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanCalenderAlertView.m; sourceTree = "<group>"; };
+		92A69DB120C1322500A70203 /* ATStudyPlanCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStudyPlanCalendarView.h; sourceTree = "<group>"; };
+		92A69DB220C1322500A70203 /* ATStudyPlanCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanCalendarView.m; sourceTree = "<group>"; };
 		92ACD55920C0EDF700BA45D1 /* ATStudyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATStudyPlanViewController.h; sourceTree = "<group>"; };
 		92ACD55A20C0EDF700BA45D1 /* ATStudyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanViewController.m; sourceTree = "<group>"; };
 		92ACD55D20C0EDF700BA45D1 /* ATStudentRecommondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATStudentRecommondCell.h; sourceTree = "<group>"; };
@@ -1001,6 +1012,10 @@
 				92ACD56920C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.h */,
 				92ACD56A20C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.m */,
 				92ACD56B20C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.xib */,
+				92A69DAE20C1308200A70203 /* ATStudyPlanCalenderAlertView.h */,
+				92A69DAF20C1308200A70203 /* ATStudyPlanCalenderAlertView.m */,
+				92A69DB120C1322500A70203 /* ATStudyPlanCalendarView.h */,
+				92A69DB220C1322500A70203 /* ATStudyPlanCalendarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1052,6 +1067,9 @@
 				92ACD6A720C1012C00BA45D1 /* ATPlanStateCell.h */,
 				92ACD6A820C1012C00BA45D1 /* ATPlanStateCell.m */,
 				92ACD6A920C1012C00BA45D1 /* ATPlanStateCell.xib */,
+				92A69DA920C12AD700A70203 /* ATFinishedPlanStateCell.h */,
+				92A69DAA20C12AD700A70203 /* ATFinishedPlanStateCell.m */,
+				92A69DAB20C12AD700A70203 /* ATFinishedPlanStateCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2629,6 +2647,7 @@
 				FBB884FB20B6903300E15CA5 /* Assets.xcassets in Resources */,
 				FBB8870820B6909800E15CA5 /* CFDropDownMenuView.bundle in Resources */,
 				92ACD68520C0EDF700BA45D1 /* .gitkeep in Resources */,
+				92A69DAD20C12AD700A70203 /* ATFinishedPlanStateCell.xib in Resources */,
 				FBB886BC20B6909800E15CA5 /* ATTeacherNavBar.xib in Resources */,
 				FBB884F920B6903100E15CA5 /* Main.storyboard in Resources */,
 				92ACD64220C0EDF700BA45D1 /* ATStudyPlanListCell.xib in Resources */,
@@ -2747,6 +2766,7 @@
 				92ACD66F20C0EDF700BA45D1 /* ATSignCalendarCell.m in Sources */,
 				FBB886F920B6909800E15CA5 /* UIView+Click.m in Sources */,
 				FBB8868D20B6909800E15CA5 /* ATMainView.m in Sources */,
+				92A69DB320C1322500A70203 /* ATStudyPlanCalendarView.m in Sources */,
 				FBB886A220B6909800E15CA5 /* ATSubjectSpreadCell.m in Sources */,
 				FBB886F720B6909800E15CA5 /* UIView+Shake.m in Sources */,
 				92ACD68120C0EDF700BA45D1 /* BaseViewModel.m in Sources */,
@@ -2757,6 +2777,7 @@
 				92ACD65420C0EDF700BA45D1 /* ATExamPaperModel.m in Sources */,
 				92ACD67F20C0EDF700BA45D1 /* BaseView.m in Sources */,
 				FBB886FA20B6909800E15CA5 /* UIView+Extension.m in Sources */,
+				92A69DAC20C12AD700A70203 /* ATFinishedPlanStateCell.m in Sources */,
 				FBB884F620B6903100E15CA5 /* ViewController.m in Sources */,
 				92ACD68C20C0EDF700BA45D1 /* UIImage+SGImageSize.m in Sources */,
 				FBB886E220B6909800E15CA5 /* ATMineHelpCell.m in Sources */,
@@ -2834,6 +2855,7 @@
 				92ACD66B20C0EDF700BA45D1 /* ATQRCodeScanViewController.m in Sources */,
 				92ACD64320C0EDF700BA45D1 /* ATStudyPlanReusableView.m in Sources */,
 				92ACD64E20C0EDF700BA45D1 /* ATSystemRecommendViewController.m in Sources */,
+				92A69DB020C1308200A70203 /* ATStudyPlanCalenderAlertView.m in Sources */,
 				FBB8870520B6909800E15CA5 /* CFLabelOnLeftButton.m in Sources */,
 				92ACD68920C0EDF700BA45D1 /* ATPullDownCell.m in Sources */,
 				FBB886BE20B6909800E15CA5 /* ATTeacherDetailCell.m in Sources */,

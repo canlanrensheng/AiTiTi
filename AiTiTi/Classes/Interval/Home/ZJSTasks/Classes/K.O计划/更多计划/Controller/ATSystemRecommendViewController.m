@@ -28,7 +28,7 @@
     NSMutableArray *controllerArray = [NSMutableArray array];
     for(int i = 0; i < 8;i++){
         ATBaseSystemRecommondPlanViewController *planVC = [[ATBaseSystemRecommondPlanViewController alloc] init];
-        planVC.view.backgroundColor = RGB(240, 240, 240);
+        planVC.view.backgroundColor = [UIColor whiteColor];
         [controllerArray addObject:planVC];
     }
     

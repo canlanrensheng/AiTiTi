@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="K.O计划背景图" translatesAutoresizingMaskIntoConstraints="NO" id="8Z9-ZF-Fyf">
-                    <rect key="frame" x="23" y="0.0" width="329" height="259"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="259"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oev-Jr-A86">
                     <rect key="frame" x="225" y="159" width="107" height="27"/>
@@ -24,6 +24,7 @@
                         <constraint firstAttribute="height" constant="27" id="8le-fX-Tdk"/>
                         <constraint firstAttribute="width" constant="107" id="xXW-gi-7xR"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title=" 新建计划" image="新建计划">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -73,6 +74,7 @@
                         <constraint firstAttribute="width" constant="107" id="Bgj-Km-lMO"/>
                         <constraint firstAttribute="height" constant="27" id="oSe-0y-qrn"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title=" 计划安排" image="计划安排">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -109,12 +111,12 @@
                 <constraint firstItem="oev-Jr-A86" firstAttribute="width" secondItem="SI6-SY-k5a" secondAttribute="width" id="OzQ-KB-Snw"/>
                 <constraint firstItem="oev-Jr-A86" firstAttribute="centerY" secondItem="SI6-SY-k5a" secondAttribute="centerY" id="PCP-tf-lUw"/>
                 <constraint firstItem="YDj-ij-Ii5" firstAttribute="leading" secondItem="dPl-aO-NuH" secondAttribute="trailing" constant="10" id="Pwg-Pm-nH0"/>
-                <constraint firstAttribute="trailing" secondItem="8Z9-ZF-Fyf" secondAttribute="trailing" constant="23" id="TdI-Rz-5mt"/>
+                <constraint firstAttribute="trailing" secondItem="8Z9-ZF-Fyf" secondAttribute="trailing" id="TdI-Rz-5mt"/>
                 <constraint firstItem="HYZ-9g-4oI" firstAttribute="centerY" secondItem="XkB-EA-1d4" secondAttribute="centerY" id="Wnp-lz-G8j"/>
                 <constraint firstItem="SI6-SY-k5a" firstAttribute="centerX" secondItem="XkB-EA-1d4" secondAttribute="centerX" id="XI7-a3-JWD"/>
                 <constraint firstItem="SI6-SY-k5a" firstAttribute="top" secondItem="XkB-EA-1d4" secondAttribute="bottom" constant="16" id="Zac-ZX-1YW"/>
                 <constraint firstItem="4gr-E4-roJ" firstAttribute="top" secondItem="SI6-SY-k5a" secondAttribute="bottom" constant="17" id="des-mO-APm"/>
-                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="fHe-1a-k3u"/>
+                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fHe-1a-k3u"/>
                 <constraint firstItem="HYZ-9g-4oI" firstAttribute="centerX" secondItem="YDj-ij-Ii5" secondAttribute="centerX" id="mQj-Jn-d4P"/>
                 <constraint firstItem="XkB-EA-1d4" firstAttribute="centerX" secondItem="efZ-c7-fin" secondAttribute="centerX" id="rS7-Dc-Ic1"/>
                 <constraint firstAttribute="bottom" secondItem="8Z9-ZF-Fyf" secondAttribute="bottom" id="tK3-Vq-fRk"/>

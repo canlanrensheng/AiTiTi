@@ -8,6 +8,13 @@
 
 #import "ATStudyHeaderView.h"
 #import "ATMyPlanStateViewController.h"
+#import "ATStudyPlanCalenderAlertView.h"
+@interface ATStudyHeaderView()
+
+@property (nonatomic,strong) ATStudyPlanCalenderAlertView *alertView;
+
+@end
+
 @implementation ATStudyHeaderView
 
 - (void)awakeFromNib{
@@ -20,7 +27,7 @@
 
 
 - (IBAction)planButtonClick:(id)sender {
-    
+    [self.alertView showInView:VisibleViewController().view];
 }
 
 - (IBAction)createPlanButtonClick:(id)sender {
@@ -30,4 +37,19 @@
     ATMyPlanStateViewController *planStateVC = [[ATMyPlanStateViewController alloc] init];
     [VisibleViewController().navigationController pushViewController:planStateVC animated:YES];
 }
+
+- (ATStudyPlanCalenderAlertView *)alertView{
+    if(!_alertView){
+        _alertView = [[ATStudyPlanCalenderAlertView alloc] initWithFrame:CGRectMake(0,0, Screen_Width, Screen_Height) actionSheetBlock:^(NSString *dateString) {
+            
+            [self.alertView dismiss];
+            _alertView = nil;
+        } cancleSheetBlock:^{
+            [self.alertView dismiss];
+            _alertView = nil;
+        }];
+    }
+    return _alertView;
+}
+
 @end

@@ -1,5 +1,5 @@
 //
-//  ATPlanStateCell.h
+//  ATFinishedPlanStateCell.h
 //  AiTiTi
 //
 //  Created by Oma-002 on 2018/6/1.
@@ -8,12 +8,11 @@
 
 #import "BaseTableViewCell.h"
 
-@interface ATPlanStateCell : BaseTableViewCell
+@interface ATFinishedPlanStateCell : BaseTableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *classNameLabel;
 @property (weak, nonatomic) IBOutlet UIView *backV;
 @property (weak, nonatomic) IBOutlet UIView *headerBackView;
-@property (weak, nonatomic) IBOutlet UIButton *startStudyButton;
-- (IBAction)startStudyButtonClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *koImageView;
 
 @end

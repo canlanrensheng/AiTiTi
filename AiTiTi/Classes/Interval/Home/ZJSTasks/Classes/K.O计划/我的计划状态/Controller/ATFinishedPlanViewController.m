@@ -8,7 +8,7 @@
 
 #import "ATFinishedPlanViewController.h"
 #import "ATPlanHeaderView.h"
-#import "ATPlanStateCell.h"
+#import "ATFinishedPlanStateCell.h"
 
 //#define kSubjectHeaderHeight 50
 @interface ATFinishedPlanViewController ()
@@ -35,10 +35,10 @@
     [headerV addSubview:self.headerView];
     self.tableView.tableHeaderView = headerV;
     
-    [self.tableView registerNibCell:[ATPlanStateCell class]];
+    [self.tableView registerNibCell:[ATFinishedPlanStateCell class]];
     
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0,10, 0));
     }];
 }
 
@@ -77,10 +77,19 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ATPlanStateCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ATPlanStateCell" forIndexPath:indexPath];
+    ATFinishedPlanStateCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ATFinishedPlanStateCell" forIndexPath:indexPath];
     self.tableView.separatorColor = [UIColor clearColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //    [cell setViewModel:self.viewModel indexPath:indexPath];
+    if(indexPath.row == 0){
+        cell.headerBackView.backgroundColor = RGBA(23,207,151,0.1);
+        cell.classNameLabel.backgroundColor = RGB(23, 207, 151);
+        cell.koImageView.image = IMAGE(@"已KO_绿");
+    }else{
+        cell.headerBackView.backgroundColor = RGBA(131,109,249,0.1);
+        cell.classNameLabel.backgroundColor = RGB(131,109,249);
+        cell.koImageView.image = IMAGE(@"已KO_紫");
+    }
     return cell;
 }
 

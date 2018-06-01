@@ -38,7 +38,7 @@
     [self.tableView registerNibCell:[ATPlanStateCell class]];
     
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0,10, 0));
     }];
 }
 
@@ -63,7 +63,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 290;
+    return 331;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -81,6 +81,16 @@
     self.tableView.separatorColor = [UIColor clearColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //    [cell setViewModel:self.viewModel indexPath:indexPath];
+    if(indexPath.row == 0){
+        cell.headerBackView.backgroundColor = RGBA(23,207,151,0.1);
+        cell.classNameLabel.backgroundColor = RGB(23, 207, 151);
+        [cell.startStudyButton setBackgroundColor:RGB(23, 207, 151)];
+    }else{
+        cell.headerBackView.backgroundColor = RGBA(131,109,249,0.1);
+        cell.classNameLabel.backgroundColor = RGB(131,109,249);
+        [cell.startStudyButton setBackgroundColor:RGB(131,109,249)];
+ 
+    }
     return cell;
 }
 
