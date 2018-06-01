@@ -7,7 +7,7 @@
 //
 
 #import "ATStudentRecommendViewController.h"
-#import "ATBaseRecommondPlanViewController.h"
+#import "ATBaseStudentRecommondPlanViewController.h"
 #import <ZXSegmentController/ZXSegmentController.h>
 @interface ATStudentRecommendViewController ()
 
@@ -26,7 +26,7 @@
     
     NSMutableArray *controllerArray = [NSMutableArray array];
     for(int i = 0; i < 8;i++){
-        ATBaseRecommondPlanViewController *planVC = [[ATBaseRecommondPlanViewController alloc] init];
+        ATBaseStudentRecommondPlanViewController *planVC = [[ATBaseStudentRecommondPlanViewController alloc] init];
         planVC.view.backgroundColor = RGB(240, 240, 240);
         [controllerArray addObject:planVC];
     }
@@ -36,9 +36,9 @@
     ZXSegmentController* segmentController = [[ZXSegmentController alloc] initWithControllers:controllerArray
                                                                                withTitleNames:names
                                                                              withDefaultIndex:0
-                                                                               withTitleColor:RGB(51, 51, 51)
-                                                                       withTitleSelectedColor:RGB(24, 208, 251)
-                                                                              withSliderColor:RGB(24, 208, 251)];
+                                                                               withTitleColor:RGB(153, 153, 153)
+                                                                       withTitleSelectedColor:RGB(131, 109, 249)
+                                                                              withSliderColor:RGB(131, 109, 249)];
     [self addChildViewController:(_segmentController = segmentController)];
     [self.view addSubview:segmentController.view];
     [segmentController didMoveToParentViewController:self];

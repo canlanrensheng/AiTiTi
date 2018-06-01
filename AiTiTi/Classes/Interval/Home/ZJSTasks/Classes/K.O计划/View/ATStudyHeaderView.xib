@@ -27,6 +27,9 @@
                     <state key="normal" title=" 新建计划" image="新建计划">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="createPlanButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="sdP-qg-Ntc"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-9g-4oI">
                     <rect key="frame" x="264.5" y="98" width="27" height="45"/>
@@ -73,6 +76,9 @@
                     <state key="normal" title=" 计划安排" image="计划安排">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="planButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Iz3-Vz-xYr"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-E4-roJ">
                     <rect key="frame" x="120" y="203" width="135" height="36"/>
@@ -84,6 +90,9 @@
                     <state key="normal" title="开始学习">
                         <color key="titleColor" red="0.035294117649999998" green="0.80000000000000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="satrtStudyButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qzk-VA-MqB"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -113,7 +122,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="createPlanButton" destination="oev-Jr-A86" id="FTs-pb-ud7"/>
+                <outlet property="createPlanButton" destination="oev-Jr-A86" id="U8e-33-ujA"/>
                 <outlet property="planButton" destination="SI6-SY-k5a" id="Lfa-f7-67h"/>
                 <outlet property="startStudyButton" destination="4gr-E4-roJ" id="WPB-0G-7fR"/>
             </connections>

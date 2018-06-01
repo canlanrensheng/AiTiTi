@@ -1,18 +1,19 @@
 //
-//  ATMorePlanViewController.m
+//  ATMyPlanStateViewController.m
 //  AiTiTi
 //
-//  Created by 张金山 on 2018/5/31.
+//  Created by Oma-002 on 2018/6/1.
 //  Copyright © 2018年 云辉. All rights reserved.
 //
 
-#import "ATMorePlanViewController.h"
-#import "ATSystemRecommendViewController.h"
-#import "ATStudentRecommendViewController.h"
+#import "ATMyPlanStateViewController.h"
+
+#import "ATOngoingPlanViewController.h"
+#import "ATFinishedPlanViewController.h"
 #import "UIImage+ZJSImageColor.h"
 #define SegMentViewHeight 50
 
-@interface ATMorePlanViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface ATMyPlanStateViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, weak) UICollectionView *collectionMain;
 @property (nonatomic, strong) NSArray *controllersClass;
@@ -21,7 +22,7 @@
 
 @end
 
-@implementation ATMorePlanViewController
+@implementation ATMyPlanStateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,7 +36,7 @@
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-    self.controllersClass = @[@"ATSystemRecommendViewController",@"ATStudentRecommendViewController"];
+    self.controllersClass = @[@"ATOngoingPlanViewController",@"ATFinishedPlanViewController"];
     self.navigationItem.titleView = self.segmentControl;
     //    self.navigationItem.titleView.frame = CGRectMake(0, 0, 150, 36);
 }
@@ -97,11 +98,11 @@
     if (!_controllers) {
         NSMutableArray *controllers = [NSMutableArray array];
         for(int i = 0; i < self.controllersClass.count;i++){
-            ATSystemRecommendViewController *listVC = [[ATSystemRecommendViewController alloc] init];
+            ATOngoingPlanViewController *listVC = [[ATOngoingPlanViewController alloc] init];
             [self addChildViewController:listVC];
             [controllers addObject:listVC];
             
-            ATStudentRecommendViewController *mapVC = [[ATStudentRecommendViewController alloc] init];
+            ATFinishedPlanViewController *mapVC = [[ATFinishedPlanViewController alloc] init];
             [self addChildViewController:mapVC];
             [controllers addObject:mapVC];
         }
@@ -113,7 +114,7 @@
 
 - (UISegmentedControl *)segmentControl{
     if(!_segmentControl){
-        NSArray *segmentedArray = [NSArray arrayWithObjects:@"系统推荐",@"同学推荐",nil];
+        NSArray *segmentedArray = [NSArray arrayWithObjects:@"进行中",@"已完成",nil];
         _segmentControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
         _segmentControl.frame = CGRectMake(0, 0, 178, 30);
         _segmentControl.layer.cornerRadius = 15.0f;
@@ -135,9 +136,7 @@
         _segmentControl.selectedSegmentIndex = 0;
         //        _segmentControl.tintColor = DEFAULTCOLOR;
         [_segmentControl addTarget:self action:@selector(indexDidChangeForSegmentedControl:) forControlEvents:UIControlEventValueChanged];
-//        [_segmentControl setBackgroundImage:[UIImage ZJS_imageWithColor:RGB(34, 208, 144)]
-//                                   forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-        [_segmentControl setBackgroundImage:[UIImage ZJS_imageWithColor:RGB(34, 208, 144)]
+        [_segmentControl setBackgroundImage:[UIImage ZJS_imageWithColor:RGB(23, 207, 151)]
                                    forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
         [_segmentControl setBackgroundImage:[UIImage ZJS_imageWithColor:[UIColor whiteColor]]
                                    forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
@@ -149,13 +148,6 @@
 
 - (void)indexDidChangeForSegmentedControl:(UISegmentedControl *)sender{
     NSInteger selectIndex = sender.selectedSegmentIndex;
-    if(selectIndex == 0){
-        [_segmentControl setBackgroundImage:[UIImage ZJS_imageWithColor:RGB(34, 208, 144)]
-                                   forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-    }else{
-        [_segmentControl setBackgroundImage:[UIImage ZJS_imageWithColor:RGB(131, 109, 249)]
-                                   forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-    }
     [self.collectionMain scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:selectIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
 }
 @end

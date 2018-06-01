@@ -6,16 +6,15 @@
 //  Copyright © 2018年 云辉. All rights reserved.
 //
 
-#import "ATBaseRecommondPlanViewController.h"
+#import "ATBaseSystemRecommondPlanViewController.h"
 #import "ATStudyPlanListCell.h"
 
-@interface ATBaseRecommondPlanViewController()
-
+@interface ATBaseSystemRecommondPlanViewController()
 
 
 @end
 
-@implementation ATBaseRecommondPlanViewController
+@implementation ATBaseSystemRecommondPlanViewController
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

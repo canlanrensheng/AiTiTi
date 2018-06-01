@@ -8,6 +8,7 @@
 
 #import "ATStudyPlanViewController.h"
 #import "ATStudyPlanListCell.h"
+#import "ATStudentRecommondCell.h"
 #import "ATStudyHeaderView.h"
 #import "ATStudyPlanReusableView.h"
 #import "ATStudyPlanSectionFooterView.h"
@@ -40,6 +41,9 @@
     [self.collectionView addSubview:self.headerView];
     [self.collectionView setFrame: CGRectMake(0, 13, Screen_Width - 26, Screen_Height - kNavigationBarHeight)];
     [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudyPlanListCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"ATStudyPlanListCell"];
+     [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudentRecommondCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"ATStudentRecommondCell"];
+    
+    
     [self.collectionView registerNibHeaderFooter:[ATStudyPlanReusableView class]];
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudyPlanReusableView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ATStudyPlanReusableView"];
@@ -78,18 +82,16 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    ATStudyPlanListCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ATStudyPlanListCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
-    
-//    [cell setViewModel:self.viewModel indexPath:indexPath];
     if(indexPath.section == 0){
-        cell.headerBackView.backgroundColor = RGBA(23,207,151,0.1);
-        cell.classNameLabel.backgroundColor = RGB(23,207,151);
+        ATStudyPlanListCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ATStudyPlanListCell" forIndexPath:indexPath];
+        cell.backgroundColor = [UIColor whiteColor];
+        return cell;
     }else{
-        cell.headerBackView.backgroundColor = RGBA(131,109,249,0.1);
-        cell.classNameLabel.backgroundColor = RGB(131,109,249);
+        ATStudentRecommondCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ATStudentRecommondCell" forIndexPath:indexPath];
+        cell.backgroundColor = [UIColor whiteColor];
+        return cell;
     }
-    return cell;
+    
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{

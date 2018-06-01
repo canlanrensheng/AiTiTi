@@ -8,6 +8,6 @@
 
 #import "BaseCollectionViewController.h"
 
-@interface ATBaseRecommondPlanViewController : BaseCollectionViewController
+@interface ATBaseSystemRecommondPlanViewController : BaseCollectionViewController
 
 @end

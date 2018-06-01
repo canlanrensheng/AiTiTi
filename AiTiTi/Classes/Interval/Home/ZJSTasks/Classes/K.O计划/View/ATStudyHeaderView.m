@@ -7,7 +7,7 @@
 //
 
 #import "ATStudyHeaderView.h"
-
+#import "ATMyPlanStateViewController.h"
 @implementation ATStudyHeaderView
 
 - (void)awakeFromNib{
@@ -19,4 +19,15 @@
 
 
 
+- (IBAction)planButtonClick:(id)sender {
+    
+}
+
+- (IBAction)createPlanButtonClick:(id)sender {
+}
+
+- (IBAction)satrtStudyButtonClick:(id)sender {
+    ATMyPlanStateViewController *planStateVC = [[ATMyPlanStateViewController alloc] init];
+    [VisibleViewController().navigationController pushViewController:planStateVC animated:YES];
+}
 @end
