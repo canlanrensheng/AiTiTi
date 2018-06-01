@@ -11,6 +11,7 @@
 #import "ATStudyHeaderView.h"
 #import "ATStudyPlanReusableView.h"
 #import "ATStudyPlanSectionFooterView.h"
+#import "ATPlanDetailViewController.h"
 #define HeaderViewHeight 254
 @interface ATStudyPlanViewController()
 
@@ -37,8 +38,7 @@
 //      self.shopHeaderView = [[BrandShopHeaderView alloc] initWithFrame:CGRectMake(0, -MCHHEIGHT, SWIDTH, MCHHEIGHT) WithAdData:self.adMarr];
     self.headerView.frame = CGRectMake(0, -HeaderViewHeight, Screen_Width, HeaderViewHeight);
     [self.collectionView addSubview:self.headerView];
-    [self.collectionView setFrame: CGRectMake(0, 0, Screen_Width, Screen_Height - kNavigationBarHeight)];
-//    [self.collectionView registerNibItem:[ATStudyPlanListCell class]];
+    [self.collectionView setFrame: CGRectMake(0, 13, Screen_Width - 26, Screen_Height - kNavigationBarHeight)];
     [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudyPlanListCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"ATStudyPlanListCell"];
     [self.collectionView registerNibHeaderFooter:[ATStudyPlanReusableView class]];
     
@@ -52,6 +52,10 @@
     if (@available(iOS 11.0, *)) {
         self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
+    
+    [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 13, 0, 13));
+    }];
 }
 
 - (void)tx_loadData{
@@ -59,7 +63,6 @@
 }
 
 - (void)tx_bindViewModel{
-
 //    self.viewModel.titleViewType = BMTitleViewTypeLoadingTitle;
 //    [self.viewModel.JMBrandCommomd execute:nil];
 }
@@ -79,24 +82,32 @@
     cell.backgroundColor = [UIColor whiteColor];
     
 //    [cell setViewModel:self.viewModel indexPath:indexPath];
+    if(indexPath.section == 0){
+        cell.headerBackView.backgroundColor = RGBA(23,207,151,0.1);
+        cell.classNameLabel.backgroundColor = RGB(23,207,151);
+    }else{
+        cell.headerBackView.backgroundColor = RGBA(131,109,249,0.1);
+        cell.classNameLabel.backgroundColor = RGB(131,109,249);
+    }
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-
+    ATPlanDetailViewController *planVC = [[ATPlanDetailViewController alloc] init];
+    [self.navigationController pushViewController:planVC animated:YES];
 }
 
 //设置每个cell的大小 Item网格
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat width = (Screen_Width - 10)/2.0f;
-    return CGSizeMake(width, 50 + (Screen_Width - 10) / 2.0f);
+    CGFloat width = (self.collectionView.bounds.size.width - 10) / 2.0f;
+    return CGSizeMake(width, 228);
 }
 
 //设置cell上下左右侧距离
--(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(5, 0, 10, 0);
-}
+//-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+//    return UIEdgeInsetsMake(0, 0, 0, 0);
+//}
 
 #pragma mark CollectionViewSectionHeaderDelagate
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
@@ -126,7 +137,12 @@
     return CGSizeMake(0, 70);
 }
 
-
+//UICollectionView设置区尾的高度
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    //设置区尾 高度
+    CGSize size = CGSizeMake(Screen_Width - 26, 106);
+    return size;
+}
 
 @end
 

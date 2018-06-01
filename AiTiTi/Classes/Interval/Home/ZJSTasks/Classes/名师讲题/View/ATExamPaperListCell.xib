@@ -6,13 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Jal-I2-gXy" customClass="ATExamPaperListCell">
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jal-I2-gXy" customClass="ATExamPaperListCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -53,24 +52,23 @@
             </subviews>
             <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="TxA-d6-dYN" firstAttribute="trailing" secondItem="GON-cK-bpe" secondAttribute="trailing" id="1Vd-tx-bkN"/>
+                <constraint firstAttribute="trailing" secondItem="GON-cK-bpe" secondAttribute="trailing" id="1Vd-tx-bkN"/>
                 <constraint firstItem="nha-l9-p5W" firstAttribute="leading" secondItem="tJm-M5-wWT" secondAttribute="trailing" constant="5" id="3LG-Ty-Yxp"/>
                 <constraint firstItem="k0x-y8-CrY" firstAttribute="centerY" secondItem="GON-cK-bpe" secondAttribute="centerY" id="5vh-UW-apb"/>
-                <constraint firstItem="GON-cK-bpe" firstAttribute="top" secondItem="TxA-d6-dYN" secondAttribute="top" id="ARs-9l-RbD"/>
-                <constraint firstItem="GON-cK-bpe" firstAttribute="leading" secondItem="TxA-d6-dYN" secondAttribute="leading" id="GfD-gW-De3"/>
-                <constraint firstItem="tJm-M5-wWT" firstAttribute="leading" secondItem="TxA-d6-dYN" secondAttribute="leading" constant="22" id="Ly8-fu-jPU"/>
+                <constraint firstItem="GON-cK-bpe" firstAttribute="top" secondItem="Jal-I2-gXy" secondAttribute="top" id="ARs-9l-RbD"/>
+                <constraint firstItem="GON-cK-bpe" firstAttribute="leading" secondItem="Jal-I2-gXy" secondAttribute="leading" id="GfD-gW-De3"/>
+                <constraint firstItem="tJm-M5-wWT" firstAttribute="leading" secondItem="Jal-I2-gXy" secondAttribute="leading" constant="22" id="Ly8-fu-jPU"/>
                 <constraint firstItem="k0x-y8-CrY" firstAttribute="leading" secondItem="Vn2-2R-HZY" secondAttribute="trailing" constant="15" id="PO0-Za-xp9"/>
-                <constraint firstItem="TxA-d6-dYN" firstAttribute="bottom" secondItem="Moq-ad-fu2" secondAttribute="bottom" id="RVH-na-Chs"/>
+                <constraint firstAttribute="bottom" secondItem="Moq-ad-fu2" secondAttribute="bottom" id="RVH-na-Chs"/>
                 <constraint firstItem="tJm-M5-wWT" firstAttribute="centerY" secondItem="GON-cK-bpe" secondAttribute="centerY" id="RdU-iO-vOI"/>
-                <constraint firstItem="TxA-d6-dYN" firstAttribute="bottom" secondItem="GON-cK-bpe" secondAttribute="bottom" constant="1" id="g2X-Wx-zOM"/>
-                <constraint firstItem="Moq-ad-fu2" firstAttribute="trailing" secondItem="TxA-d6-dYN" secondAttribute="trailing" id="geE-eZ-qyG"/>
+                <constraint firstAttribute="bottom" secondItem="GON-cK-bpe" secondAttribute="bottom" constant="1" id="g2X-Wx-zOM"/>
+                <constraint firstItem="Moq-ad-fu2" firstAttribute="trailing" secondItem="Jal-I2-gXy" secondAttribute="trailing" id="geE-eZ-qyG"/>
                 <constraint firstItem="nha-l9-p5W" firstAttribute="top" secondItem="tJm-M5-wWT" secondAttribute="top" id="kSB-qA-x2I"/>
-                <constraint firstItem="Moq-ad-fu2" firstAttribute="leading" secondItem="TxA-d6-dYN" secondAttribute="leading" id="tQU-5X-Ymj"/>
+                <constraint firstItem="Moq-ad-fu2" firstAttribute="leading" secondItem="Jal-I2-gXy" secondAttribute="leading" id="tQU-5X-Ymj"/>
                 <constraint firstItem="Vn2-2R-HZY" firstAttribute="centerY" secondItem="GON-cK-bpe" secondAttribute="centerY" id="whO-2z-ppc"/>
-                <constraint firstItem="TxA-d6-dYN" firstAttribute="trailing" secondItem="k0x-y8-CrY" secondAttribute="trailing" constant="22" id="ydo-Nc-oqy"/>
+                <constraint firstAttribute="trailing" secondItem="k0x-y8-CrY" secondAttribute="trailing" constant="22" id="ydo-Nc-oqy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="TxA-d6-dYN"/>
             <connections>
                 <outlet property="difficultTypeLabel" destination="k0x-y8-CrY" id="wFF-yL-nGK"/>
             </connections>

@@ -6,13 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ATStudyHeaderView">
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ATStudyHeaderView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="259"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -90,30 +89,29 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="YDj-ij-Ii5" firstAttribute="top" secondItem="dPl-aO-NuH" secondAttribute="bottom" constant="24" id="0hL-XZ-cot"/>
-                <constraint firstItem="dPl-aO-NuH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="0vq-Ah-sxV"/>
+                <constraint firstItem="dPl-aO-NuH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="0vq-Ah-sxV"/>
                 <constraint firstItem="efZ-c7-fin" firstAttribute="top" secondItem="YDj-ij-Ii5" secondAttribute="top" id="55w-25-xv3"/>
                 <constraint firstItem="dPl-aO-NuH" firstAttribute="leading" secondItem="efZ-c7-fin" secondAttribute="trailing" constant="20" id="5xo-CN-TWb"/>
                 <constraint firstItem="dPl-aO-NuH" firstAttribute="centerX" secondItem="8Z9-ZF-Fyf" secondAttribute="centerX" id="BQw-0R-Dn4"/>
                 <constraint firstItem="4gr-E4-roJ" firstAttribute="centerX" secondItem="8Z9-ZF-Fyf" secondAttribute="centerX" id="FH4-oG-RV7"/>
                 <constraint firstItem="oev-Jr-A86" firstAttribute="centerX" secondItem="HYZ-9g-4oI" secondAttribute="centerX" id="FN9-cv-DFq"/>
                 <constraint firstItem="XkB-EA-1d4" firstAttribute="top" secondItem="efZ-c7-fin" secondAttribute="bottom" constant="18" id="HMT-eM-27A"/>
-                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="M4t-th-Dox"/>
+                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M4t-th-Dox"/>
                 <constraint firstItem="oev-Jr-A86" firstAttribute="width" secondItem="SI6-SY-k5a" secondAttribute="width" id="OzQ-KB-Snw"/>
                 <constraint firstItem="oev-Jr-A86" firstAttribute="centerY" secondItem="SI6-SY-k5a" secondAttribute="centerY" id="PCP-tf-lUw"/>
                 <constraint firstItem="YDj-ij-Ii5" firstAttribute="leading" secondItem="dPl-aO-NuH" secondAttribute="trailing" constant="10" id="Pwg-Pm-nH0"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Z9-ZF-Fyf" secondAttribute="trailing" constant="23" id="TdI-Rz-5mt"/>
+                <constraint firstAttribute="trailing" secondItem="8Z9-ZF-Fyf" secondAttribute="trailing" constant="23" id="TdI-Rz-5mt"/>
                 <constraint firstItem="HYZ-9g-4oI" firstAttribute="centerY" secondItem="XkB-EA-1d4" secondAttribute="centerY" id="Wnp-lz-G8j"/>
                 <constraint firstItem="SI6-SY-k5a" firstAttribute="centerX" secondItem="XkB-EA-1d4" secondAttribute="centerX" id="XI7-a3-JWD"/>
                 <constraint firstItem="SI6-SY-k5a" firstAttribute="top" secondItem="XkB-EA-1d4" secondAttribute="bottom" constant="16" id="Zac-ZX-1YW"/>
                 <constraint firstItem="4gr-E4-roJ" firstAttribute="top" secondItem="SI6-SY-k5a" secondAttribute="bottom" constant="17" id="des-mO-APm"/>
-                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="fHe-1a-k3u"/>
+                <constraint firstItem="8Z9-ZF-Fyf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="fHe-1a-k3u"/>
                 <constraint firstItem="HYZ-9g-4oI" firstAttribute="centerX" secondItem="YDj-ij-Ii5" secondAttribute="centerX" id="mQj-Jn-d4P"/>
                 <constraint firstItem="XkB-EA-1d4" firstAttribute="centerX" secondItem="efZ-c7-fin" secondAttribute="centerX" id="rS7-Dc-Ic1"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8Z9-ZF-Fyf" secondAttribute="bottom" id="tK3-Vq-fRk"/>
+                <constraint firstAttribute="bottom" secondItem="8Z9-ZF-Fyf" secondAttribute="bottom" id="tK3-Vq-fRk"/>
                 <constraint firstItem="oev-Jr-A86" firstAttribute="height" secondItem="SI6-SY-k5a" secondAttribute="height" id="zWe-gw-3X1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="createPlanButton" destination="oev-Jr-A86" id="FTs-pb-ud7"/>
                 <outlet property="planButton" destination="SI6-SY-k5a" id="Lfa-f7-67h"/>

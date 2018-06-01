@@ -1,5 +1,6 @@
 platform :ios, '8.0'
 target 'AiTiTi' do
+    
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'SVProgressHUD'
@@ -17,4 +18,7 @@ pod 'SKTagView'
 pod 'SDCycleScrollView'
 pod 'Masonry'
 pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+#pod 'ZXSegmentController'
+pod 'ZXSegmentController'
+
 end

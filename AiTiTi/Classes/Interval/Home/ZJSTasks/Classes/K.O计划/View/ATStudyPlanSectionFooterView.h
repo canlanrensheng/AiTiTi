@@ -10,4 +10,7 @@
 
 @interface ATStudyPlanSectionFooterView : UICollectionReusableView
 
+@property (weak, nonatomic) IBOutlet UIButton *lookMoreBtn;
+- (IBAction)lookMoreBtnClick:(id)sender;
+
 @end

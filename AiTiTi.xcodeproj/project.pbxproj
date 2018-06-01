@@ -108,6 +108,12 @@
 		13603F9B20BEE29B00A1C73A /* UILabel+LJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13603F4920BEE29A00A1C73A /* UILabel+LJLabel.m */; };
 		13603F9F20BEEE5300A1C73A /* ATStudyPlanSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13603F9D20BEEE5300A1C73A /* ATStudyPlanSectionFooterView.m */; };
 		13603FA020BEEE5300A1C73A /* ATStudyPlanSectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13603F9E20BEEE5300A1C73A /* ATStudyPlanSectionFooterView.xib */; };
+		13CAB00220C041C30070D865 /* ATMorePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CAB00120C041C30070D865 /* ATMorePlanViewController.m */; };
+		13CAB00520C042400070D865 /* ATSystemRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CAB00420C042400070D865 /* ATSystemRecommendViewController.m */; };
+		13CAB00820C0426C0070D865 /* ATStudentRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CAB00720C0426C0070D865 /* ATStudentRecommendViewController.m */; };
+		13CAB01020C049E90070D865 /* ATBaseRecommondPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CAB00F20C049E90070D865 /* ATBaseRecommondPlanViewController.m */; };
+		92D5BA0C20BFAACE00F83989 /* UIView+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D5BA0B20BFAACE00F83989 /* UIView+category.m */; };
+		92D5BA2F20C0D4A600F83989 /* ATPlanDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D5BA2E20C0D4A600F83989 /* ATPlanDetailViewController.m */; };
 		FBB884F320B6903100E15CA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F220B6903100E15CA5 /* AppDelegate.m */; };
 		FBB884F620B6903100E15CA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F520B6903100E15CA5 /* ViewController.m */; };
 		FBB884F920B6903100E15CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB884F720B6903100E15CA5 /* Main.storyboard */; };
@@ -450,8 +456,20 @@
 		13603F9C20BEEE5300A1C73A /* ATStudyPlanSectionFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStudyPlanSectionFooterView.h; sourceTree = "<group>"; };
 		13603F9D20BEEE5300A1C73A /* ATStudyPlanSectionFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanSectionFooterView.m; sourceTree = "<group>"; };
 		13603F9E20BEEE5300A1C73A /* ATStudyPlanSectionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATStudyPlanSectionFooterView.xib; sourceTree = "<group>"; };
+		13CAB00020C041C30070D865 /* ATMorePlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMorePlanViewController.h; sourceTree = "<group>"; };
+		13CAB00120C041C30070D865 /* ATMorePlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMorePlanViewController.m; sourceTree = "<group>"; };
+		13CAB00320C042400070D865 /* ATSystemRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSystemRecommendViewController.h; sourceTree = "<group>"; };
+		13CAB00420C042400070D865 /* ATSystemRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSystemRecommendViewController.m; sourceTree = "<group>"; };
+		13CAB00620C0426C0070D865 /* ATStudentRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStudentRecommendViewController.h; sourceTree = "<group>"; };
+		13CAB00720C0426C0070D865 /* ATStudentRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStudentRecommendViewController.m; sourceTree = "<group>"; };
+		13CAB00E20C049E90070D865 /* ATBaseRecommondPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseRecommondPlanViewController.h; sourceTree = "<group>"; };
+		13CAB00F20C049E90070D865 /* ATBaseRecommondPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseRecommondPlanViewController.m; sourceTree = "<group>"; };
 		1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiTiTi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.debug.xcconfig"; sourceTree = "<group>"; };
+		92D5BA0A20BFAACE00F83989 /* UIView+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+category.h"; sourceTree = "<group>"; };
+		92D5BA0B20BFAACE00F83989 /* UIView+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+category.m"; sourceTree = "<group>"; };
+		92D5BA2D20C0D4A600F83989 /* ATPlanDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPlanDetailViewController.h; sourceTree = "<group>"; };
+		92D5BA2E20C0D4A600F83989 /* ATPlanDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPlanDetailViewController.m; sourceTree = "<group>"; };
 		F8EA3AACED2108C8F22901E8 /* Pods-AiTiTi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.release.xcconfig"; sourceTree = "<group>"; };
 		FBB884EE20B6903100E15CA5 /* AiTiTi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiTiTi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB884F120B6903100E15CA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -959,6 +977,8 @@
 		13603EAB20BEE29A00A1C73A /* K.O计划 */ = {
 			isa = PBXGroup;
 			children = (
+				92D5BA2C20C0D48000F83989 /* 计划详情 */,
+				92D5BA1920BFE42600F83989 /* 更多计划 */,
 				13603EAC20BEE29A00A1C73A /* ViewModel */,
 				13603EAD20BEE29A00A1C73A /* Controller */,
 				13603EB020BEE29A00A1C73A /* Model */,
@@ -1300,8 +1320,106 @@
 				13603F4720BEE29A00A1C73A /* UIButton+TXInit.m */,
 				13603F4820BEE29A00A1C73A /* TXHudTool.m */,
 				13603F4920BEE29A00A1C73A /* UILabel+LJLabel.m */,
+				92D5BA0A20BFAACE00F83989 /* UIView+category.h */,
+				92D5BA0B20BFAACE00F83989 /* UIView+category.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		13CAB00920C049BB0070D865 /* BaseRecommondPlan */ = {
+			isa = PBXGroup;
+			children = (
+				13CAB00A20C049BB0070D865 /* ViewModel */,
+				13CAB00B20C049BB0070D865 /* Controller */,
+				13CAB00C20C049BB0070D865 /* Model */,
+				13CAB00D20C049BB0070D865 /* View */,
+			);
+			path = BaseRecommondPlan;
+			sourceTree = "<group>";
+		};
+		13CAB00A20C049BB0070D865 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13CAB00B20C049BB0070D865 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13CAB00E20C049E90070D865 /* ATBaseRecommondPlanViewController.h */,
+				13CAB00F20C049E90070D865 /* ATBaseRecommondPlanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		13CAB00C20C049BB0070D865 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13CAB00D20C049BB0070D865 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92D5BA1920BFE42600F83989 /* 更多计划 */ = {
+			isa = PBXGroup;
+			children = (
+				13CAB00920C049BB0070D865 /* BaseRecommondPlan */,
+				92D5BA1A20BFE42600F83989 /* Controller */,
+				92D5BA1B20BFE42600F83989 /* Model */,
+				92D5BA1C20BFE42600F83989 /* View */,
+				92D5BA1D20BFE42600F83989 /* ViewModel */,
+			);
+			path = "更多计划";
+			sourceTree = "<group>";
+		};
+		92D5BA1A20BFE42600F83989 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13CAB00020C041C30070D865 /* ATMorePlanViewController.h */,
+				13CAB00120C041C30070D865 /* ATMorePlanViewController.m */,
+				13CAB00320C042400070D865 /* ATSystemRecommendViewController.h */,
+				13CAB00420C042400070D865 /* ATSystemRecommendViewController.m */,
+				13CAB00620C0426C0070D865 /* ATStudentRecommendViewController.h */,
+				13CAB00720C0426C0070D865 /* ATStudentRecommendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92D5BA1B20BFE42600F83989 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92D5BA1C20BFE42600F83989 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92D5BA1D20BFE42600F83989 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92D5BA2C20C0D48000F83989 /* 计划详情 */ = {
+			isa = PBXGroup;
+			children = (
+				92D5BA2D20C0D4A600F83989 /* ATPlanDetailViewController.h */,
+				92D5BA2E20C0D4A600F83989 /* ATPlanDetailViewController.m */,
+			);
+			path = "计划详情";
 			sourceTree = "<group>";
 		};
 		B88917E7FBA933900A193511 /* Frameworks */ = {
@@ -2478,8 +2596,10 @@
 				FBB8869E20B6909800E15CA5 /* ATHomeHeader.m in Sources */,
 				FBB886D120B6909800E15CA5 /* ATMineDownloadViewController.m in Sources */,
 				13603F8520BEE29A00A1C73A /* SGQRCodeAlbumManager.m in Sources */,
+				13CAB00520C042400070D865 /* ATSystemRecommendViewController.m in Sources */,
 				FBB8869A20B6909800E15CA5 /* ATSubjectSectionHeader.m in Sources */,
 				FBB886C620B6909800E15CA5 /* ATMineStudyViewController.m in Sources */,
+				13CAB01020C049E90070D865 /* ATBaseRecommondPlanViewController.m in Sources */,
 				FBB8869D20B6909800E15CA5 /* ATSelectGradeBtn.m in Sources */,
 				13603F8920BEE29A00A1C73A /* LPCalendarView.m in Sources */,
 				FBB8868820B6909700E15CA5 /* ATMainModel.m in Sources */,
@@ -2505,6 +2625,7 @@
 				FBB886DE20B6909800E15CA5 /* ATMineSettingCell.m in Sources */,
 				FBB886FB20B6909800E15CA5 /* UIFont+Extension.m in Sources */,
 				FBB8853B20B6908A00E15CA5 /* ATRechargeListCell.m in Sources */,
+				13CAB00820C0426C0070D865 /* ATStudentRecommendViewController.m in Sources */,
 				FBB886B220B6909800E15CA5 /* ATTeacherDetailController.m in Sources */,
 				FBB886B920B6909800E15CA5 /* ATTeacherCell.m in Sources */,
 				FBB886FC20B6909800E15CA5 /* UIDevice+DeviceType.m in Sources */,
@@ -2521,6 +2642,7 @@
 				FBB886CC20B6909800E15CA5 /* ATLoginViewController.m in Sources */,
 				FBB886F920B6909800E15CA5 /* UIView+Click.m in Sources */,
 				13603F9B20BEE29B00A1C73A /* UILabel+LJLabel.m in Sources */,
+				13CAB00220C041C30070D865 /* ATMorePlanViewController.m in Sources */,
 				FBB8868D20B6909800E15CA5 /* ATMainView.m in Sources */,
 				FBB886A220B6909800E15CA5 /* ATSubjectSpreadCell.m in Sources */,
 				FBB886F720B6909800E15CA5 /* UIView+Shake.m in Sources */,
@@ -2530,6 +2652,7 @@
 				FBB886FA20B6909800E15CA5 /* UIView+Extension.m in Sources */,
 				13603F9920BEE29B00A1C73A /* UIButton+TXInit.m in Sources */,
 				13603F6F20BEE29A00A1C73A /* ATTestDirectionItemCell.m in Sources */,
+				92D5BA2F20C0D4A600F83989 /* ATPlanDetailViewController.m in Sources */,
 				FBB884F620B6903100E15CA5 /* ViewController.m in Sources */,
 				FBB886E220B6909800E15CA5 /* ATMineHelpCell.m in Sources */,
 				13603F4F20BEE29A00A1C73A /* ATSignSuccessALertView.m in Sources */,
@@ -2659,6 +2782,7 @@
 				FBB886B720B6909800E15CA5 /* ATTeacherItem.m in Sources */,
 				FBB886E520B6909800E15CA5 /* ATMineHeaderCell.m in Sources */,
 				FBB886A920B6909800E15CA5 /* ATQuotaDetailViewController.m in Sources */,
+				92D5BA0C20BFAACE00F83989 /* UIView+category.m in Sources */,
 				13603F6020BEE29A00A1C73A /* ATExamClasssifySectionView.m in Sources */,
 				FBB886DB20B6909800E15CA5 /* ATMineVIPCell.m in Sources */,
 				FBB886D520B6909800E15CA5 /* ATMinCouponViewController.m in Sources */,
@@ -2819,7 +2943,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2847,7 +2971,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

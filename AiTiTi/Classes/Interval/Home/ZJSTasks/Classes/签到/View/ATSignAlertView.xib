@@ -6,13 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -40,16 +39,15 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="OuD-nT-wQk" firstAttribute="centerX" secondItem="kBG-DY-NlV" secondAttribute="centerX" id="8oy-xB-wJJ"/>
-                <constraint firstItem="0fK-9K-VlT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="42" id="8xC-ZO-6ck"/>
+                <constraint firstItem="0fK-9K-VlT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="8xC-ZO-6ck"/>
                 <constraint firstItem="Ha8-F5-3cP" firstAttribute="centerX" secondItem="kBG-DY-NlV" secondAttribute="centerX" id="9YB-BK-Q4F"/>
                 <constraint firstItem="kBG-DY-NlV" firstAttribute="top" secondItem="0fK-9K-VlT" secondAttribute="bottom" constant="23" id="JnD-NO-TB0"/>
                 <constraint firstItem="Ha8-F5-3cP" firstAttribute="top" secondItem="kBG-DY-NlV" secondAttribute="bottom" constant="23" id="gGa-DT-TOj"/>
-                <constraint firstItem="0fK-9K-VlT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="kO7-dq-qZM"/>
+                <constraint firstItem="0fK-9K-VlT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kO7-dq-qZM"/>
                 <constraint firstItem="OuD-nT-wQk" firstAttribute="top" secondItem="Ha8-F5-3cP" secondAttribute="bottom" constant="5" id="mKe-ib-9zA"/>
-                <constraint firstItem="kBG-DY-NlV" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="zwB-Zf-Wxf"/>
+                <constraint firstItem="kBG-DY-NlV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zwB-Zf-Wxf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="55.5" y="-203.5"/>
         </view>
     </objects>

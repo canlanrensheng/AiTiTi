@@ -11,9 +11,34 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U6b-Vx-4bR">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U6b-Vx-4bR" customClass="ATStudyPlanSectionFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
             <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEZ-hy-KDy">
+                    <rect key="frame" x="89" y="13" width="142" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="4LF-7Q-vaW"/>
+                        <constraint firstAttribute="width" constant="142" id="hAe-QX-CJ0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="查看更多">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="lookMoreBtnClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="H5a-5J-3OS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FEZ-hy-KDy" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="13" id="OaU-qz-rmb"/>
+                <constraint firstItem="FEZ-hy-KDy" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="kX6-qM-gGG"/>
+            </constraints>
+            <connections>
+                <outlet property="lookMoreBtn" destination="FEZ-hy-KDy" id="e2i-C6-pWa"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="103"/>
         </collectionReusableView>
     </objects>
 </document>

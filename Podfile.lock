@@ -56,6 +56,8 @@ PODS:
   - UMCShare/UI (6.9.1):
     - UMCCommon
     - UMCShare/Core
+  - ZXSegmentController (0.1.1):
+    - Masonry (~> 1.1.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -72,6 +74,7 @@ DEPENDENCIES:
   - UMCShare/Social/QQ
   - UMCShare/Social/WeChat
   - UMCShare/UI
+  - ZXSegmentController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -86,6 +89,7 @@ SPEC REPOS:
     - SVProgressHUD
     - UMCCommon
     - UMCShare
+    - ZXSegmentController
 
 EXTERNAL SOURCES:
   ReactiveCocoa:
@@ -110,7 +114,8 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UMCCommon: 82d21f4bb9532a5472cc533bbd8ed48aff376a14
   UMCShare: f8be567946c3aa68deefd03b0ffaa0710a3b07ea
+  ZXSegmentController: 7d0144f7b84396f6f45599d6c03fcb6467539430
 
-PODFILE CHECKSUM: 8287ea53391cb42da1b7fea1767aa2b6316dfbe1
+PODFILE CHECKSUM: 177af9d244d32a7ebe7335d16059dbec0c2c3995
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3
