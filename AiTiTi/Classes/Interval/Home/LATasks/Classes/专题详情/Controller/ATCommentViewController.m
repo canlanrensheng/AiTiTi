@@ -7,9 +7,12 @@
 //
 
 #import "ATCommentViewController.h"
-#import "ATTeacherDetailCell.h"
+#import "ATSearchView.h"
+#import "ATCommentCell.h"
 
 @interface ATCommentViewController ()
+
+@property (nonatomic, strong)ATSearchView *searchView;
 
 @end
 
@@ -18,7 +21,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor cyanColor];
+    
+    [self setupUI];
+}
+
+- (void)setupUI {
+    [self.tableView setTableHeaderView:self.searchView];
+    
+}
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 4;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ATCommentCell *cell = [ATCommentCell getTableView:tableView forIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 110;
+}
+
+- (ATSearchView *)searchView {
+    if (!_searchView) {
+        _searchView = [[ATSearchView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width, 76/2)];
+    }
+    return _searchView;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,13 +59,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

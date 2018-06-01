@@ -14,6 +14,7 @@
 #import "ATCourseDescriptionViewController.h"
 #import "ATDirectoryViewController.h"
 #import "ATCommentViewController.h"
+#import "ATBottomViewTool.h"
 
 @interface ATSubjectDetailController ()<ATNavigationBarDelegate,UITableViewDelegate,UITableViewDataSource,FSPageContentViewDelegate,FSSegmentTitleViewDelegate>
 
@@ -48,6 +49,13 @@
         [weakSelf insertRowAtTop];
     }];
     [self.tableView.mj_header beginRefreshing];
+    
+    ATBottomViewTool *toolView = [ATBottomViewTool setUpBottomViewTool];
+    [self.view addSubview:toolView];
+    [toolView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.height.mas_offset(54);
+        make.left.right.equalTo(self.view);    }];
 }
 
 - (void)insertRowAtTop {

@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- 专题详情--->底部Tool
- */
 @interface ATBottomViewTool : UIView
-
++ (ATBottomViewTool *)setUpBottomViewTool;
 @end
