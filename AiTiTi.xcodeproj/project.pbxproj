@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1633C520C405FD00CE7D42 /* ATReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633C420C405FD00CE7D42 /* ATReportView.m */; };
+		0B1633C920C4067700CE7D42 /* ATReportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633C720C4067700CE7D42 /* ATReportCell.m */; };
+		0B1633CA20C4067700CE7D42 /* ATReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1633C820C4067700CE7D42 /* ATReportCell.xib */; };
+		0B1633CD20C42D4F00CE7D42 /* ATSubjectModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633CC20C42D4F00CE7D42 /* ATSubjectModels.m */; };
+		0B1633D020C42E2700CE7D42 /* ATLASubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633CF20C42E2700CE7D42 /* ATLASubjectViewController.m */; };
+		0B1633D320C42EC700CE7D42 /* ATSubjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633D220C42EC700CE7D42 /* ATSubjectViewModel.m */; };
+		0B1998A420C026130050BA4C /* YSQDrodownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998A320C026130050BA4C /* YSQDrodownMenu.m */; };
+		0B1998A720C027650050BA4C /* ATCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998A620C027650050BA4C /* ATCommentView.m */; };
+		0B1998AB20C042A60050BA4C /* ATCommentMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998AA20C042A60050BA4C /* ATCommentMenuView.m */; };
 		0B3AC64A20BF0E6F003CBFFC /* ATBottomViewTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3AC64220BF0E67003CBFFC /* ATBottomViewTool.xib */; };
-		0B3AC64B20BF0E6F003CBFFC /* ATSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC64420BF0E68003CBFFC /* ATSearchView.m */; };
 		0B3AC64C20BF0E6F003CBFFC /* ATBottomViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC64520BF0E69003CBFFC /* ATBottomViewTool.m */; };
 		0B3AC64D20BF0E6F003CBFFC /* ATCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC64720BF0E6B003CBFFC /* ATCommentCell.m */; };
 		0B3AC64E20BF0E6F003CBFFC /* ATCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3AC64820BF0E6C003CBFFC /* ATCommentCell.xib */; };
@@ -264,11 +272,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B1633C320C405FD00CE7D42 /* ATReportView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATReportView.h; sourceTree = "<group>"; };
+		0B1633C420C405FD00CE7D42 /* ATReportView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATReportView.m; sourceTree = "<group>"; };
+		0B1633C620C4067700CE7D42 /* ATReportCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATReportCell.h; sourceTree = "<group>"; };
+		0B1633C720C4067700CE7D42 /* ATReportCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATReportCell.m; sourceTree = "<group>"; };
+		0B1633C820C4067700CE7D42 /* ATReportCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATReportCell.xib; sourceTree = "<group>"; };
+		0B1633CB20C42D4F00CE7D42 /* ATSubjectModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ATSubjectModels.h; path = "AiTiTi/Classes/Interval/Home/LATasks/Classes/专题详情/Model/ATSubjectModels.h"; sourceTree = SOURCE_ROOT; };
+		0B1633CC20C42D4F00CE7D42 /* ATSubjectModels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ATSubjectModels.m; path = "AiTiTi/Classes/Interval/Home/LATasks/Classes/专题详情/Model/ATSubjectModels.m"; sourceTree = SOURCE_ROOT; };
+		0B1633CE20C42E2700CE7D42 /* ATLASubjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATLASubjectViewController.h; sourceTree = "<group>"; };
+		0B1633CF20C42E2700CE7D42 /* ATLASubjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATLASubjectViewController.m; sourceTree = "<group>"; };
+		0B1633D120C42EC700CE7D42 /* ATSubjectViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ATSubjectViewModel.h; path = "AiTiTi/Classes/Interval/Home/LATasks/Classes/专题详情/ViewModel/ATSubjectViewModel.h"; sourceTree = SOURCE_ROOT; };
+		0B1633D220C42EC700CE7D42 /* ATSubjectViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ATSubjectViewModel.m; path = "AiTiTi/Classes/Interval/Home/LATasks/Classes/专题详情/ViewModel/ATSubjectViewModel.m"; sourceTree = SOURCE_ROOT; };
+		0B1998A220C026130050BA4C /* YSQDrodownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQDrodownMenu.h; sourceTree = "<group>"; };
+		0B1998A320C026130050BA4C /* YSQDrodownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQDrodownMenu.m; sourceTree = "<group>"; };
+		0B1998A520C027650050BA4C /* ATCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommentView.h; sourceTree = "<group>"; };
+		0B1998A620C027650050BA4C /* ATCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommentView.m; sourceTree = "<group>"; };
+		0B1998A920C042A60050BA4C /* ATCommentMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommentMenuView.h; sourceTree = "<group>"; };
+		0B1998AA20C042A60050BA4C /* ATCommentMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommentMenuView.m; sourceTree = "<group>"; };
 		0B3AC64220BF0E67003CBFFC /* ATBottomViewTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATBottomViewTool.xib; sourceTree = "<group>"; };
 		0B3AC64320BF0E67003CBFFC /* ATBottomViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBottomViewTool.h; sourceTree = "<group>"; };
-		0B3AC64420BF0E68003CBFFC /* ATSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSearchView.m; sourceTree = "<group>"; };
 		0B3AC64520BF0E69003CBFFC /* ATBottomViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBottomViewTool.m; sourceTree = "<group>"; };
-		0B3AC64620BF0E6A003CBFFC /* ATSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSearchView.h; sourceTree = "<group>"; };
 		0B3AC64720BF0E6B003CBFFC /* ATCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCommentCell.m; sourceTree = "<group>"; };
 		0B3AC64820BF0E6C003CBFFC /* ATCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCommentCell.xib; sourceTree = "<group>"; };
 		0B3AC64920BF0E6D003CBFFC /* ATCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCommentCell.h; sourceTree = "<group>"; };
@@ -763,6 +786,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1633D420C4388900CE7D42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0B1633D120C42EC700CE7D42 /* ATSubjectViewModel.h */,
+				0B1633D220C42EC700CE7D42 /* ATSubjectViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B1633D520C438A800CE7D42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B1633CB20C42D4F00CE7D42 /* ATSubjectModels.h */,
+				0B1633CC20C42D4F00CE7D42 /* ATSubjectModels.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B1998A120C025BA0050BA4C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0B1998A220C026130050BA4C /* YSQDrodownMenu.h */,
+				0B1998A320C026130050BA4C /* YSQDrodownMenu.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		0BF9114B20BD952E00559135 /* LATasks */ = {
 			isa = PBXGroup;
 			children = (
@@ -783,19 +833,12 @@
 		0BF9114D20BD952E00559135 /* 专题详情 */ = {
 			isa = PBXGroup;
 			children = (
-				0BF9114E20BD952E00559135 /* ViewModel */,
+				0B1633D520C438A800CE7D42 /* Model */,
+				0B1633D420C4388900CE7D42 /* ViewModel */,
 				0BF9114F20BD952E00559135 /* Controller */,
-				0BF9115820BD952E00559135 /* Model */,
 				0BF9115920BD952E00559135 /* View */,
 			);
 			path = "专题详情";
-			sourceTree = "<group>";
-		};
-		0BF9114E20BD952E00559135 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0BF9114F20BD952E00559135 /* Controller */ = {
@@ -809,15 +852,10 @@
 				0BF9115620BD952E00559135 /* ATCourseDescriptionViewController.m */,
 				0BF9115020BD952E00559135 /* ATDirectoryViewController.h */,
 				0BF9115520BD952E00559135 /* ATDirectoryViewController.m */,
+				0B1633CE20C42E2700CE7D42 /* ATLASubjectViewController.h */,
+				0B1633CF20C42E2700CE7D42 /* ATLASubjectViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		0BF9115820BD952E00559135 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0BF9115920BD952E00559135 /* View */ = {
@@ -837,8 +875,15 @@
 				0B3AC64920BF0E6D003CBFFC /* ATCommentCell.h */,
 				0B3AC64720BF0E6B003CBFFC /* ATCommentCell.m */,
 				0B3AC64820BF0E6C003CBFFC /* ATCommentCell.xib */,
-				0B3AC64620BF0E6A003CBFFC /* ATSearchView.h */,
-				0B3AC64420BF0E68003CBFFC /* ATSearchView.m */,
+				0B1998A520C027650050BA4C /* ATCommentView.h */,
+				0B1998A620C027650050BA4C /* ATCommentView.m */,
+				0B1998A920C042A60050BA4C /* ATCommentMenuView.h */,
+				0B1998AA20C042A60050BA4C /* ATCommentMenuView.m */,
+				0B1633C320C405FD00CE7D42 /* ATReportView.h */,
+				0B1633C420C405FD00CE7D42 /* ATReportView.m */,
+				0B1633C620C4067700CE7D42 /* ATReportCell.h */,
+				0B1633C720C4067700CE7D42 /* ATReportCell.m */,
+				0B1633C820C4067700CE7D42 /* ATReportCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -846,6 +891,7 @@
 		0BF9117120BD95A200559135 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				0B1998A120C025BA0050BA4C /* Lib */,
 				0BF9117B20BD96AF00559135 /* Macros */,
 				0BF9117220BD95B300559135 /* Category */,
 			);
@@ -2384,6 +2430,7 @@
 				13603F7F20BEE29A00A1C73A /* SGQRCode.bundle in Resources */,
 				0BF9116F20BD952F00559135 /* ATSubjectDetailView.xib in Resources */,
 				FBB8869920B6909800E15CA5 /* ATHomeRecommendCell.xib in Resources */,
+				0B1633CA20C4067700CE7D42 /* ATReportCell.xib in Resources */,
 				FBB886C720B6909800E15CA5 /* ATGetbackPwdViewController.xib in Resources */,
 				FBB886BA20B6909800E15CA5 /* ATTeacherCell.xib in Resources */,
 				13603F6E20BEE29A00A1C73A /* ATDifficultyDistributionCell.xib in Resources */,
@@ -2441,6 +2488,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
@@ -2448,6 +2496,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
@@ -2488,7 +2537,6 @@
 				13603F8420BEE29A00A1C73A /* SGQRCodeGenerateManager.m in Sources */,
 				FBB886AC20B6909800E15CA5 /* ATRankListModel.m in Sources */,
 				13603F6520BEE29A00A1C73A /* ATTestAnalysisViewModel.m in Sources */,
-				0B3AC64B20BF0E6F003CBFFC /* ATSearchView.m in Sources */,
 				13603F5520BEE29A00A1C73A /* ATSignCalendarCell.m in Sources */,
 				FBB8869E20B6909800E15CA5 /* ATHomeHeader.m in Sources */,
 				FBB886D120B6909800E15CA5 /* ATMineDownloadViewController.m in Sources */,
@@ -2501,6 +2549,7 @@
 				FBB886C520B6909800E15CA5 /* ATMineViewController.m in Sources */,
 				FBB8869120B6909800E15CA5 /* ATTeacherExplainController.m in Sources */,
 				FBB886AD20B6909800E15CA5 /* ATIntervalHeaderView.m in Sources */,
+				0B1633C920C4067700CE7D42 /* ATReportCell.m in Sources */,
 				13603F4A20BEE29A00A1C73A /* ATSignViewModel.m in Sources */,
 				FBB8853E20B6908A00E15CA5 /* FNTipsView.m in Sources */,
 				FBB886BF20B6909800E15CA5 /* ATTeacherDetailBottomCell.m in Sources */,
@@ -2522,10 +2571,12 @@
 				FBB8853B20B6908A00E15CA5 /* ATRechargeListCell.m in Sources */,
 				FBB886B220B6909800E15CA5 /* ATTeacherDetailController.m in Sources */,
 				FBB886B920B6909800E15CA5 /* ATTeacherCell.m in Sources */,
+				0B1633C520C405FD00CE7D42 /* ATReportView.m in Sources */,
 				FBB886FC20B6909800E15CA5 /* UIDevice+DeviceType.m in Sources */,
 				13603F8D20BEE29A00A1C73A /* BaseView.m in Sources */,
 				13603F5F20BEE29A00A1C73A /* ATExamPaperSectionView.m in Sources */,
 				13603F6D20BEE29A00A1C73A /* ATDifficultyDistributionCell.m in Sources */,
+				0B1633D320C42EC700CE7D42 /* ATSubjectViewModel.m in Sources */,
 				13603F6920BEE29A00A1C73A /* ATTestDirrectionCell.m in Sources */,
 				FBB886D320B6909800E15CA5 /* ATMineCourceViewController.m in Sources */,
 				FBB886B620B6909800E15CA5 /* ATHotSubjectController.m in Sources */,
@@ -2583,6 +2634,7 @@
 				FBB886E620B6909800E15CA5 /* ATErrorView.m in Sources */,
 				FBB886B820B6909800E15CA5 /* ATSubjectModel.m in Sources */,
 				0B3C5ED520B8F6A200A61750 /* ATMessagesModel.m in Sources */,
+				0B1998A420C026130050BA4C /* YSQDrodownMenu.m in Sources */,
 				FBB886EF20B6909800E15CA5 /* UILabel+Click.m in Sources */,
 				13603F8220BEE29A00A1C73A /* SGQRCodeScanningView.m in Sources */,
 				13603F5820BEE29A00A1C73A /* ATStudyPlanViewController.m in Sources */,
@@ -2592,6 +2644,7 @@
 				13603F7920BEE29A00A1C73A /* ATExamPaperModel.m in Sources */,
 				FBB886E020B6909800E15CA5 /* ATDownloadCell.m in Sources */,
 				13603F7220BEE29A00A1C73A /* ATExamClasssifyViewController.m in Sources */,
+				0B1633D020C42E2700CE7D42 /* ATLASubjectViewController.m in Sources */,
 				FBB886CA20B6909800E15CA5 /* ATGetbackPwdViewController.m in Sources */,
 				13603F6220BEE29A00A1C73A /* ATExamPaperViewModel.m in Sources */,
 				FBB886F320B6909800E15CA5 /* UIView+SetRect.m in Sources */,
@@ -2634,6 +2687,7 @@
 				13603F9420BEE29B00A1C73A /* UINavigationBar+Extention.m in Sources */,
 				FBB886ED20B6909800E15CA5 /* UIScreen+Extension.m in Sources */,
 				FBB8853820B6908A00E15CA5 /* ATOrderCell.m in Sources */,
+				0B1998A720C027650050BA4C /* ATCommentView.m in Sources */,
 				FBB886AE20B6909800E15CA5 /* ATRankMineView.m in Sources */,
 				FBB886F420B6909800E15CA5 /* UIView+KRKit.m in Sources */,
 				FBB8853920B6908A00E15CA5 /* ATRechargeListViewController.m in Sources */,
@@ -2669,6 +2723,7 @@
 				13603F7320BEE29A00A1C73A /* ATExamPaperViewController.m in Sources */,
 				0B3AC64D20BF0E6F003CBFFC /* ATCommentCell.m in Sources */,
 				FBB886EC20B6909800E15CA5 /* UIImage+Extension.m in Sources */,
+				0B1633CD20C42D4F00CE7D42 /* ATSubjectModels.m in Sources */,
 				13603F8F20BEE29B00A1C73A /* BaseViewController.m in Sources */,
 				0B3C5ED720B8F6A200A61750 /* ATMessagesCell.m in Sources */,
 				FBB886EB20B6909800E15CA5 /* UIImage+ScreenShot.m in Sources */,
@@ -2681,6 +2736,7 @@
 				FBB8853020B6908A00E15CA5 /* ATSearchViewController.m in Sources */,
 				FBB8853220B6908A00E15CA5 /* ATNetWorking.m in Sources */,
 				FBB8869B20B6909800E15CA5 /* ATHeaderBtn.m in Sources */,
+				0B1998AB20C042A60050BA4C /* ATCommentMenuView.m in Sources */,
 				FBB886FD20B6909800E15CA5 /* UIBarButtonItem+Extension.m in Sources */,
 				13603F8B20BEE29A00A1C73A /* BaseTableViewCell.m in Sources */,
 				FBB886BB20B6909800E15CA5 /* ATTeacherDetailHeaderView.m in Sources */,
@@ -2831,7 +2887,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q47FFAHNF9;
+				DEVELOPMENT_TEAM = 2WD7KHDDVT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
@@ -2840,7 +2896,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTiT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2859,7 +2915,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q47FFAHNF9;
+				DEVELOPMENT_TEAM = 2WD7KHDDVT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AiTiTi/Macros/MainHeader.h";
 				INFOPLIST_FILE = AiTiTi/Info.plist;
@@ -2868,7 +2924,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTiT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunhui.AiTi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AiTiTi/Classes/Interval/Home/LATasks/Public/Category/LayerCorner/AiTiTi-Bridging-Header.h";

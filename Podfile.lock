@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.0.3)
   - LBXScan/LBXNative (2.3):
     - LBXScan/Types (~> 2.2)
   - LBXScan/Types (2.3)
@@ -59,6 +60,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - IQKeyboardManager (~> 6.0.3)
   - LBXScan/LBXNative (~> 2.3)
   - LBXScan/UI (~> 2.3)
   - Masonry
@@ -76,6 +78,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - IQKeyboardManager
     - LBXScan
     - Masonry
     - MJExtension
@@ -99,6 +102,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IQKeyboardManager: c390e612f4b98c8fd748016470138537dc163ead
   LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
@@ -111,6 +115,6 @@ SPEC CHECKSUMS:
   UMCCommon: 82d21f4bb9532a5472cc533bbd8ed48aff376a14
   UMCShare: f8be567946c3aa68deefd03b0ffaa0710a3b07ea
 
-PODFILE CHECKSUM: 8287ea53391cb42da1b7fea1767aa2b6316dfbe1
+PODFILE CHECKSUM: 696b0125943479de438f011d19df36937dd64d67
 
 COCOAPODS: 1.5.2

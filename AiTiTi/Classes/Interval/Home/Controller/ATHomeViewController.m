@@ -25,6 +25,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "ATTeacherTalkViewController.h"
 #import "ATStudyPlanViewController.h"
+#import "ATLASubjectViewController.h"
 @interface ATHomeViewController ()<UITableViewDelegate,UITableViewDataSource,ATHomeHeaderBtnDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -200,8 +201,14 @@ static NSString *const mainCellID = @"mainCell";
 #pragma mark - ATHomeHeaderBtnDelegate
 - (void)homeHeader:(ATHomeHeader *)homeHeader btnDidClicker:(UIButton *)btn {
     if ([btn.titleLabel.text isEqualToString:@"专题"]) {
+#if 0
         ATSubjectViewController *subjectVC = [[ATSubjectViewController alloc] init];
         [self.navigationController pushViewController:subjectVC animated:YES];
+#else
+        ATLASubjectViewController *subjectVC = [[ATLASubjectViewController alloc] init];
+        [self.navigationController pushViewController:subjectVC animated:YES];
+
+#endif
     }else if ([btn.titleLabel.text isEqualToString:@"系统课"]) {
         ATCourseController *courseVC = [[ATCourseController alloc] init];
         [self.navigationController pushViewController:courseVC animated:YES];

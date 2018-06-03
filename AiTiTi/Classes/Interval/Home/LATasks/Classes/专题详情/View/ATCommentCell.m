@@ -15,6 +15,9 @@ NSString * const kATCommentCell = @"ATCommentCell";
     [super awakeFromNib];
     // Initialization code
 }
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
 
 + (instancetype)getTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *)indexPath {
     [tableView registerNibCell:[ATCommentCell class]];

@@ -21,6 +21,11 @@
     
     self.window.rootViewController = [ATMainViewController new];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    // 三方
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    [IQKeyboardManager sharedManager].keyboardDistanceFromTextField = 30;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
     return YES;
 }
 
