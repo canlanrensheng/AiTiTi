@@ -43,13 +43,13 @@
 		13DCB1E420C4297B00B93EF7 /* TopButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DCB1E320C4297B00B93EF7 /* TopButtonView.m */; };
 		13DCB1E820C42D1500B93EF7 /* ATSelectClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DCB1E620C42D1500B93EF7 /* ATSelectClassCell.m */; };
 		13DCB1E920C42D1500B93EF7 /* ATSelectClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DCB1E720C42D1500B93EF7 /* ATSelectClassCell.xib */; };
+		13DCB1EB20C567AE00B93EF7 /* ATStudentRecommondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DCB1EA20C567AE00B93EF7 /* ATStudentRecommondCell.xib */; };
 		92A69DAC20C12AD700A70203 /* ATFinishedPlanStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DAA20C12AD700A70203 /* ATFinishedPlanStateCell.m */; };
 		92A69DAD20C12AD700A70203 /* ATFinishedPlanStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A69DAB20C12AD700A70203 /* ATFinishedPlanStateCell.xib */; };
 		92A69DB020C1308200A70203 /* ATStudyPlanCalenderAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DAF20C1308200A70203 /* ATStudyPlanCalenderAlertView.m */; };
 		92A69DB320C1322500A70203 /* ATStudyPlanCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DB220C1322500A70203 /* ATStudyPlanCalendarView.m */; };
 		92ACD63C20C0EDF700BA45D1 /* ATStudyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD55A20C0EDF700BA45D1 /* ATStudyPlanViewController.m */; };
 		92ACD63D20C0EDF700BA45D1 /* ATStudentRecommondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD55E20C0EDF700BA45D1 /* ATStudentRecommondCell.m */; };
-		92ACD63E20C0EDF700BA45D1 /* ATStudentRecommondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ACD55F20C0EDF700BA45D1 /* ATStudentRecommondCell.xib */; };
 		92ACD63F20C0EDF700BA45D1 /* ATStudyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD56120C0EDF700BA45D1 /* ATStudyHeaderView.m */; };
 		92ACD64020C0EDF700BA45D1 /* ATStudyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ACD56220C0EDF700BA45D1 /* ATStudyHeaderView.xib */; };
 		92ACD64120C0EDF700BA45D1 /* ATStudyPlanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD56420C0EDF700BA45D1 /* ATStudyPlanListCell.m */; };
@@ -363,6 +363,7 @@
 		13DCB1E520C42D1500B93EF7 /* ATSelectClassCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSelectClassCell.h; sourceTree = "<group>"; };
 		13DCB1E620C42D1500B93EF7 /* ATSelectClassCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSelectClassCell.m; sourceTree = "<group>"; };
 		13DCB1E720C42D1500B93EF7 /* ATSelectClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSelectClassCell.xib; sourceTree = "<group>"; };
+		13DCB1EA20C567AE00B93EF7 /* ATStudentRecommondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATStudentRecommondCell.xib; sourceTree = "<group>"; };
 		1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiTiTi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.debug.xcconfig"; sourceTree = "<group>"; };
 		92A69DA920C12AD700A70203 /* ATFinishedPlanStateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATFinishedPlanStateCell.h; sourceTree = "<group>"; };
@@ -376,7 +377,6 @@
 		92ACD55A20C0EDF700BA45D1 /* ATStudyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanViewController.m; sourceTree = "<group>"; };
 		92ACD55D20C0EDF700BA45D1 /* ATStudentRecommondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATStudentRecommondCell.h; sourceTree = "<group>"; };
 		92ACD55E20C0EDF700BA45D1 /* ATStudentRecommondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStudentRecommondCell.m; sourceTree = "<group>"; };
-		92ACD55F20C0EDF700BA45D1 /* ATStudentRecommondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATStudentRecommondCell.xib; sourceTree = "<group>"; };
 		92ACD56020C0EDF700BA45D1 /* ATStudyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATStudyHeaderView.h; sourceTree = "<group>"; };
 		92ACD56120C0EDF700BA45D1 /* ATStudyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStudyHeaderView.m; sourceTree = "<group>"; };
 		92ACD56220C0EDF700BA45D1 /* ATStudyHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATStudyHeaderView.xib; sourceTree = "<group>"; };
@@ -1145,9 +1145,9 @@
 		92ACD55C20C0EDF700BA45D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13DCB1EA20C567AE00B93EF7 /* ATStudentRecommondCell.xib */,
 				92ACD55D20C0EDF700BA45D1 /* ATStudentRecommondCell.h */,
 				92ACD55E20C0EDF700BA45D1 /* ATStudentRecommondCell.m */,
-				92ACD55F20C0EDF700BA45D1 /* ATStudentRecommondCell.xib */,
 				92ACD56020C0EDF700BA45D1 /* ATStudyHeaderView.h */,
 				92ACD56120C0EDF700BA45D1 /* ATStudyHeaderView.m */,
 				92ACD56220C0EDF700BA45D1 /* ATStudyHeaderView.xib */,
@@ -2764,6 +2764,7 @@
 				1322F4F220C38341000A4119 /* ATClassListSectionHeaderView.xib in Resources */,
 				FBB8853720B6908A00E15CA5 /* ATFriendPayViewController.xib in Resources */,
 				0B3AC64E20BF0E6F003CBFFC /* ATCommentCell.xib in Resources */,
+				13DCB1EB20C567AE00B93EF7 /* ATStudentRecommondCell.xib in Resources */,
 				92ACD6AB20C1012C00BA45D1 /* ATPlanStateCell.xib in Resources */,
 				FBB886A120B6909800E15CA5 /* ATSubjectMainCell.xib in Resources */,
 				92ACD6A620C0FDD700BA45D1 /* ATPlanHeaderView.xib in Resources */,
@@ -2776,7 +2777,6 @@
 				FBB886CE20B6909800E15CA5 /* ATRegisterViewController.xib in Resources */,
 				92ACD67220C0EDF700BA45D1 /* ATSignRuleViewCell.xib in Resources */,
 				FBB886CD20B6909800E15CA5 /* ATLoginViewController.xib in Resources */,
-				92ACD63E20C0EDF700BA45D1 /* ATStudentRecommondCell.xib in Resources */,
 				92ACD64620C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.xib in Resources */,
 				FBB886BD20B6909800E15CA5 /* ATTeacherDetailHeaderView.xib in Resources */,
 				92ACD64020C0EDF700BA45D1 /* ATStudyHeaderView.xib in Resources */,
