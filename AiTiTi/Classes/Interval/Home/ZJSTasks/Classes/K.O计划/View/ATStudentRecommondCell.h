@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIView *headerBackView;
 @property (weak, nonatomic) IBOutlet UILabel *classNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 
 @end

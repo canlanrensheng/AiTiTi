@@ -27,6 +27,26 @@
 		0BF9117A20BD967000559135 /* UITableView+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9117820BD966F00559135 /* UITableView+Register.m */; };
 		0BF9118020BD9A1F00559135 /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9117F20BD9A1D00559135 /* Storyboard+Extension.swift */; };
 		0C3DCE43284143D22087B13F /* libPods-AiTiTi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */; };
+		1322F4DA20C3721B000A4119 /* ATDefinePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F4D920C3721B000A4119 /* ATDefinePlanViewController.m */; };
+		1322F4DD20C372F6000A4119 /* ATDefinePlanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F4DC20C372F6000A4119 /* ATDefinePlanViewModel.m */; };
+		1322F4E120C373D1000A4119 /* ATDefinePlanTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F4DF20C373D1000A4119 /* ATDefinePlanTextCell.m */; };
+		1322F4E220C373D1000A4119 /* ATDefinePlanTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1322F4E020C373D1000A4119 /* ATDefinePlanTextCell.xib */; };
+		1322F4E720C37880000A4119 /* ATClassListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F4E520C37880000A4119 /* ATClassListCell.m */; };
+		1322F4E820C37880000A4119 /* ATClassListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1322F4E620C37880000A4119 /* ATClassListCell.xib */; };
+		1322F4EC20C378FE000A4119 /* ATDefineTimePlanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F4EA20C378FE000A4119 /* ATDefineTimePlanCell.m */; };
+		1322F4ED20C378FE000A4119 /* ATDefineTimePlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1322F4EB20C378FE000A4119 /* ATDefineTimePlanCell.xib */; };
+		1322F4F020C38331000A4119 /* ATClassListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F4EF20C38331000A4119 /* ATClassListSectionHeaderView.m */; };
+		1322F4F220C38341000A4119 /* ATClassListSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1322F4F120C38341000A4119 /* ATClassListSectionHeaderView.xib */; };
+		1322F4FB20C389FC000A4119 /* ATDefineCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F4FA20C389FC000A4119 /* ATDefineCalendarView.m */; };
+		1322F50520C3934F000A4119 /* ATSelectClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322F50420C3934F000A4119 /* ATSelectClassViewController.m */; };
+		13DCB1E120C4275000B93EF7 /* ATBaseSecletClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DCB1E020C4275000B93EF7 /* ATBaseSecletClassViewController.m */; };
+		13DCB1E420C4297B00B93EF7 /* TopButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DCB1E320C4297B00B93EF7 /* TopButtonView.m */; };
+		13DCB1E820C42D1500B93EF7 /* ATSelectClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DCB1E620C42D1500B93EF7 /* ATSelectClassCell.m */; };
+		13DCB1E920C42D1500B93EF7 /* ATSelectClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DCB1E720C42D1500B93EF7 /* ATSelectClassCell.xib */; };
+		92A69DAC20C12AD700A70203 /* ATFinishedPlanStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DAA20C12AD700A70203 /* ATFinishedPlanStateCell.m */; };
+		92A69DAD20C12AD700A70203 /* ATFinishedPlanStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A69DAB20C12AD700A70203 /* ATFinishedPlanStateCell.xib */; };
+		92A69DB020C1308200A70203 /* ATStudyPlanCalenderAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DAF20C1308200A70203 /* ATStudyPlanCalenderAlertView.m */; };
+		92A69DB320C1322500A70203 /* ATStudyPlanCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A69DB220C1322500A70203 /* ATStudyPlanCalendarView.m */; };
 		92ACD63C20C0EDF700BA45D1 /* ATStudyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD55A20C0EDF700BA45D1 /* ATStudyPlanViewController.m */; };
 		92ACD63D20C0EDF700BA45D1 /* ATStudentRecommondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD55E20C0EDF700BA45D1 /* ATStudentRecommondCell.m */; };
 		92ACD63E20C0EDF700BA45D1 /* ATStudentRecommondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ACD55F20C0EDF700BA45D1 /* ATStudentRecommondCell.xib */; };
@@ -316,8 +336,42 @@
 		0BF9117D20BD995D00559135 /* LAToolHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAToolHeader.h; sourceTree = "<group>"; };
 		0BF9117E20BD9A1B00559135 /* AiTiTi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AiTiTi-Bridging-Header.h"; sourceTree = "<group>"; };
 		0BF9117F20BD9A1D00559135 /* Storyboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
+		1322F4D820C3721B000A4119 /* ATDefinePlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDefinePlanViewController.h; sourceTree = "<group>"; };
+		1322F4D920C3721B000A4119 /* ATDefinePlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDefinePlanViewController.m; sourceTree = "<group>"; };
+		1322F4DB20C372F6000A4119 /* ATDefinePlanViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDefinePlanViewModel.h; sourceTree = "<group>"; };
+		1322F4DC20C372F6000A4119 /* ATDefinePlanViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDefinePlanViewModel.m; sourceTree = "<group>"; };
+		1322F4DE20C373D1000A4119 /* ATDefinePlanTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDefinePlanTextCell.h; sourceTree = "<group>"; };
+		1322F4DF20C373D1000A4119 /* ATDefinePlanTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDefinePlanTextCell.m; sourceTree = "<group>"; };
+		1322F4E020C373D1000A4119 /* ATDefinePlanTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATDefinePlanTextCell.xib; sourceTree = "<group>"; };
+		1322F4E420C37880000A4119 /* ATClassListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATClassListCell.h; sourceTree = "<group>"; };
+		1322F4E520C37880000A4119 /* ATClassListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATClassListCell.m; sourceTree = "<group>"; };
+		1322F4E620C37880000A4119 /* ATClassListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATClassListCell.xib; sourceTree = "<group>"; };
+		1322F4E920C378FE000A4119 /* ATDefineTimePlanCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDefineTimePlanCell.h; sourceTree = "<group>"; };
+		1322F4EA20C378FE000A4119 /* ATDefineTimePlanCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDefineTimePlanCell.m; sourceTree = "<group>"; };
+		1322F4EB20C378FE000A4119 /* ATDefineTimePlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATDefineTimePlanCell.xib; sourceTree = "<group>"; };
+		1322F4EE20C38331000A4119 /* ATClassListSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATClassListSectionHeaderView.h; sourceTree = "<group>"; };
+		1322F4EF20C38331000A4119 /* ATClassListSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATClassListSectionHeaderView.m; sourceTree = "<group>"; };
+		1322F4F120C38341000A4119 /* ATClassListSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATClassListSectionHeaderView.xib; sourceTree = "<group>"; };
+		1322F4F920C389FC000A4119 /* ATDefineCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDefineCalendarView.h; sourceTree = "<group>"; };
+		1322F4FA20C389FC000A4119 /* ATDefineCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDefineCalendarView.m; sourceTree = "<group>"; };
+		1322F50320C3934F000A4119 /* ATSelectClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSelectClassViewController.h; sourceTree = "<group>"; };
+		1322F50420C3934F000A4119 /* ATSelectClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSelectClassViewController.m; sourceTree = "<group>"; };
+		13DCB1DF20C4275000B93EF7 /* ATBaseSecletClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseSecletClassViewController.h; sourceTree = "<group>"; };
+		13DCB1E020C4275000B93EF7 /* ATBaseSecletClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseSecletClassViewController.m; sourceTree = "<group>"; };
+		13DCB1E220C4297900B93EF7 /* TopButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopButtonView.h; sourceTree = "<group>"; };
+		13DCB1E320C4297B00B93EF7 /* TopButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopButtonView.m; sourceTree = "<group>"; };
+		13DCB1E520C42D1500B93EF7 /* ATSelectClassCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSelectClassCell.h; sourceTree = "<group>"; };
+		13DCB1E620C42D1500B93EF7 /* ATSelectClassCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSelectClassCell.m; sourceTree = "<group>"; };
+		13DCB1E720C42D1500B93EF7 /* ATSelectClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATSelectClassCell.xib; sourceTree = "<group>"; };
 		1CA304A0E18B92E18FC2AA76 /* libPods-AiTiTi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiTiTi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		660001AFC1CF3BB82BFDECED /* Pods-AiTiTi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.debug.xcconfig"; sourceTree = "<group>"; };
+		92A69DA920C12AD700A70203 /* ATFinishedPlanStateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATFinishedPlanStateCell.h; sourceTree = "<group>"; };
+		92A69DAA20C12AD700A70203 /* ATFinishedPlanStateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATFinishedPlanStateCell.m; sourceTree = "<group>"; };
+		92A69DAB20C12AD700A70203 /* ATFinishedPlanStateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATFinishedPlanStateCell.xib; sourceTree = "<group>"; };
+		92A69DAE20C1308200A70203 /* ATStudyPlanCalenderAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStudyPlanCalenderAlertView.h; sourceTree = "<group>"; };
+		92A69DAF20C1308200A70203 /* ATStudyPlanCalenderAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanCalenderAlertView.m; sourceTree = "<group>"; };
+		92A69DB120C1322500A70203 /* ATStudyPlanCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStudyPlanCalendarView.h; sourceTree = "<group>"; };
+		92A69DB220C1322500A70203 /* ATStudyPlanCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanCalendarView.m; sourceTree = "<group>"; };
 		92ACD55920C0EDF700BA45D1 /* ATStudyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATStudyPlanViewController.h; sourceTree = "<group>"; };
 		92ACD55A20C0EDF700BA45D1 /* ATStudyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStudyPlanViewController.m; sourceTree = "<group>"; };
 		92ACD55D20C0EDF700BA45D1 /* ATStudentRecommondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATStudentRecommondCell.h; sourceTree = "<group>"; };
@@ -933,6 +987,109 @@
 			path = Macros;
 			sourceTree = "<group>";
 		};
+		1322F4D320C371C8000A4119 /* 制定我的计划 */ = {
+			isa = PBXGroup;
+			children = (
+				1322F4D420C371C8000A4119 /* ViewModel */,
+				1322F4D520C371C8000A4119 /* Controller */,
+				1322F4D620C371C8000A4119 /* Model */,
+				1322F4D720C371C8000A4119 /* View */,
+			);
+			path = "制定我的计划";
+			sourceTree = "<group>";
+		};
+		1322F4D420C371C8000A4119 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1322F4DB20C372F6000A4119 /* ATDefinePlanViewModel.h */,
+				1322F4DC20C372F6000A4119 /* ATDefinePlanViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1322F4D520C371C8000A4119 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1322F4D820C3721B000A4119 /* ATDefinePlanViewController.h */,
+				1322F4D920C3721B000A4119 /* ATDefinePlanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1322F4D620C371C8000A4119 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1322F4D720C371C8000A4119 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1322F4E420C37880000A4119 /* ATClassListCell.h */,
+				1322F4E520C37880000A4119 /* ATClassListCell.m */,
+				1322F4E620C37880000A4119 /* ATClassListCell.xib */,
+				1322F4DE20C373D1000A4119 /* ATDefinePlanTextCell.h */,
+				1322F4DF20C373D1000A4119 /* ATDefinePlanTextCell.m */,
+				1322F4E020C373D1000A4119 /* ATDefinePlanTextCell.xib */,
+				1322F4E920C378FE000A4119 /* ATDefineTimePlanCell.h */,
+				1322F4EA20C378FE000A4119 /* ATDefineTimePlanCell.m */,
+				1322F4EB20C378FE000A4119 /* ATDefineTimePlanCell.xib */,
+				1322F4EE20C38331000A4119 /* ATClassListSectionHeaderView.h */,
+				1322F4EF20C38331000A4119 /* ATClassListSectionHeaderView.m */,
+				1322F4F120C38341000A4119 /* ATClassListSectionHeaderView.xib */,
+				1322F4F920C389FC000A4119 /* ATDefineCalendarView.h */,
+				1322F4FA20C389FC000A4119 /* ATDefineCalendarView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1322F4FE20C39323000A4119 /* 选择课程 */ = {
+			isa = PBXGroup;
+			children = (
+				1322F4FF20C39323000A4119 /* ViewModel */,
+				1322F50020C39323000A4119 /* Controller */,
+				1322F50120C39323000A4119 /* Model */,
+				1322F50220C39323000A4119 /* View */,
+			);
+			path = "选择课程";
+			sourceTree = "<group>";
+		};
+		1322F4FF20C39323000A4119 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1322F50020C39323000A4119 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1322F50320C3934F000A4119 /* ATSelectClassViewController.h */,
+				1322F50420C3934F000A4119 /* ATSelectClassViewController.m */,
+				13DCB1DF20C4275000B93EF7 /* ATBaseSecletClassViewController.h */,
+				13DCB1E020C4275000B93EF7 /* ATBaseSecletClassViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1322F50120C39323000A4119 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1322F50220C39323000A4119 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13DCB1E520C42D1500B93EF7 /* ATSelectClassCell.h */,
+				13DCB1E620C42D1500B93EF7 /* ATSelectClassCell.m */,
+				13DCB1E720C42D1500B93EF7 /* ATSelectClassCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		92ACD55520C0EDF700BA45D1 /* ZJSTasks */ = {
 			isa = PBXGroup;
 			children = (
@@ -956,6 +1113,8 @@
 		92ACD55720C0EDF700BA45D1 /* K.O计划 */ = {
 			isa = PBXGroup;
 			children = (
+				1322F4FE20C39323000A4119 /* 选择课程 */,
+				1322F4D320C371C8000A4119 /* 制定我的计划 */,
 				92ACD55820C0EDF700BA45D1 /* Controller */,
 				92ACD55B20C0EDF700BA45D1 /* Model */,
 				92ACD55C20C0EDF700BA45D1 /* View */,
@@ -1001,6 +1160,10 @@
 				92ACD56920C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.h */,
 				92ACD56A20C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.m */,
 				92ACD56B20C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.xib */,
+				92A69DAE20C1308200A70203 /* ATStudyPlanCalenderAlertView.h */,
+				92A69DAF20C1308200A70203 /* ATStudyPlanCalenderAlertView.m */,
+				92A69DB120C1322500A70203 /* ATStudyPlanCalendarView.h */,
+				92A69DB220C1322500A70203 /* ATStudyPlanCalendarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1052,6 +1215,9 @@
 				92ACD6A720C1012C00BA45D1 /* ATPlanStateCell.h */,
 				92ACD6A820C1012C00BA45D1 /* ATPlanStateCell.m */,
 				92ACD6A920C1012C00BA45D1 /* ATPlanStateCell.xib */,
+				92A69DA920C12AD700A70203 /* ATFinishedPlanStateCell.h */,
+				92A69DAA20C12AD700A70203 /* ATFinishedPlanStateCell.m */,
+				92A69DAB20C12AD700A70203 /* ATFinishedPlanStateCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1497,6 +1663,8 @@
 		92ACD62920C0EDF700BA45D1 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				13DCB1E220C4297900B93EF7 /* TopButtonView.h */,
+				13DCB1E320C4297B00B93EF7 /* TopButtonView.m */,
 				92ACD62A20C0EDF700BA45D1 /* TXHudTool.h */,
 				92ACD62B20C0EDF700BA45D1 /* TXHudTool.m */,
 				92ACD62C20C0EDF700BA45D1 /* UIBarButtonItem+TXAdditions.h */,
@@ -2591,7 +2759,9 @@
 				FBB886BA20B6909800E15CA5 /* ATTeacherCell.xib in Resources */,
 				92ACD65D20C0EDF700BA45D1 /* ATExamPaperSectionView.xib in Resources */,
 				FBB8853C20B6908A00E15CA5 /* ATOrderCell.xib in Resources */,
+				13DCB1E920C42D1500B93EF7 /* ATSelectClassCell.xib in Resources */,
 				92ACD68D20C0EDF700BA45D1 /* SGQRCode.bundle in Resources */,
+				1322F4F220C38341000A4119 /* ATClassListSectionHeaderView.xib in Resources */,
 				FBB8853720B6908A00E15CA5 /* ATFriendPayViewController.xib in Resources */,
 				0B3AC64E20BF0E6F003CBFFC /* ATCommentCell.xib in Resources */,
 				92ACD6AB20C1012C00BA45D1 /* ATPlanStateCell.xib in Resources */,
@@ -2617,18 +2787,22 @@
 				92ACD68A20C0EDF700BA45D1 /* ATPullDownCell.xib in Resources */,
 				FBB8869F20B6909800E15CA5 /* ATSubjectSpreadCell.xib in Resources */,
 				92ACD66720C0EDF700BA45D1 /* ATTestDirrectionCell.xib in Resources */,
+				1322F4ED20C378FE000A4119 /* ATDefineTimePlanCell.xib in Resources */,
 				92ACD64420C0EDF700BA45D1 /* ATStudyPlanReusableView.xib in Resources */,
 				FBB886CB20B6909800E15CA5 /* ATBindPhoneViewController.xib in Resources */,
 				0BF9116920BD952E00559135 /* ATDirectoryCell.xib in Resources */,
 				FBB886D720B6909800E15CA5 /* ATMineCommentCell.xib in Resources */,
 				92ACD67420C0EDF700BA45D1 /* ATSignScheduleViewCell.xib in Resources */,
 				FBB884FE20B6903300E15CA5 /* LaunchScreen.storyboard in Resources */,
+				1322F4E820C37880000A4119 /* ATClassListCell.xib in Resources */,
 				92ACD65620C0EDF700BA45D1 /* ATExamClasssifyListCell.xib in Resources */,
 				FBB886EA20B6909800E15CA5 /* ATNoteCell.xib in Resources */,
 				92ACD67020C0EDF700BA45D1 /* ATSignCalendarCell.xib in Resources */,
 				FBB884FB20B6903300E15CA5 /* Assets.xcassets in Resources */,
 				FBB8870820B6909800E15CA5 /* CFDropDownMenuView.bundle in Resources */,
+				1322F4E220C373D1000A4119 /* ATDefinePlanTextCell.xib in Resources */,
 				92ACD68520C0EDF700BA45D1 /* .gitkeep in Resources */,
+				92A69DAD20C12AD700A70203 /* ATFinishedPlanStateCell.xib in Resources */,
 				FBB886BC20B6909800E15CA5 /* ATTeacherNavBar.xib in Resources */,
 				FBB884F920B6903100E15CA5 /* Main.storyboard in Resources */,
 				92ACD64220C0EDF700BA45D1 /* ATStudyPlanListCell.xib in Resources */,
@@ -2707,6 +2881,7 @@
 				FBB8869120B6909800E15CA5 /* ATTeacherExplainController.m in Sources */,
 				FBB886AD20B6909800E15CA5 /* ATIntervalHeaderView.m in Sources */,
 				FBB8853E20B6908A00E15CA5 /* FNTipsView.m in Sources */,
+				1322F4F020C38331000A4119 /* ATClassListSectionHeaderView.m in Sources */,
 				92ACD64B20C0EDF700BA45D1 /* ATBaseSystemRecommondPlanViewController.m in Sources */,
 				92ACD65F20C0EDF700BA45D1 /* ATTestAnalysisViewController.m in Sources */,
 				92ACD65020C0EDF700BA45D1 /* ATExamClasssifyViewController.m in Sources */,
@@ -2723,6 +2898,7 @@
 				FBB886AB20B6909800E15CA5 /* ATRankViewController.m in Sources */,
 				0BF9116720BD952E00559135 /* ATCourseDescriptionViewController.m in Sources */,
 				92ACD67520C0EDF700BA45D1 /* ATSignStatisticsCell.m in Sources */,
+				1322F4DD20C372F6000A4119 /* ATDefinePlanViewModel.m in Sources */,
 				0BF9116620BD952E00559135 /* ATDirectoryViewController.m in Sources */,
 				FBB8870620B6909800E15CA5 /* CFDropDownMenuView.m in Sources */,
 				FBB886F120B6909800E15CA5 /* UIButton+Extension.m in Sources */,
@@ -2747,6 +2923,7 @@
 				92ACD66F20C0EDF700BA45D1 /* ATSignCalendarCell.m in Sources */,
 				FBB886F920B6909800E15CA5 /* UIView+Click.m in Sources */,
 				FBB8868D20B6909800E15CA5 /* ATMainView.m in Sources */,
+				92A69DB320C1322500A70203 /* ATStudyPlanCalendarView.m in Sources */,
 				FBB886A220B6909800E15CA5 /* ATSubjectSpreadCell.m in Sources */,
 				FBB886F720B6909800E15CA5 /* UIView+Shake.m in Sources */,
 				92ACD68120C0EDF700BA45D1 /* BaseViewModel.m in Sources */,
@@ -2757,6 +2934,7 @@
 				92ACD65420C0EDF700BA45D1 /* ATExamPaperModel.m in Sources */,
 				92ACD67F20C0EDF700BA45D1 /* BaseView.m in Sources */,
 				FBB886FA20B6909800E15CA5 /* UIView+Extension.m in Sources */,
+				92A69DAC20C12AD700A70203 /* ATFinishedPlanStateCell.m in Sources */,
 				FBB884F620B6903100E15CA5 /* ViewController.m in Sources */,
 				92ACD68C20C0EDF700BA45D1 /* UIImage+SGImageSize.m in Sources */,
 				FBB886E220B6909800E15CA5 /* ATMineHelpCell.m in Sources */,
@@ -2766,6 +2944,7 @@
 				0BF9116820BD952E00559135 /* ATCommentViewController.m in Sources */,
 				FBB886A520B6909800E15CA5 /* ATHomeNavBar.m in Sources */,
 				0B3AC64C20BF0E6F003CBFFC /* ATBottomViewTool.m in Sources */,
+				1322F50520C3934F000A4119 /* ATSelectClassViewController.m in Sources */,
 				FBB886B120B6909800E15CA5 /* ATTeacherViewController.m in Sources */,
 				FBB886D920B6909800E15CA5 /* ATMineVIPFourthCell.m in Sources */,
 				FBB8868920B6909700E15CA5 /* ATMainViewController.m in Sources */,
@@ -2783,6 +2962,7 @@
 				FBB8869520B6909800E15CA5 /* ATHomeModel.m in Sources */,
 				FBB886E620B6909800E15CA5 /* ATErrorView.m in Sources */,
 				92ACD69B20C0EDF700BA45D1 /* UIView+category.m in Sources */,
+				1322F4DA20C3721B000A4119 /* ATDefinePlanViewController.m in Sources */,
 				92ACD67B20C0EDF700BA45D1 /* BaseModel.m in Sources */,
 				FBB886B820B6909800E15CA5 /* ATSubjectModel.m in Sources */,
 				0B3C5ED520B8F6A200A61750 /* ATMessagesModel.m in Sources */,
@@ -2818,6 +2998,7 @@
 				FBB8868C20B6909800E15CA5 /* ATNavigationBar.m in Sources */,
 				0BF9116520BD952E00559135 /* ATBaseTableViewController.m in Sources */,
 				0BF9116A20BD952E00559135 /* ATSubjectDetailView.m in Sources */,
+				13DCB1E420C4297B00B93EF7 /* TopButtonView.m in Sources */,
 				FBB886EE20B6909800E15CA5 /* UILabel+Extension.m in Sources */,
 				FBB8868F20B6909800E15CA5 /* ATEvaluationViewController.m in Sources */,
 				FBB886FE20B6909800E15CA5 /* UIImageView+BXExtension.m in Sources */,
@@ -2834,6 +3015,7 @@
 				92ACD66B20C0EDF700BA45D1 /* ATQRCodeScanViewController.m in Sources */,
 				92ACD64320C0EDF700BA45D1 /* ATStudyPlanReusableView.m in Sources */,
 				92ACD64E20C0EDF700BA45D1 /* ATSystemRecommendViewController.m in Sources */,
+				92A69DB020C1308200A70203 /* ATStudyPlanCalenderAlertView.m in Sources */,
 				FBB8870520B6909800E15CA5 /* CFLabelOnLeftButton.m in Sources */,
 				92ACD68920C0EDF700BA45D1 /* ATPullDownCell.m in Sources */,
 				FBB886BE20B6909800E15CA5 /* ATTeacherDetailCell.m in Sources */,
@@ -2844,9 +3026,11 @@
 				FBB886AE20B6909800E15CA5 /* ATRankMineView.m in Sources */,
 				FBB886F420B6909800E15CA5 /* UIView+KRKit.m in Sources */,
 				FBB8853920B6908A00E15CA5 /* ATRechargeListViewController.m in Sources */,
+				1322F4EC20C378FE000A4119 /* ATDefineTimePlanCell.m in Sources */,
 				FBB8870120B6909800E15CA5 /* NSString+KRKit.m in Sources */,
 				92ACD65220C0EDF700BA45D1 /* ATTeacherTalkViewController.m in Sources */,
 				92ACD64720C0EDF700BA45D1 /* ATFinishedPlanViewController.m in Sources */,
+				13DCB1E120C4275000B93EF7 /* ATBaseSecletClassViewController.m in Sources */,
 				FBB8870320B6909800E15CA5 /* UITableView+RemoveEmptyCell.m in Sources */,
 				92ACD65C20C0EDF700BA45D1 /* ATExamPaperSectionView.m in Sources */,
 				FBB8869C20B6909800E15CA5 /* ATSectionHeader.m in Sources */,
@@ -2863,10 +3047,12 @@
 				FBB8853A20B6908A00E15CA5 /* ATOrderViewController.m in Sources */,
 				92ACD68B20C0EDF700BA45D1 /* JPullDownMenu.m in Sources */,
 				92ACD66D20C0EDF700BA45D1 /* ATSignAlertView.m in Sources */,
+				1322F4FB20C389FC000A4119 /* ATDefineCalendarView.m in Sources */,
 				92ACD64920C0EDF700BA45D1 /* ATOngoingPlanViewController.m in Sources */,
 				FBB8853620B6908A00E15CA5 /* MyTools.m in Sources */,
 				FBB8869020B6909800E15CA5 /* ATSubjectViewController.m in Sources */,
 				92ACD65E20C0EDF700BA45D1 /* ATExamPaperViewModel.m in Sources */,
+				1322F4E720C37880000A4119 /* ATClassListCell.m in Sources */,
 				FBB886DD20B6909800E15CA5 /* ATMineVIPThirdCell.m in Sources */,
 				FBB8868E20B6909800E15CA5 /* ATCourseController.m in Sources */,
 				FBB886F620B6909800E15CA5 /* UIView+IBExtension.m in Sources */,
@@ -2876,6 +3062,7 @@
 				92ACD64820C0EDF700BA45D1 /* ATMyPlanStateViewController.m in Sources */,
 				FBB8869720B6909800E15CA5 /* ATSubjectMainCell.m in Sources */,
 				FBB886D420B6909800E15CA5 /* ATMineHelpViewController.m in Sources */,
+				1322F4E120C373D1000A4119 /* ATDefinePlanTextCell.m in Sources */,
 				0BF9116D20BD952F00559135 /* ATContentViewCell.m in Sources */,
 				92ACD66C20C0EDF700BA45D1 /* ATSignViewController.m in Sources */,
 				FBB8868B20B6909800E15CA5 /* ATSuperViewController.m in Sources */,
@@ -2892,6 +3079,7 @@
 				FBB886A920B6909800E15CA5 /* ATQuotaDetailViewController.m in Sources */,
 				FBB886DB20B6909800E15CA5 /* ATMineVIPCell.m in Sources */,
 				FBB886D520B6909800E15CA5 /* ATMinCouponViewController.m in Sources */,
+				13DCB1E820C42D1500B93EF7 /* ATSelectClassCell.m in Sources */,
 				FBB8853020B6908A00E15CA5 /* ATSearchViewController.m in Sources */,
 				92ACD65520C0EDF700BA45D1 /* ATExamClasssifyListCell.m in Sources */,
 				FBB8853220B6908A00E15CA5 /* ATNetWorking.m in Sources */,

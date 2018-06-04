@@ -12,5 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *classNameLabel;
 @property (weak, nonatomic) IBOutlet UIView *backV;
+@property (weak, nonatomic) IBOutlet UIView *headerBackView;
+@property (weak, nonatomic) IBOutlet UIButton *startStudyButton;
+- (IBAction)startStudyButtonClick:(id)sender;
 
 @end

@@ -23,7 +23,7 @@
 
 
 - (void)tx_configSubViews{
-    
+    self.view.backgroundColor = white_color;
     [self.collectionView setFrame: CGRectMake(0, 13, Screen_Width - 26, Screen_Height - kNavigationBarHeight - 40)];
     [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudentRecommondCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"ATStudentRecommondCell"];
     self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
@@ -34,7 +34,7 @@
     }
     
     [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 13, kBottomBarHeight, 13));
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 13, kBottomBarHeight + 20, 13));
     }];
 }
 
@@ -73,7 +73,11 @@
 //设置每个cell的大小 Item网格
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat width = (self.collectionView.bounds.size.width - 10) / 2.0f;
-    return CGSizeMake(width, 228);
+    return CGSizeMake(width, 251);
+}
+
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(18, 0, 0, 0);
 }
 
 
