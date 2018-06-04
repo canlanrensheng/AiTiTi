@@ -8,6 +8,7 @@
 
 #import "ATCommentMenuView.h"
 
+#define ATCommentBgHeight 753/2
 #define MYCOLOR(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 @interface ATCommentMenuView ()<UIGestureRecognizerDelegate,UITextViewDelegate>
 
@@ -40,14 +41,15 @@
     
     // 弹出视图
     UIImageView *alertView = [[UIImageView alloc] init];
-    alertView.image = [UIImage imageNamed:@"temp_bg"];
+    alertView.image = [UIImage imageNamed:@"commnet_bg"];
+    alertView.contentMode = UIViewContentModeScaleToFill;
     alertView.userInteractionEnabled = YES;
     UITapGestureRecognizer * alertViewTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:nil];
     [alertView addGestureRecognizer:alertViewTap];
     [self.bgView addSubview:alertView];
     self.alertView = alertView;
     //从底部弹窗设置y:Screen_Height
-    self.alertView.frame = CGRectMake(0, Screen_Height, Screen_Width, 292);
+    self.alertView.frame = CGRectMake(0, Screen_Height, Screen_Width, ATCommentBgHeight);
 //    [alertView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.bottom.equalTo(self.bgView.mas_bottom);
 //        make.left.right.equalTo(self.bgView);
@@ -229,7 +231,7 @@
     [UIView animateWithDuration:0.5 animations:^{
         // 在0.5秒内做的事情
         CGRect rec = self.alertView.frame;
-        rec.origin.y = Screen_Height - 292;
+        rec.origin.y = Screen_Height - ATCommentBgHeight;
         self.alertView.frame = rec;
     } completion:^(BOOL finished) {
         

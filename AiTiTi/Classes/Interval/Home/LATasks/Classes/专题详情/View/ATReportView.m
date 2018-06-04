@@ -11,6 +11,8 @@
 
 #import "ATReportView.h"
 #import "ATReportCell.h"
+
+#define ATReportBgHeight 830/2
 #define MYCOLOR(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
 @interface ATReportView ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
@@ -44,11 +46,12 @@
     
     // 弹窗视图
     UIImageView *alertView = [[UIImageView alloc] init];
-    alertView.image = [UIImage imageNamed:@"temp_bg"];
+    alertView.image = [UIImage imageNamed:@"report_bg"];
+    alertView.contentMode = UIViewContentModeScaleToFill;
     alertView.userInteractionEnabled = YES;
     [self.bgView addSubview:alertView];
     self.alertView = alertView;
-    self.alertView.frame = CGRectMake(0, Screen_Height, Screen_Width, 292);
+    self.alertView.frame = CGRectMake(0, Screen_Height, Screen_Width, ATReportBgHeight);
     
 //    [alertView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.bottom.equalTo(self.bgView.mas_bottom);
@@ -122,7 +125,7 @@
     [kWindow addSubview:self];
     [UIView animateWithDuration:0.5 animations:^{
         CGRect rec = self.alertView.frame;
-        rec.origin.y = Screen_Height - 292;
+        rec.origin.y = Screen_Height - ATReportBgHeight;
         self.alertView.frame = rec;
     } completion:^(BOOL finished) {
         

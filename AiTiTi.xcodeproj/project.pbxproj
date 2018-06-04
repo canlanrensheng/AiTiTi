@@ -16,6 +16,9 @@
 		0B1998A420C026130050BA4C /* YSQDrodownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998A320C026130050BA4C /* YSQDrodownMenu.m */; };
 		0B1998A720C027650050BA4C /* ATCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998A620C027650050BA4C /* ATCommentView.m */; };
 		0B1998AB20C042A60050BA4C /* ATCommentMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998AA20C042A60050BA4C /* ATCommentMenuView.m */; };
+		0B2CCF7D20C51A00000B561A /* ATCommentBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2CCF7C20C51A00000B561A /* ATCommentBackViewController.m */; };
+		0B2CCF8120C54D1D000B561A /* ATTextFieldBottomTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2CCF8020C54D1D000B561A /* ATTextFieldBottomTool.m */; };
+		0B2CCF8320C54D2E000B561A /* ATTextFieldBottomTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CCF8220C54D2E000B561A /* ATTextFieldBottomTool.xib */; };
 		0B3AC64A20BF0E6F003CBFFC /* ATBottomViewTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3AC64220BF0E67003CBFFC /* ATBottomViewTool.xib */; };
 		0B3AC64C20BF0E6F003CBFFC /* ATBottomViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC64520BF0E69003CBFFC /* ATBottomViewTool.m */; };
 		0B3AC64D20BF0E6F003CBFFC /* ATCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC64720BF0E6B003CBFFC /* ATCommentCell.m */; };
@@ -289,6 +292,11 @@
 		0B1998A620C027650050BA4C /* ATCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommentView.m; sourceTree = "<group>"; };
 		0B1998A920C042A60050BA4C /* ATCommentMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommentMenuView.h; sourceTree = "<group>"; };
 		0B1998AA20C042A60050BA4C /* ATCommentMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommentMenuView.m; sourceTree = "<group>"; };
+		0B2CCF7B20C51A00000B561A /* ATCommentBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommentBackViewController.h; sourceTree = "<group>"; };
+		0B2CCF7C20C51A00000B561A /* ATCommentBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommentBackViewController.m; sourceTree = "<group>"; };
+		0B2CCF7F20C54D1D000B561A /* ATTextFieldBottomTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTextFieldBottomTool.h; sourceTree = "<group>"; };
+		0B2CCF8020C54D1D000B561A /* ATTextFieldBottomTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTextFieldBottomTool.m; sourceTree = "<group>"; };
+		0B2CCF8220C54D2E000B561A /* ATTextFieldBottomTool.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATTextFieldBottomTool.xib; sourceTree = "<group>"; };
 		0B3AC64220BF0E67003CBFFC /* ATBottomViewTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATBottomViewTool.xib; sourceTree = "<group>"; };
 		0B3AC64320BF0E67003CBFFC /* ATBottomViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBottomViewTool.h; sourceTree = "<group>"; };
 		0B3AC64520BF0E69003CBFFC /* ATBottomViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBottomViewTool.m; sourceTree = "<group>"; };
@@ -854,6 +862,8 @@
 				0BF9115520BD952E00559135 /* ATDirectoryViewController.m */,
 				0B1633CE20C42E2700CE7D42 /* ATLASubjectViewController.h */,
 				0B1633CF20C42E2700CE7D42 /* ATLASubjectViewController.m */,
+				0B2CCF7B20C51A00000B561A /* ATCommentBackViewController.h */,
+				0B2CCF7C20C51A00000B561A /* ATCommentBackViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -884,6 +894,9 @@
 				0B1633C620C4067700CE7D42 /* ATReportCell.h */,
 				0B1633C720C4067700CE7D42 /* ATReportCell.m */,
 				0B1633C820C4067700CE7D42 /* ATReportCell.xib */,
+				0B2CCF7F20C54D1D000B561A /* ATTextFieldBottomTool.h */,
+				0B2CCF8020C54D1D000B561A /* ATTextFieldBottomTool.m */,
+				0B2CCF8220C54D2E000B561A /* ATTextFieldBottomTool.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2441,6 +2454,7 @@
 				13603F4C20BEE29A00A1C73A /* ATSignAlertView.xib in Resources */,
 				FBB886A120B6909800E15CA5 /* ATSubjectMainCell.xib in Resources */,
 				FBB886E320B6909800E15CA5 /* ATCouponCell.xib in Resources */,
+				0B2CCF8320C54D2E000B561A /* ATTextFieldBottomTool.xib in Resources */,
 				13603F6820BEE29A00A1C73A /* ATTestFrequencyCell.xib in Resources */,
 				FBB8869820B6909800E15CA5 /* ATHomeMainCell.xib in Resources */,
 				13603F7420BEE29A00A1C73A /* ATExamClasssifyListCell.xib in Resources */,
@@ -2590,6 +2604,7 @@
 				FBB8868D20B6909800E15CA5 /* ATMainView.m in Sources */,
 				FBB886A220B6909800E15CA5 /* ATSubjectSpreadCell.m in Sources */,
 				FBB886F720B6909800E15CA5 /* UIView+Shake.m in Sources */,
+				0B2CCF7D20C51A00000B561A /* ATCommentBackViewController.m in Sources */,
 				FBB886D220B6909800E15CA5 /* ATMineMoneyViewController.m in Sources */,
 				13603F9A20BEE29B00A1C73A /* TXHudTool.m in Sources */,
 				13603F4E20BEE29A00A1C73A /* ATSignAlertView.m in Sources */,
@@ -2660,6 +2675,7 @@
 				FBB886B520B6909800E15CA5 /* ATSystemCourseController.m in Sources */,
 				FBB8870020B6909800E15CA5 /* NSString+BXExtension.m in Sources */,
 				FBB8870920B6909800E15CA5 /* FSSegmentTitleView.m in Sources */,
+				0B2CCF8120C54D1D000B561A /* ATTextFieldBottomTool.m in Sources */,
 				13603F9620BEE29B00A1C73A /* UILabel+TXInit.m in Sources */,
 				FBB8850120B6903300E15CA5 /* main.m in Sources */,
 				FBB8868C20B6909800E15CA5 /* ATNavigationBar.m in Sources */,
