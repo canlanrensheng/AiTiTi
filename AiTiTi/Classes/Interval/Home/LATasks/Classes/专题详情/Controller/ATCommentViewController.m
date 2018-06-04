@@ -11,6 +11,7 @@
 #import "ATCommentView.h"
 #import "ATCommentMenuView.h"
 #import "ATReportView.h"
+#import "ATCommentBackViewController.h"
 
 @interface ATCommentViewController ()
 @property (nonatomic, strong) ATCommentView *commnetView;
@@ -45,6 +46,7 @@
 //            @strongify(self);
         };
         [self.menuView la_show];
+        
     };
 }
 
@@ -66,6 +68,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 0) {
+        ATCommentBackViewController *commentBackVC = [[ATCommentBackViewController alloc] init];
+        [self.navigationController pushViewController:commentBackVC animated:YES];
+        return;
+    }
+    
     // 当menuController显示依赖于第一响应者，当点击另外的cell时，当前cell取消第一响应者状态，menuController自动消失
     UIMenuController *menu = [UIMenuController sharedMenuController];
     // 防止点击多次创建

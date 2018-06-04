@@ -8,6 +8,9 @@
 
 #import "BaseTableViewController.h"
 
+/**
+ 专题列表
+ */
 @interface ATLASubjectViewController : BaseTableViewController
 
 @end
