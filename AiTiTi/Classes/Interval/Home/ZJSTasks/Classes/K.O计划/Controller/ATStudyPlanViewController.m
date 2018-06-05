@@ -103,7 +103,10 @@
 //设置每个cell的大小 Item网格
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat width = (self.collectionView.bounds.size.width - 10) / 2.0f;
-    return CGSizeMake(width, 228);
+    if(indexPath.section == 0){
+        return CGSizeMake(width, 228);
+    }
+    return CGSizeMake(width, 251);
 }
 
 //设置cell上下左右侧距离

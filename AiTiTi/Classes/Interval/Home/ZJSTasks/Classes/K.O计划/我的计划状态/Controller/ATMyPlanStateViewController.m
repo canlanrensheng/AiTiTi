@@ -45,7 +45,7 @@
     UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc]init];
     flowlayout.minimumInteritemSpacing = 2;
     flowlayout.minimumLineSpacing = 2;
-    CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height );
+    CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - kBottomBarHeight);
     [flowlayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     UICollectionView *collectionMain = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:flowlayout];
     collectionMain.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];

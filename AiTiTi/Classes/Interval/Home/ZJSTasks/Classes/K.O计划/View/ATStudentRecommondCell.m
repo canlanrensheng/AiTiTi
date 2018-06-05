@@ -18,6 +18,9 @@
     
     self.classNameLabel.clipsToBounds = YES;
     self.classNameLabel.layer.cornerRadius = 3.0f;
+    
+    [self.iconImageView clipWithCornerRadius:13.5 borderColor:nil
+                                 borderWidth:0];
 }
 
 @end

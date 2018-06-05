@@ -22,18 +22,19 @@
 
 
 - (void)tx_configSubViews{
-
+    
     [self.collectionView setFrame: CGRectMake(0, 13, Screen_Width - 26, Screen_Height - kNavigationBarHeight - 40)];
     [self.collectionView registerNib:[UINib nibWithNibName:@"ATStudyPlanListCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"ATStudyPlanListCell"];
     self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = white_color;
     if (@available(iOS 11.0, *)) {
         self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
     
     [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 13, kBottomBarHeight, 13));
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 13 , kBottomBarHeight + 20, 13));
     }];
 }
 
@@ -80,6 +81,9 @@
     return CGSizeMake(width, 228);
 }
 
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(18, 0, 0, 0);
+}
 
 @end
 
