@@ -16,6 +16,7 @@
 //
 
 #import "ATSelectClassViewController.h"
+
 #import "ATTrueTitleViewController.h"
 #import "ATProjectTitleViewController.h"
 #import "ATSystemClassViewController.h"
@@ -65,7 +66,7 @@
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-    self.controllersClass = @[@"ATTrueTitleViewController",@"ATProjectTitleViewController",@"ATSystemClassViewController"];
+    self.controllersClass = @[@"ATBaseSecletClassViewController",@"ATBaseSecletClassViewController",@"ATBaseSecletClassViewController"];
     self.navigationItem.titleView = self.segmentControl;
     //    self.navigationItem.titleView.frame = CGRectMake(0, 0, 150, 36);
     
@@ -139,6 +140,7 @@
         ATSystemClassViewController *listVC2 = [[ATSystemClassViewController alloc] init];
         [self addChildViewController:listVC2];
         [controllers addObject:listVC2];
+
         _controllers = controllers;
     }
     return _controllers;
