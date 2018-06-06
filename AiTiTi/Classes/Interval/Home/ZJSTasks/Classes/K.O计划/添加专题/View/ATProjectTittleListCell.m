@@ -13,8 +13,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.backgroundColor = RGB(240, 240, 240);
-    [self.backView clipWithCornerRadius:5.0 borderColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f]  borderWidth:0];
+//    self.backgroundColor = RGB(240, 240, 240);
+    [self.backView clipWithCornerRadius:5.0 borderColor:[UIColor colorWithRed:221.0f/255.0f green:221.0f/255.0f blue:221.0f/255.0f alpha:1.0f]   borderWidth:0.5];
+
     [self.classNameLabel clipWithCornerRadius:3.0 borderColor:nil borderWidth:0];
     [self.iconImageView clipWithCornerRadius:12.5 borderColor:nil borderWidth:0];
 }
