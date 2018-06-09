@@ -1,15 +1,14 @@
 //
-//  ATStudyPlanCalendarView.m
+//  ATDefineCalendarView.m
 //  AiTiTi
 //
-//  Created by Oma-002 on 2018/6/1.
+//  Created by 张金山 on 2018/6/3.
 //  Copyright © 2018年 云辉. All rights reserved.
 //
 
-#import "ATStudyPlanCalendarView.h"
+#import "ATDefineCalendarView.h"
 
-
-@implementation ATStudyPlanCalendarView
+@implementation ATDefineCalendarView
 {
     UIButton  *_selectButton;
     NSMutableArray *_daysArray;
@@ -24,22 +23,14 @@
     NSDate *lpDate;
 }
 
-- (id)initWithFrame:(CGRect)frame cancleBlock:(cancleAlertViewBlock)cancleBlock calendarAlertViewBlock:(calendarAlertViewBlock)calendarAlertViewBlock
-{
+- (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        //        self.backgroundColor = red_color;
         _daysArray = [NSMutableArray arrayWithCapacity:42];
         for (int i = 0; i < 42; i++) {
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             [self addSubview:button];
             [_daysArray addObject:button];
-            if(cancleBlock){
-                self.cancleSheetBlock = cancleBlock;
-            }
-            if(calendarAlertViewBlock){
-                self.calendarAlertViewBlock = calendarAlertViewBlock;
-            }
         }
     }
     return self;
@@ -55,8 +46,10 @@
     
     lpDate = self.date;
     
+    CGFloat height =  29 + 20 + 30 + 20 + 30 + 6 * 40;
+    
     UIView *backView = [[UIView alloc] init];
-    backView.frame = CGRectMake(20, 0, self.bounds.size.width - 40, self.bounds.size.height - 20);
+    backView.frame = CGRectMake(20, 0, self.bounds.size.width - 40, height);
     backView.clipsToBounds = YES;
     backView.layer.cornerRadius = 5.0f;
     backView.layer.borderColor = RGB(240, 240, 240).CGColor;
@@ -69,7 +62,7 @@
     headlabel = [[UILabel alloc] init];
     headlabel.text = [NSString stringWithFormat:@"%li年%@月",[LPCalendarDate year:date],[self transformInter:[LPCalendarDate month:date]]];
     headlabel.font     = [UIFont systemFontOfSize:16];
-    headlabel.frame           = CGRectMake( (self.frame.size.width - 90 - 40) / 2, 20, 90, 20);
+    headlabel.frame           = CGRectMake( 0, 20, 90, 20);
     headlabel.centerX = self.centerX - 20;
 //    headlabel.backgroundColor = [UIColor redColor];
     headlabel.textAlignment   = NSTextAlignmentCenter;
@@ -101,7 +94,7 @@
     weekBg.frame = CGRectMake(16, CGRectGetMaxY(headlabel.frame) + 30, backView.frame.size.width - 32, 20);
     CGFloat weekBtnWidth = (backView.frame.size.width - 32) / 7;
     [backView addSubview:weekBg];
-
+    
     
     for (int i = 0; i < 7; i++) {
         UILabel *week = [[UILabel alloc] init];
@@ -121,7 +114,7 @@
     //  3.days (1-31)
     for (int i = 0; i < _daysArray.count; i++) {
         
-        int x = (i % 7) * (calendarBtnHeight + padding) + 16 + 16;
+        int x = (i % 7) * (calendarBtnHeight + padding) + 16;
         int y = (i / 7) * (calendarBtnHeight + 10) + CGRectGetMaxY(weekBg.frame) + 10;
         
         UIButton *dayButton = _daysArray[i];
@@ -204,7 +197,7 @@
     {
         return YES;
     }else
-    return NO;
+        return NO;
 }
 
 //已经签名的
@@ -296,7 +289,6 @@
     //    NSLog(@"获取到的当前的时间是:");
     [self setStyle_Today:button];
     _dayButton = button;
-    self.calendarAlertViewBlock([NSString stringWithFormat:[NSString stringWithFormat:@"%li-%@-%@",[LPCalendarDate year:lpDate],[self transformInter:[LPCalendarDate month:lpDate]],_dayButton.currentTitle]]);
 }
 
 - (NSString *)transformInter:(NSInteger)inter{
@@ -307,9 +299,5 @@
     return  [NSString stringWithFormat:@"%li",inter];;
 }
 
-//取消按钮的操作
-- (void)cancleButtonClick:(UIButton *)button{
-    self.cancleSheetBlock();
-}
 
 @end

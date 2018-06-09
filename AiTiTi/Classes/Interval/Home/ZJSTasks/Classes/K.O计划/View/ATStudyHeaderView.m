@@ -9,6 +9,7 @@
 #import "ATStudyHeaderView.h"
 #import "ATMyPlanStateViewController.h"
 #import "ATStudyPlanCalenderAlertView.h"
+#import "ATDefinePlanViewController.h"
 @interface ATStudyHeaderView()
 
 @property (nonatomic,strong) ATStudyPlanCalenderAlertView *alertView;
@@ -31,6 +32,8 @@
 }
 
 - (IBAction)createPlanButtonClick:(id)sender {
+    ATDefinePlanViewController *planStateVC = [[ATDefinePlanViewController alloc] init];
+    [VisibleViewController().navigationController pushViewController:planStateVC animated:YES];
 }
 
 - (IBAction)satrtStudyButtonClick:(id)sender {

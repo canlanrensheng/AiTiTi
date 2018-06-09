@@ -62,32 +62,32 @@
                             <constraint firstItem="uAf-sp-K6Z" firstAttribute="leading" secondItem="alr-sq-d7i" secondAttribute="leading" id="ylX-HO-Nim"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="时间" translatesAutoresizingMaskIntoConstraints="NO" id="4Z0-Jb-CtJ">
-                        <rect key="frame" x="12" y="114" width="11" height="11"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="时间-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Z0-Jb-CtJ">
+                        <rect key="frame" x="12" y="114" width="13" height="13"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60分钟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZi-MZ-Wbe">
-                        <rect key="frame" x="28" y="112.5" width="37" height="14"/>
+                        <rect key="frame" x="30" y="113.5" width="37" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建议2课/天，7天完成" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TE-9D-20b">
-                        <rect key="frame" x="28" y="134.5" width="107" height="14"/>
+                        <rect key="frame" x="28" y="136.5" width="107" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="时间" translatesAutoresizingMaskIntoConstraints="NO" id="Oyw-MO-QOE">
-                        <rect key="frame" x="12" y="136" width="11" height="11"/>
+                        <rect key="frame" x="12" y="138" width="11" height="11"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="456人加入该计划" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyp-CZ-iM1">
-                        <rect key="frame" x="30" y="157.5" width="89" height="14"/>
+                        <rect key="frame" x="30" y="159.5" width="89" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-Ce-rN8">
-                        <rect key="frame" x="12" y="211.5" width="34" height="16"/>
+                        <rect key="frame" x="12" y="213.5" width="34" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="oDW-Qm-AxQ"/>
                         </constraints>
@@ -97,16 +97,16 @@
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxm-3X-xCa">
-                        <rect key="frame" x="190" y="208.5" width="41" height="22"/>
+                        <rect key="frame" x="190" y="210.5" width="41" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="1" green="0.2274509804" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="人" translatesAutoresizingMaskIntoConstraints="NO" id="kuG-k1-Db7">
-                        <rect key="frame" x="12" y="158" width="13" height="13"/>
+                        <rect key="frame" x="12" y="160" width="13" height="13"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tT3-sd-fNi">
-                        <rect key="frame" x="12" y="184.5" width="27" height="27"/>
+                        <rect key="frame" x="12" y="186.5" width="27" height="27"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="27" id="4vg-ZX-rMj"/>
@@ -152,5 +152,6 @@
         <image name="k.o" width="127" height="59"/>
         <image name="人" width="13" height="13"/>
         <image name="时间" width="11" height="11"/>
+        <image name="时间-1" width="13" height="13"/>
     </resources>
 </document>
