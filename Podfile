@@ -1,0 +1,18 @@
+platform :ios, '8.0'
+target 'AiTiTi' do
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+    pod 'SVProgressHUD'
+    pod 'MJRefresh'
+    pod 'MJExtension'
+    pod 'UMCShare/UI'
+    pod 'UMCShare/Social/WeChat'
+    pod 'UMCShare/Social/QQ'
+    pod 'LBXScan/LBXNative'
+    pod 'LBXScan/UI'
+    pod 'SDCycleScrollView'
+    pod 'Masonry'
+    pod 'IQKeyboardManager', '~> 6.0.3'
+    pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+    pod 'ZXSegmentController'
+end

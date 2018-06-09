@@ -9,5 +9,7 @@
 #import "BaseCollectionViewCell.h"
 
 @interface ATStudyPlanListCell : BaseCollectionViewCell
+@property (weak, nonatomic) IBOutlet UIView *headerBackView;
+@property (weak, nonatomic) IBOutlet UILabel *classNameLabel;
 
 @end

@@ -8,6 +8,9 @@
 
 #import "BaseView.h"
 
+/**
+ 评论回复底部textField工具条
+ */
 @interface ATTextFieldBottomTool : BaseView
-
+@property (nonatomic, copy) void (^releaseBtnBlock)(NSString *);
 @end

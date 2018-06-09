@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ATBottomViewTool : UIView
+@property (weak, nonatomic) IBOutlet UIButton *startLearnBtn;
 + (ATBottomViewTool *)setUpBottomViewTool;
 @end

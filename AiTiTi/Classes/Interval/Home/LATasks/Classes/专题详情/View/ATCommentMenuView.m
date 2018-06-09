@@ -8,7 +8,7 @@
 
 #import "ATCommentMenuView.h"
 
-#define ATCommentBgHeight 753/2
+#define ATCommentBgHeight 730/2
 #define MYCOLOR(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 @interface ATCommentMenuView ()<UIGestureRecognizerDelegate,UITextViewDelegate>
 
@@ -61,10 +61,10 @@
     titleLabel.text = @"给老师的课程评个星吧~";
     titleLabel.font = [UIFont systemFontOfSize:15];
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.textColor = RGB(255, 255, 255);
+    titleLabel.textColor = [UIColor blackColor];
     [alertView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(15);
+        make.top.mas_equalTo(80);
         make.centerX.equalTo(alertView.mas_centerX);
     }];
     
@@ -74,7 +74,7 @@
     NSMutableArray *tempArr = [NSMutableArray array];
     for (int i = 0; i< 5; i++) {
         UIButton *starBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        starBtn.frame = CGRectMake(45 + i * (starBtnW + starBtnSpace), 25 + 20, starBtnW, starBtnW);
+        starBtn.frame = CGRectMake(45 + i * (starBtnW + starBtnSpace), 80 + 40, starBtnW, starBtnW);
         starBtn.tag = i;
         [starBtn setBackgroundImage:[UIImage imageNamed:@"star_default"] forState:UIControlStateNormal];
         [starBtn setBackgroundImage:[UIImage imageNamed:@"star_select"] forState:UIControlStateSelected];
@@ -85,6 +85,21 @@
     }
     [self.btnArray removeAllObjects];
     [self.btnArray addObjectsFromArray:tempArr];
+    
+    // 发表
+    UIButton *commentBtn = [[UIButton alloc] init];
+    [commentBtn setTitle:@"发表" forState:UIControlStateNormal];
+    [commentBtn setBackgroundColor:RGB(54, 181, 252)];
+    commentBtn.layer.cornerRadius = 35/2;
+    commentBtn.layer.masksToBounds = YES;
+    [commentBtn addTarget:self action:@selector(commentBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [alertView addSubview:commentBtn];
+    [commentBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(35);
+        make.right.mas_equalTo(-35);
+        make.height.mas_equalTo(35);
+        make.bottom.equalTo(alertView.mas_bottom).offset(-30);
+    }];
     
     // textView
     UITextView *textView = [[UITextView alloc] init];
@@ -113,8 +128,9 @@
     [textView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(15);
         make.right.mas_equalTo(-15);
-        make.top.equalTo(self.starBtn.mas_bottom).mas_offset(20);
+//      make.top.equalTo(self.starBtn.mas_bottom).mas_offset(20);
         make.height.mas_equalTo(100);
+        make.bottom.equalTo(commentBtn.mas_top).offset(-30);;
     }];
     // 通过运行时，发现UITextView有一个叫做“_placeHolderLabel”的私有变量
     unsigned int count = 0;
@@ -128,21 +144,7 @@
     // keyboard
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    
-    // 发表
-    UIButton *commentBtn = [[UIButton alloc] init];
-    [commentBtn setTitle:@"发表" forState:UIControlStateNormal];
-    [commentBtn setBackgroundColor:RGB(54, 181, 252)];
-    commentBtn.layer.cornerRadius = 35/2;
-    commentBtn.layer.masksToBounds = YES;
-    [commentBtn addTarget:self action:@selector(commentBtnAction) forControlEvents:UIControlEventTouchUpInside];
-    [alertView addSubview:commentBtn];
-    [commentBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(35);
-        make.right.mas_equalTo(-35);
-        make.height.mas_equalTo(35);
-        make.top.equalTo(textView.mas_bottom).offset(20);
-    }];
+
 }
 
 
@@ -259,6 +261,9 @@
     return _btnArray;
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 @end
 

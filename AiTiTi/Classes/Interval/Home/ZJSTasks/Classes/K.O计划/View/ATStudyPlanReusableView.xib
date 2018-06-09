@@ -16,13 +16,13 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K.O计划推荐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSA-X8-pxM">
-                    <rect key="frame" x="23" y="14.5" width="104.5" height="21.5"/>
+                    <rect key="frame" x="0.0" y="14.5" width="104.5" height="21.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oor-eC-IrV">
-                    <rect key="frame" x="235" y="12.5" width="62" height="25"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oor-eC-IrV">
+                    <rect key="frame" x="258" y="12.5" width="62" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="7wa-9e-JLB"/>
                         <constraint firstAttribute="width" constant="62" id="zkn-zs-aZQ"/>
@@ -35,9 +35,9 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="NSA-X8-pxM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="23" id="9QD-rG-vHA"/>
+                <constraint firstItem="NSA-X8-pxM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="9QD-rG-vHA"/>
                 <constraint firstItem="NSA-X8-pxM" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="P3D-BJ-2pR"/>
-                <constraint firstAttribute="trailing" secondItem="Oor-eC-IrV" secondAttribute="trailing" constant="23" id="UgC-VU-vJw"/>
+                <constraint firstAttribute="trailing" secondItem="Oor-eC-IrV" secondAttribute="trailing" id="UgC-VU-vJw"/>
                 <constraint firstItem="Oor-eC-IrV" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="lbV-4h-3bn"/>
             </constraints>
             <connections>

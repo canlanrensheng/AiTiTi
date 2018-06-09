@@ -7,8 +7,6 @@
 //
 
 #import "ATSearchViewController.h"
-#import <SKTagView.h>
-
 @interface ATSearchViewController ()
 
 @property(nonatomic,strong)SKTagView * tagView;

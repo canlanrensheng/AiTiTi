@@ -25,7 +25,7 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     
-    self.view.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor blackColor];
     
 
     switch (_libraryType) {

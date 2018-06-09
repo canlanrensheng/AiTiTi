@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ATEvaluationBottomTool">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELn-RW-eAn">
+                    <rect key="frame" x="26" y="6" width="152" height="37"/>
+                    <color key="backgroundColor" red="0.1764705882352941" green="0.70588235294117641" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="zN0-Px-ke9"/>
+                    </constraints>
+                    <state key="normal" title="高考测试">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18.25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="collegeExaminationBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="sNs-va-zaK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbF-q9-xkv">
+                    <rect key="frame" x="204" y="5.5" width="145" height="37"/>
+                    <color key="backgroundColor" red="1" green="0.54117647058823526" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="单元测试">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18.25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="unitTestingBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wpy-Uq-6NA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ELn-RW-eAn" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="2OD-tm-rP3"/>
+                <constraint firstItem="ELn-RW-eAn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="6gg-Co-Ymi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ELn-RW-eAn" secondAttribute="bottom" constant="6" id="ASk-QB-d4d"/>
+                <constraint firstItem="ELn-RW-eAn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="Po1-gI-VxO"/>
+                <constraint firstItem="rbF-q9-xkv" firstAttribute="leading" secondItem="ELn-RW-eAn" secondAttribute="trailing" constant="26" id="R2W-dK-lPr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rbF-q9-xkv" secondAttribute="trailing" constant="26" id="hb8-Ar-Jfo"/>
+                <constraint firstItem="rbF-q9-xkv" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="mHA-q3-s7o"/>
+                <constraint firstItem="rbF-q9-xkv" firstAttribute="height" secondItem="ELn-RW-eAn" secondAttribute="height" id="vlb-K9-kkX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

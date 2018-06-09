@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = white_color;
     [self.view addSubview:self.collectionView];
     [self setUpIndicator];
     [self setUpRefreshData];
@@ -87,13 +88,15 @@
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height - 64) collectionViewLayout:flowLayout];
-        _collectionView.backgroundColor = Background_Color;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height - kNavigationBarHeight) collectionViewLayout:flowLayout];
+        _collectionView.backgroundColor = white_color;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.alwaysBounceVertical = YES;
+        flowLayout.minimumInteritemSpacing = 5;
+        flowLayout.minimumLineSpacing = 10;
     }
     return _collectionView;
 }

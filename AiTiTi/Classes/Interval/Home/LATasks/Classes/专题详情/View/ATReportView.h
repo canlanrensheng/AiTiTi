@@ -12,7 +12,7 @@
  举报View
  */
 @interface ATReportView : UIView
-@property (nonatomic, strong) void (^commitBlock)();
+@property (nonatomic, strong) void (^commitBlock)(void);
 - (void)la_show;
 - (void)la_dismiss;
 

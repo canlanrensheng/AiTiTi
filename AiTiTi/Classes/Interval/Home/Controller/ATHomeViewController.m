@@ -26,6 +26,9 @@
 #import "ATTeacherTalkViewController.h"
 #import "ATStudyPlanViewController.h"
 #import "ATLASubjectViewController.h"
+#import "ATReviewViewController.h"
+#import "ATSystemClassViewController.h"
+
 @interface ATHomeViewController ()<UITableViewDelegate,UITableViewDataSource,ATHomeHeaderBtnDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArr;
@@ -210,8 +213,13 @@ static NSString *const mainCellID = @"mainCell";
 
 #endif
     }else if ([btn.titleLabel.text isEqualToString:@"系统课"]) {
+#if 0
         ATCourseController *courseVC = [[ATCourseController alloc] init];
         [self.navigationController pushViewController:courseVC animated:YES];
+#else
+        ATSystemClassViewController *systemVC = [[ATSystemClassViewController alloc] init];
+        [self.navigationController pushViewController:systemVC animated:YES];
+#endif
     }else if ([btn.titleLabel.text isEqualToString:@"名师讲题"]) {
         ATTeacherTalkViewController *teacherExplainVC = [[ATTeacherTalkViewController alloc] init];
         [self.navigationController pushViewController:teacherExplainVC animated:YES];
@@ -219,8 +227,13 @@ static NSString *const mainCellID = @"mainCell";
         ATStudyPlanViewController *koVC = [[ATStudyPlanViewController alloc] init];
         [self.navigationController pushViewController:koVC animated:YES];
     }else if ([btn.titleLabel.text isEqualToString:@"评测"]) {
+#if 0
         ATEvaluationViewController *evaluationVC = [[ATEvaluationViewController alloc] init];
         [self.navigationController pushViewController:evaluationVC animated:YES];
+#else
+        ATReviewViewController *reviewVC = [[ATReviewViewController alloc] init];
+        [self.navigationController pushViewController:reviewVC animated:YES];
+#endif
     }
 }
 

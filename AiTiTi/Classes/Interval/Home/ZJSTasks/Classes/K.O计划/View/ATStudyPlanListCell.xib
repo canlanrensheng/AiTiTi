@@ -6,13 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ATStudyPlanListCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="ATStudyPlanListCell">
             <rect key="frame" x="0.0" y="0.0" width="241" height="219"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -126,8 +125,11 @@
                 <constraint firstItem="ARB-fj-PV7" firstAttribute="leading" secondItem="7ay-Fy-JTG" secondAttribute="trailing" constant="5" id="vRG-M3-JSV"/>
                 <constraint firstItem="vBZ-aE-6jY" firstAttribute="top" secondItem="ARB-fj-PV7" secondAttribute="bottom" constant="15" id="yV0-sQ-nxA"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="241" height="219"/>
+            <connections>
+                <outlet property="classNameLabel" destination="IRf-tw-NJA" id="qds-jl-Q5f"/>
+                <outlet property="headerBackView" destination="bfV-0V-3h5" id="BoJ-3k-zWY"/>
+            </connections>
             <point key="canvasLocation" x="-57.5" y="79.5"/>
         </collectionViewCell>
     </objects>

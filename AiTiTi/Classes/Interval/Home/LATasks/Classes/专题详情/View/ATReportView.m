@@ -12,7 +12,7 @@
 #import "ATReportView.h"
 #import "ATReportCell.h"
 
-#define ATReportBgHeight 830/2
+#define ATReportBgHeight 875/2
 #define MYCOLOR(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
 @interface ATReportView ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
@@ -49,6 +49,8 @@
     alertView.image = [UIImage imageNamed:@"report_bg"];
     alertView.contentMode = UIViewContentModeScaleToFill;
     alertView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *alertTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:nil];
+    [alertView addGestureRecognizer:alertTap];
     [self.bgView addSubview:alertView];
     self.alertView = alertView;
     self.alertView.frame = CGRectMake(0, Screen_Height, Screen_Width, ATReportBgHeight);
@@ -65,10 +67,10 @@
     titleLabel.text = @"举报";
     titleLabel.font = [UIFont systemFontOfSize:15];
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.textColor = RGB(255, 255, 255);
+    titleLabel.textColor = [UIColor blackColor];
     [alertView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(15);
+        make.top.equalTo(alertView.mas_top).offset(70);
         make.centerX.equalTo(alertView.mas_centerX);
     }];
     
@@ -152,6 +154,10 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

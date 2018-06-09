@@ -14,7 +14,7 @@
 #import "ATExamPaperListCell.h"
 #import "ATSubjectSectionHeader.h"
 #import "ATSubjectDetailController.h"
-
+#import "ATSubjectListDetailViewController.h"
 #define kSubjectHeaderHeight 50
 
 @interface ATLASubjectViewController ()
@@ -29,7 +29,7 @@
     self.tableViewStyle = UITableViewStyleGrouped;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"专题";
+    self.navigationItem.title = @"专题";
 }
 
 - (void)tx_configSubViews {
@@ -124,8 +124,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    ATSubjectDetailController *detailVC = [[ATSubjectDetailController alloc] init];
-    [self.navigationController pushViewController:detailVC animated:YES];
+    if (indexPath.section == 0) {
+        ATSubjectListDetailViewController *listDetailVC = [[ATSubjectListDetailViewController alloc] initWithParams:nil];
+        [self.navigationController pushViewController:listDetailVC animated:YES];
+    }else {
+        ATSubjectDetailController *detailVC = [[ATSubjectDetailController alloc] init];
+        [self.navigationController pushViewController:detailVC animated:YES];
+    }
 }
 
 

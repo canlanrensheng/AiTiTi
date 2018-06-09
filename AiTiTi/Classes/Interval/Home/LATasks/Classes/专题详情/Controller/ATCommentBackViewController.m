@@ -9,16 +9,19 @@
 #import "ATCommentBackViewController.h"
 #import "ATCommentCell.h"
 #import "ATSectionHeader.h"
+#import "ATTextFieldBottomTool.h"
+
 @interface ATCommentBackViewController ()
+@property (nonatomic, strong) ATTextFieldBottomTool *bottomTool;
 
 @end
 
 @implementation ATCommentBackViewController
 
 - (void)viewDidLoad {
-    self.tableViewStyle = UITableViewStylePlain;
+    self.tableViewStyle = UITableViewStyleGrouped;
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)tx_configSubViews {
@@ -32,6 +35,18 @@
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(-10, 0, 0, 0));
     }];
+    
+    self.bottomTool = [[[NSBundle mainBundle] loadNibNamed:@"ATTextFieldBottomTool" owner:self options:nil] lastObject];
+    [self.view addSubview:self.bottomTool];
+    self.bottomTool.releaseBtnBlock = ^(NSString *text) {
+        ATLog(@"text %@",text);
+    };
+    [self.bottomTool mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.height.mas_equalTo(49);
+    }];
+
+
 }
 
 - (void)tx_loadData {
@@ -65,7 +80,14 @@
     return 40;
 }
 
-
+//- (ATTextFieldBottomTool *)bottomTool {
+//    if (!_bottomTool) {
+//        _bottomTool = [ATTextFieldBottomTool viewFromXib];
+//        _bottomTool.frame = CGRectMake(0, Screen_Height - 49, Screen_Width, 49);
+//        _bottomTool.backgroundColor = [UIColor greenColor];
+//    }
+//    return _bottomTool;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
