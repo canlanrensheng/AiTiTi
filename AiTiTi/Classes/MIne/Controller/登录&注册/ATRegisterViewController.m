@@ -67,7 +67,6 @@
     }
     
     [self registerNet];
-    
 }
 - (IBAction)getCode:(UIButton *)sender {
     if ([NSString isEmpty:self.phoneText.text]) {
@@ -92,9 +91,9 @@
     }];
 }
 -(void)timeDown{
-    static NSInteger timeNum = 10;
+    static NSInteger timeNum = 30;
     if (timeNum == 0) {
-        timeNum = 10;
+        timeNum = 30;
         self.codeButton.enabled = YES;
         [self.codeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
         [self.timer invalidate];
@@ -106,15 +105,29 @@
 
 #pragma mark - register
 -(void)registerNet{
+    [SVProgressHUD show];
     NSMutableDictionary * parame = [NSMutableDictionary dictionaryWithDictionary:@{@"phone":self.phoneText.text,
                                                                                    @"verify":self.codeText.text,
                                                                                    @"password":self.pwdText.text
                                                                                    }];
-    ATNetWorking * net = [ATNetWorking sharedManager];
-    [net postResultWithParameter:parame url:user_regist successBlock:^(id responseBody) {
+    [[ATNetWorking sharedManager] ATPostResultWithParameter:parame url:user_regist successBlock:^(id responseBody) {
         NSLog(@"%@",responseBody);
+        ATMainModel * model = [ATMainModel mj_objectWithKeyValues:responseBody];
+        [ATMainModel saveMine:model];
+        [[NSUserDefaults standardUserDefaults] setObject:responseBody[@"id"] forKey:userID];
+        [[NSUserDefaults standardUserDefaults] setObject:responseBody[@"userguid"] forKey:userguID];
+        [UIApplication sharedApplication].keyWindow.rootViewController = [ATMainViewController new];
     } failureBlock:^(NSString *error) {
         NSLog(@"%@",error);
+        if ([error isEqualToString:@"400"]) {
+            [FNTipsView showTips:@"手机验证码不正确"];
+        }else if ([error isEqualToString:@"401"]){
+            [FNTipsView showTips:@"注册失败"];
+        }else if ([error isEqualToString:@"417"]){
+            [FNTipsView showTips:@"手机号码已经有人使用"];
+        }else{
+            [FNTipsView showTips:@"网络错误！"];
+        }
     }];
 }
 

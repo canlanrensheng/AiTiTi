@@ -22,6 +22,9 @@
 #import "ATMacrosKey.h"
 #import "ATMacrosOther.h"
 
+#import "ATMainModel.h"
+#import "ATMainViewController.h"
+
 #import <AFNetworking.h>
 #import <SVProgressHUD.h>
 #import <MJExtension.h>

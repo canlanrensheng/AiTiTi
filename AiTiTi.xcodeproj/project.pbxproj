@@ -22,6 +22,16 @@
 		0B1633CD20C42D4F00CE7D42 /* ATSubjectModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633CC20C42D4F00CE7D42 /* ATSubjectModels.m */; };
 		0B1633D020C42E2700CE7D42 /* ATLASubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633CF20C42E2700CE7D42 /* ATLASubjectViewController.m */; };
 		0B1633D320C42EC700CE7D42 /* ATSubjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1633D220C42EC700CE7D42 /* ATSubjectViewModel.m */; };
+		0B1968DC20CB63450039A699 /* ATGetbackPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1968D120CB63450039A699 /* ATGetbackPwdViewController.xib */; };
+		0B1968DD20CB63450039A699 /* ATBindPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1968D320CB63450039A699 /* ATBindPhoneViewController.m */; };
+		0B1968DE20CB63450039A699 /* ATRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1968D520CB63450039A699 /* ATRegisterViewController.m */; };
+		0B1968DF20CB63450039A699 /* ATGetbackPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1968D720CB63450039A699 /* ATGetbackPwdViewController.m */; };
+		0B1968E020CB63450039A699 /* ATBindPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1968D820CB63450039A699 /* ATBindPhoneViewController.xib */; };
+		0B1968E120CB63450039A699 /* ATLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1968D920CB63450039A699 /* ATLoginViewController.m */; };
+		0B1968E220CB63450039A699 /* ATLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1968DA20CB63450039A699 /* ATLoginViewController.xib */; };
+		0B1968E320CB63450039A699 /* ATRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1968DB20CB63450039A699 /* ATRegisterViewController.xib */; };
+		0B1968E720CB63760039A699 /* ATNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1968E620CB63760039A699 /* ATNetWorking.m */; };
+		0B1968E920CB63A50039A699 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1968E820CB63A50039A699 /* AppDelegate.m */; };
 		0B1998A420C026130050BA4C /* YSQDrodownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998A320C026130050BA4C /* YSQDrodownMenu.m */; };
 		0B1998A720C027650050BA4C /* ATCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998A620C027650050BA4C /* ATCommentView.m */; };
 		0B1998AB20C042A60050BA4C /* ATCommentMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1998AA20C042A60050BA4C /* ATCommentMenuView.m */; };
@@ -174,7 +184,6 @@
 		92ACD6A620C0FDD700BA45D1 /* ATPlanHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ACD6A520C0FDD700BA45D1 /* ATPlanHeaderView.xib */; };
 		92ACD6AA20C1012C00BA45D1 /* ATPlanStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACD6A820C1012C00BA45D1 /* ATPlanStateCell.m */; };
 		92ACD6AB20C1012C00BA45D1 /* ATPlanStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ACD6A920C1012C00BA45D1 /* ATPlanStateCell.xib */; };
-		FBB884F320B6903100E15CA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F220B6903100E15CA5 /* AppDelegate.m */; };
 		FBB884F620B6903100E15CA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB884F520B6903100E15CA5 /* ViewController.m */; };
 		FBB884F920B6903100E15CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB884F720B6903100E15CA5 /* Main.storyboard */; };
 		FBB884FB20B6903300E15CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB884FA20B6903300E15CA5 /* Assets.xcassets */; };
@@ -182,7 +191,6 @@
 		FBB8850120B6903300E15CA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8850020B6903300E15CA5 /* main.m */; };
 		FBB8852F20B6908A00E15CA5 /* ATSubSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8850920B6908A00E15CA5 /* ATSubSelectView.m */; };
 		FBB8853120B6908A00E15CA5 /* ATQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8850F20B6908A00E15CA5 /* ATQRCodeViewController.m */; };
-		FBB8853220B6908A00E15CA5 /* ATNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8851320B6908A00E15CA5 /* ATNetWorking.m */; };
 		FBB8853620B6908A00E15CA5 /* MyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8851E20B6908A00E15CA5 /* MyTools.m */; };
 		FBB8853720B6908A00E15CA5 /* ATFriendPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB8852020B6908A00E15CA5 /* ATFriendPayViewController.xib */; };
 		FBB8853820B6908A00E15CA5 /* ATOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8852320B6908A00E15CA5 /* ATOrderCell.m */; };
@@ -255,14 +263,6 @@
 		FBB886C420B6909800E15CA5 /* ATVIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885D220B6909700E15CA5 /* ATVIPViewController.m */; };
 		FBB886C520B6909800E15CA5 /* ATMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885D320B6909700E15CA5 /* ATMineViewController.m */; };
 		FBB886C620B6909800E15CA5 /* ATMineStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885D520B6909700E15CA5 /* ATMineStudyViewController.m */; };
-		FBB886C720B6909800E15CA5 /* ATGetbackPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB885D920B6909700E15CA5 /* ATGetbackPwdViewController.xib */; };
-		FBB886C820B6909800E15CA5 /* ATBindPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885DB20B6909700E15CA5 /* ATBindPhoneViewController.m */; };
-		FBB886C920B6909800E15CA5 /* ATRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885DD20B6909700E15CA5 /* ATRegisterViewController.m */; };
-		FBB886CA20B6909800E15CA5 /* ATGetbackPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885DF20B6909700E15CA5 /* ATGetbackPwdViewController.m */; };
-		FBB886CB20B6909800E15CA5 /* ATBindPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB885E020B6909700E15CA5 /* ATBindPhoneViewController.xib */; };
-		FBB886CC20B6909800E15CA5 /* ATLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885E120B6909700E15CA5 /* ATLoginViewController.m */; };
-		FBB886CD20B6909800E15CA5 /* ATLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB885E220B6909700E15CA5 /* ATLoginViewController.xib */; };
-		FBB886CE20B6909800E15CA5 /* ATRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB885E320B6909700E15CA5 /* ATRegisterViewController.xib */; };
 		FBB886CF20B6909800E15CA5 /* ATMineAchieveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885E620B6909700E15CA5 /* ATMineAchieveViewController.m */; };
 		FBB886D020B6909800E15CA5 /* ATMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885E920B6909700E15CA5 /* ATMineSettingViewController.m */; };
 		FBB886D120B6909800E15CA5 /* ATMineDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB885EC20B6909700E15CA5 /* ATMineDownloadViewController.m */; };
@@ -353,6 +353,22 @@
 		0B1633CF20C42E2700CE7D42 /* ATLASubjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATLASubjectViewController.m; sourceTree = "<group>"; };
 		0B1633D120C42EC700CE7D42 /* ATSubjectViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ATSubjectViewModel.h; path = "AiTiTi/Classes/Interval/Home/LATasks/Classes/专题详情/ViewModel/ATSubjectViewModel.h"; sourceTree = SOURCE_ROOT; };
 		0B1633D220C42EC700CE7D42 /* ATSubjectViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ATSubjectViewModel.m; path = "AiTiTi/Classes/Interval/Home/LATasks/Classes/专题详情/ViewModel/ATSubjectViewModel.m"; sourceTree = SOURCE_ROOT; };
+		0B1968D020CB63450039A699 /* ATRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATRegisterViewController.h; sourceTree = "<group>"; };
+		0B1968D120CB63450039A699 /* ATGetbackPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATGetbackPwdViewController.xib; sourceTree = "<group>"; };
+		0B1968D220CB63450039A699 /* ATLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLoginViewController.h; sourceTree = "<group>"; };
+		0B1968D320CB63450039A699 /* ATBindPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBindPhoneViewController.m; sourceTree = "<group>"; };
+		0B1968D420CB63450039A699 /* ATGetbackPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGetbackPwdViewController.h; sourceTree = "<group>"; };
+		0B1968D520CB63450039A699 /* ATRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATRegisterViewController.m; sourceTree = "<group>"; };
+		0B1968D620CB63450039A699 /* ATBindPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBindPhoneViewController.h; sourceTree = "<group>"; };
+		0B1968D720CB63450039A699 /* ATGetbackPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGetbackPwdViewController.m; sourceTree = "<group>"; };
+		0B1968D820CB63450039A699 /* ATBindPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATBindPhoneViewController.xib; sourceTree = "<group>"; };
+		0B1968D920CB63450039A699 /* ATLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLoginViewController.m; sourceTree = "<group>"; };
+		0B1968DA20CB63450039A699 /* ATLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATLoginViewController.xib; sourceTree = "<group>"; };
+		0B1968DB20CB63450039A699 /* ATRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATRegisterViewController.xib; sourceTree = "<group>"; };
+		0B1968E520CB63760039A699 /* ATNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNetWorking.h; sourceTree = "<group>"; };
+		0B1968E620CB63760039A699 /* ATNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNetWorking.m; sourceTree = "<group>"; };
+		0B1968E820CB63A50039A699 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0B1968EA20CB63FD0039A699 /* ATMacrosKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMacrosKey.h; sourceTree = "<group>"; };
 		0B1998A220C026130050BA4C /* YSQDrodownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQDrodownMenu.h; sourceTree = "<group>"; };
 		0B1998A320C026130050BA4C /* YSQDrodownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQDrodownMenu.m; sourceTree = "<group>"; };
 		0B1998A520C027650050BA4C /* ATCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommentView.h; sourceTree = "<group>"; };
@@ -639,7 +655,6 @@
 		F8EA3AACED2108C8F22901E8 /* Pods-AiTiTi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiTiTi.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiTiTi/Pods-AiTiTi.release.xcconfig"; sourceTree = "<group>"; };
 		FBB884EE20B6903100E15CA5 /* AiTiTi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiTiTi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB884F120B6903100E15CA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FBB884F220B6903100E15CA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FBB884F420B6903100E15CA5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FBB884F520B6903100E15CA5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FBB884F820B6903100E15CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -652,8 +667,6 @@
 		FBB8850D20B6908A00E15CA5 /* ATSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSearchViewController.h; sourceTree = "<group>"; };
 		FBB8850F20B6908A00E15CA5 /* ATQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATQRCodeViewController.m; sourceTree = "<group>"; };
 		FBB8851020B6908A00E15CA5 /* ATQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATQRCodeViewController.h; sourceTree = "<group>"; };
-		FBB8851220B6908A00E15CA5 /* ATNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNetWorking.h; sourceTree = "<group>"; };
-		FBB8851320B6908A00E15CA5 /* ATNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNetWorking.m; sourceTree = "<group>"; };
 		FBB8851C20B6908A00E15CA5 /* MyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTools.h; sourceTree = "<group>"; };
 		FBB8851D20B6908A00E15CA5 /* AJSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSingleton.h; sourceTree = "<group>"; };
 		FBB8851E20B6908A00E15CA5 /* MyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTools.m; sourceTree = "<group>"; };
@@ -687,7 +700,6 @@
 		FBB8855120B6909700E15CA5 /* MainHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHeader.h; sourceTree = "<group>"; };
 		FBB8855220B6909700E15CA5 /* ATMacrosOther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMacrosOther.h; sourceTree = "<group>"; };
 		FBB8855320B6909700E15CA5 /* ATMacrosUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMacrosUI.h; sourceTree = "<group>"; };
-		FBB8855420B6909700E15CA5 /* ATMacrosKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMacrosKey.h; sourceTree = "<group>"; };
 		FBB8855B20B6909700E15CA5 /* ATCourseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCourseController.m; sourceTree = "<group>"; };
 		FBB8855C20B6909700E15CA5 /* ATSubjectDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSubjectDetailController.h; sourceTree = "<group>"; };
 		FBB8855D20B6909700E15CA5 /* ATKOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATKOViewController.h; sourceTree = "<group>"; };
@@ -793,18 +805,6 @@
 		FBB885D320B6909700E15CA5 /* ATMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMineViewController.m; sourceTree = "<group>"; };
 		FBB885D520B6909700E15CA5 /* ATMineStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMineStudyViewController.m; sourceTree = "<group>"; };
 		FBB885D620B6909700E15CA5 /* ATMineStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMineStudyViewController.h; sourceTree = "<group>"; };
-		FBB885D820B6909700E15CA5 /* ATRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATRegisterViewController.h; sourceTree = "<group>"; };
-		FBB885D920B6909700E15CA5 /* ATGetbackPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATGetbackPwdViewController.xib; sourceTree = "<group>"; };
-		FBB885DA20B6909700E15CA5 /* ATLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLoginViewController.h; sourceTree = "<group>"; };
-		FBB885DB20B6909700E15CA5 /* ATBindPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBindPhoneViewController.m; sourceTree = "<group>"; };
-		FBB885DC20B6909700E15CA5 /* ATGetbackPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGetbackPwdViewController.h; sourceTree = "<group>"; };
-		FBB885DD20B6909700E15CA5 /* ATRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATRegisterViewController.m; sourceTree = "<group>"; };
-		FBB885DE20B6909700E15CA5 /* ATBindPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBindPhoneViewController.h; sourceTree = "<group>"; };
-		FBB885DF20B6909700E15CA5 /* ATGetbackPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGetbackPwdViewController.m; sourceTree = "<group>"; };
-		FBB885E020B6909700E15CA5 /* ATBindPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATBindPhoneViewController.xib; sourceTree = "<group>"; };
-		FBB885E120B6909700E15CA5 /* ATLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLoginViewController.m; sourceTree = "<group>"; };
-		FBB885E220B6909700E15CA5 /* ATLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATLoginViewController.xib; sourceTree = "<group>"; };
-		FBB885E320B6909700E15CA5 /* ATRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATRegisterViewController.xib; sourceTree = "<group>"; };
 		FBB885E520B6909700E15CA5 /* ATMineAchieveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMineAchieveViewController.h; sourceTree = "<group>"; };
 		FBB885E620B6909700E15CA5 /* ATMineAchieveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMineAchieveViewController.m; sourceTree = "<group>"; };
 		FBB885E820B6909700E15CA5 /* ATMineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMineSettingViewController.h; sourceTree = "<group>"; };
@@ -954,6 +954,35 @@
 				0B1633CC20C42D4F00CE7D42 /* ATSubjectModels.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0B1968CF20CB63450039A699 /* 登录&注册 */ = {
+			isa = PBXGroup;
+			children = (
+				0B1968D020CB63450039A699 /* ATRegisterViewController.h */,
+				0B1968D120CB63450039A699 /* ATGetbackPwdViewController.xib */,
+				0B1968D220CB63450039A699 /* ATLoginViewController.h */,
+				0B1968D320CB63450039A699 /* ATBindPhoneViewController.m */,
+				0B1968D420CB63450039A699 /* ATGetbackPwdViewController.h */,
+				0B1968D520CB63450039A699 /* ATRegisterViewController.m */,
+				0B1968D620CB63450039A699 /* ATBindPhoneViewController.h */,
+				0B1968D720CB63450039A699 /* ATGetbackPwdViewController.m */,
+				0B1968D820CB63450039A699 /* ATBindPhoneViewController.xib */,
+				0B1968D920CB63450039A699 /* ATLoginViewController.m */,
+				0B1968DA20CB63450039A699 /* ATLoginViewController.xib */,
+				0B1968DB20CB63450039A699 /* ATRegisterViewController.xib */,
+			);
+			path = "登录&注册";
+			sourceTree = "<group>";
+		};
+		0B1968E420CB63760039A699 /* APITool */ = {
+			isa = PBXGroup;
+			children = (
+				0B1968E520CB63760039A699 /* ATNetWorking.h */,
+				0B1968E620CB63760039A699 /* ATNetWorking.m */,
+			);
+			name = APITool;
+			path = "../../../AITiTi文件/未命名文件夹/APITool";
 			sourceTree = "<group>";
 		};
 		0B1998A120C025BA0050BA4C /* Lib */ = {
@@ -1889,7 +1918,7 @@
 				FBB8853F20B6909700E15CA5 /* Main */,
 				FBB8850720B6908A00E15CA5 /* Public */,
 				FBB884F120B6903100E15CA5 /* AppDelegate.h */,
-				FBB884F220B6903100E15CA5 /* AppDelegate.m */,
+				0B1968E820CB63A50039A699 /* AppDelegate.m */,
 				FBB884F420B6903100E15CA5 /* ViewController.h */,
 				FBB884F520B6903100E15CA5 /* ViewController.m */,
 				FBB884F720B6903100E15CA5 /* Main.storyboard */,
@@ -1904,10 +1933,10 @@
 		FBB8850720B6908A00E15CA5 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				0B1968E420CB63760039A699 /* APITool */,
 				FBB8850820B6908A00E15CA5 /* 选择头部 */,
 				FBB8850B20B6908A00E15CA5 /* 搜索 */,
 				FBB8850E20B6908A00E15CA5 /* 扫一扫 */,
-				FBB8851120B6908A00E15CA5 /* APITool */,
 				FBB8851420B6908A00E15CA5 /* 消息 */,
 				FBB8851B20B6908A00E15CA5 /* 工具类 */,
 				FBB8851F20B6908A00E15CA5 /* 充值 */,
@@ -1941,15 +1970,6 @@
 				FBB8850F20B6908A00E15CA5 /* ATQRCodeViewController.m */,
 			);
 			path = "扫一扫";
-			sourceTree = "<group>";
-		};
-		FBB8851120B6908A00E15CA5 /* APITool */ = {
-			isa = PBXGroup;
-			children = (
-				FBB8851220B6908A00E15CA5 /* ATNetWorking.h */,
-				FBB8851320B6908A00E15CA5 /* ATNetWorking.m */,
-			);
-			path = APITool;
 			sourceTree = "<group>";
 		};
 		FBB8851420B6908A00E15CA5 /* 消息 */ = {
@@ -2049,8 +2069,8 @@
 		FBB8854F20B6909700E15CA5 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				0B1968EA20CB63FD0039A699 /* ATMacrosKey.h */,
 				FBB8855020B6909700E15CA5 /* ATMacrosApi.h */,
-				FBB8855420B6909700E15CA5 /* ATMacrosKey.h */,
 				FBB8855220B6909700E15CA5 /* ATMacrosOther.h */,
 				FBB8855320B6909700E15CA5 /* ATMacrosUI.h */,
 				FBB8855120B6909700E15CA5 /* MainHeader.h */,
@@ -2318,10 +2338,10 @@
 			children = (
 				FBB885F020B6909700E15CA5 /* ATMineViewController.h */,
 				FBB885D320B6909700E15CA5 /* ATMineViewController.m */,
+				0B1968CF20CB63450039A699 /* 登录&注册 */,
 				FBB885CD20B6909700E15CA5 /* 我的评论 */,
 				FBB885D020B6909700E15CA5 /* VIP */,
 				FBB885D420B6909700E15CA5 /* 学习记录 */,
-				FBB885D720B6909700E15CA5 /* 登录&注册 */,
 				FBB885E420B6909700E15CA5 /* 我的成就 */,
 				FBB885E720B6909700E15CA5 /* 设置 */,
 				FBB885EA20B6909700E15CA5 /* 下载管理 */,
@@ -2359,25 +2379,6 @@
 				FBB885D620B6909700E15CA5 /* ATMineStudyViewController.h */,
 			);
 			path = "学习记录";
-			sourceTree = "<group>";
-		};
-		FBB885D720B6909700E15CA5 /* 登录&注册 */ = {
-			isa = PBXGroup;
-			children = (
-				FBB885D820B6909700E15CA5 /* ATRegisterViewController.h */,
-				FBB885D920B6909700E15CA5 /* ATGetbackPwdViewController.xib */,
-				FBB885DA20B6909700E15CA5 /* ATLoginViewController.h */,
-				FBB885DB20B6909700E15CA5 /* ATBindPhoneViewController.m */,
-				FBB885DC20B6909700E15CA5 /* ATGetbackPwdViewController.h */,
-				FBB885DD20B6909700E15CA5 /* ATRegisterViewController.m */,
-				FBB885DE20B6909700E15CA5 /* ATBindPhoneViewController.h */,
-				FBB885DF20B6909700E15CA5 /* ATGetbackPwdViewController.m */,
-				FBB885E020B6909700E15CA5 /* ATBindPhoneViewController.xib */,
-				FBB885E120B6909700E15CA5 /* ATLoginViewController.m */,
-				FBB885E220B6909700E15CA5 /* ATLoginViewController.xib */,
-				FBB885E320B6909700E15CA5 /* ATRegisterViewController.xib */,
-			);
-			path = "登录&注册";
 			sourceTree = "<group>";
 		};
 		FBB885E420B6909700E15CA5 /* 我的成就 */ = {
@@ -2914,16 +2915,17 @@
 				FBB8869920B6909800E15CA5 /* ATHomeRecommendCell.xib in Resources */,
 				0B0F6E1F20C974CE003FFF49 /* ATSubjectListDetailCell.xib in Resources */,
 				0B1633CA20C4067700CE7D42 /* ATReportCell.xib in Resources */,
-				FBB886C720B6909800E15CA5 /* ATGetbackPwdViewController.xib in Resources */,
 				92ACD67620C0EDF700BA45D1 /* ATSignStatisticsCell.xib in Resources */,
 				FBB886BA20B6909800E15CA5 /* ATTeacherCell.xib in Resources */,
 				92ACD65D20C0EDF700BA45D1 /* ATExamPaperSectionView.xib in Resources */,
 				FBB8853C20B6908A00E15CA5 /* ATOrderCell.xib in Resources */,
 				92ACD68D20C0EDF700BA45D1 /* SGQRCode.bundle in Resources */,
+				0B1968E320CB63450039A699 /* ATRegisterViewController.xib in Resources */,
 				FBB8853720B6908A00E15CA5 /* ATFriendPayViewController.xib in Resources */,
 				0B3AC64E20BF0E6F003CBFFC /* ATCommentCell.xib in Resources */,
 				92ACD6AB20C1012C00BA45D1 /* ATPlanStateCell.xib in Resources */,
 				0B1B321A20C7C40B00E469CA /* ATUnitTestingCell.xib in Resources */,
+				0B1968DC20CB63450039A699 /* ATGetbackPwdViewController.xib in Resources */,
 				FBB886A120B6909800E15CA5 /* ATSubjectMainCell.xib in Resources */,
 				92ACD6A620C0FDD700BA45D1 /* ATPlanHeaderView.xib in Resources */,
 				FBB886E320B6909800E15CA5 /* ATCouponCell.xib in Resources */,
@@ -2933,15 +2935,15 @@
 				FBB886DF20B6909800E15CA5 /* ATDownloadCell.xib in Resources */,
 				92ACD66120C0EDF700BA45D1 /* ATDifficultyDistributionCell.xib in Resources */,
 				92ACD68420C0EDF700BA45D1 /* .gitkeep in Resources */,
-				FBB886CE20B6909800E15CA5 /* ATRegisterViewController.xib in Resources */,
+				0B1968E020CB63450039A699 /* ATBindPhoneViewController.xib in Resources */,
 				92ACD67220C0EDF700BA45D1 /* ATSignRuleViewCell.xib in Resources */,
-				FBB886CD20B6909800E15CA5 /* ATLoginViewController.xib in Resources */,
 				92ACD63E20C0EDF700BA45D1 /* ATStudentRecommondCell.xib in Resources */,
 				92ACD64620C0EDF700BA45D1 /* ATStudyPlanSectionFooterView.xib in Resources */,
 				FBB886BD20B6909800E15CA5 /* ATTeacherDetailHeaderView.xib in Resources */,
 				92ACD64020C0EDF700BA45D1 /* ATStudyHeaderView.xib in Resources */,
 				92ACD66320C0EDF700BA45D1 /* ATTestAnalysisCell.xib in Resources */,
 				FBB886C120B6909800E15CA5 /* ATTeacherDetailCell.xib in Resources */,
+				0B1968E220CB63450039A699 /* ATLoginViewController.xib in Resources */,
 				92ACD66920C0EDF700BA45D1 /* ATTestFrequencyCell.xib in Resources */,
 				92ACD65A20C0EDF700BA45D1 /* ATExamClasssifySectionView.xib in Resources */,
 				92ACD68A20C0EDF700BA45D1 /* ATPullDownCell.xib in Resources */,
@@ -2949,7 +2951,6 @@
 				92ACD66720C0EDF700BA45D1 /* ATTestDirrectionCell.xib in Resources */,
 				0B1B325420C7E38300E469CA /* ATStartTestingBottomTool.xib in Resources */,
 				92ACD64420C0EDF700BA45D1 /* ATStudyPlanReusableView.xib in Resources */,
-				FBB886CB20B6909800E15CA5 /* ATBindPhoneViewController.xib in Resources */,
 				0BF9116920BD952E00559135 /* ATDirectoryCell.xib in Resources */,
 				FBB886D720B6909800E15CA5 /* ATMineCommentCell.xib in Resources */,
 				92ACD67420C0EDF700BA45D1 /* ATSignScheduleViewCell.xib in Resources */,
@@ -3083,7 +3084,6 @@
 				FBB886E420B6909800E15CA5 /* ATCouponCell.m in Sources */,
 				92ACD68F20C0EDF700BA45D1 /* SGQRCodeGenerateManager.m in Sources */,
 				FBB886F520B6909800E15CA5 /* UIView+AutoLayout.m in Sources */,
-				FBB886CC20B6909800E15CA5 /* ATLoginViewController.m in Sources */,
 				92ACD66F20C0EDF700BA45D1 /* ATSignCalendarCell.m in Sources */,
 				FBB886F920B6909800E15CA5 /* UIView+Click.m in Sources */,
 				FBB8868D20B6909800E15CA5 /* ATMainView.m in Sources */,
@@ -3095,6 +3095,7 @@
 				92ACD69520C0EDF700BA45D1 /* UIButton+LJButton.m in Sources */,
 				FBB886D220B6909800E15CA5 /* ATMineMoneyViewController.m in Sources */,
 				92ACD69A20C0EDF700BA45D1 /* UINavigationBar+Extention.m in Sources */,
+				0B1968E720CB63760039A699 /* ATNetWorking.m in Sources */,
 				92ACD64F20C0EDF700BA45D1 /* ATPlanDetailViewController.m in Sources */,
 				92ACD65420C0EDF700BA45D1 /* ATExamPaperModel.m in Sources */,
 				92ACD67F20C0EDF700BA45D1 /* BaseView.m in Sources */,
@@ -3106,7 +3107,6 @@
 				FBB886D020B6909800E15CA5 /* ATMineSettingViewController.m in Sources */,
 				0B0F6E1A20C97482003FFF49 /* ATSubjectListDetailViewController.m in Sources */,
 				92ACD67720C0EDF700BA45D1 /* ATSignSuccessALertView.m in Sources */,
-				FBB886C820B6909800E15CA5 /* ATBindPhoneViewController.m in Sources */,
 				0BF9116820BD952E00559135 /* ATCommentViewController.m in Sources */,
 				FBB886A520B6909800E15CA5 /* ATHomeNavBar.m in Sources */,
 				0B3AC64C20BF0E6F003CBFFC /* ATBottomViewTool.m in Sources */,
@@ -3120,7 +3120,6 @@
 				FBB886E820B6909800E15CA5 /* ATCollectView.m in Sources */,
 				FBB886F020B6909800E15CA5 /* UIApplication+Extensions.m in Sources */,
 				92ACD64120C0EDF700BA45D1 /* ATStudyPlanListCell.m in Sources */,
-				FBB886C920B6909800E15CA5 /* ATRegisterViewController.m in Sources */,
 				FBB886AF20B6909800E15CA5 /* ATSubjectListCell.m in Sources */,
 				92ACD68720C0EDF700BA45D1 /* MLMenuItem.m in Sources */,
 				0B3C5ED620B8F6A200A61750 /* ATMessagesViewController.m in Sources */,
@@ -3149,9 +3148,9 @@
 				FBB886E020B6909800E15CA5 /* ATDownloadCell.m in Sources */,
 				0B1633D020C42E2700CE7D42 /* ATLASubjectViewController.m in Sources */,
 				92ACD65120C0EDF700BA45D1 /* ATExamPaperViewController.m in Sources */,
-				FBB886CA20B6909800E15CA5 /* ATGetbackPwdViewController.m in Sources */,
 				92ACD68E20C0EDF700BA45D1 /* SGQRCodeAlbumManager.m in Sources */,
 				FBB886F320B6909800E15CA5 /* UIView+SetRect.m in Sources */,
+				0B1968DE20CB63450039A699 /* ATRegisterViewController.m in Sources */,
 				92ACD67320C0EDF700BA45D1 /* ATSignScheduleViewCell.m in Sources */,
 				92ACD67820C0EDF700BA45D1 /* ATSignViewModel.m in Sources */,
 				92ACD66020C0EDF700BA45D1 /* ATDifficultyDistributionCell.m in Sources */,
@@ -3191,6 +3190,7 @@
 				92ACD66B20C0EDF700BA45D1 /* ATQRCodeScanViewController.m in Sources */,
 				92ACD64320C0EDF700BA45D1 /* ATStudyPlanReusableView.m in Sources */,
 				92ACD64E20C0EDF700BA45D1 /* ATSystemRecommendViewController.m in Sources */,
+				0B1968DD20CB63450039A699 /* ATBindPhoneViewController.m in Sources */,
 				92A69DB020C1308200A70203 /* ATStudyPlanCalenderAlertView.m in Sources */,
 				0B12891120C946FE00BAE134 /* UIImage+Image.m in Sources */,
 				FBB8870520B6909800E15CA5 /* CFLabelOnLeftButton.m in Sources */,
@@ -3253,17 +3253,18 @@
 				0B0F6E1E20C974CE003FFF49 /* ATSubjectListDetailCell.m in Sources */,
 				92ACD69420C0EDF700BA45D1 /* UIBarButtonItem+TXAdditions.m in Sources */,
 				0B3C5ED720B8F6A200A61750 /* ATMessagesCell.m in Sources */,
+				0B1968E920CB63A50039A699 /* AppDelegate.m in Sources */,
 				FBB886EB20B6909800E15CA5 /* UIImage+ScreenShot.m in Sources */,
 				92ACD69620C0EDF700BA45D1 /* UIButton+TXInit.m in Sources */,
 				FBB886B720B6909800E15CA5 /* ATTeacherItem.m in Sources */,
 				92ACD68220C0EDF700BA45D1 /* LPCalendarDate.m in Sources */,
+				0B1968DF20CB63450039A699 /* ATGetbackPwdViewController.m in Sources */,
 				0B9881F120C68687001EEC8F /* SKTagView.m in Sources */,
 				FBB886E520B6909800E15CA5 /* ATMineHeaderCell.m in Sources */,
 				FBB886A920B6909800E15CA5 /* ATQuotaDetailViewController.m in Sources */,
 				FBB886DB20B6909800E15CA5 /* ATMineVIPCell.m in Sources */,
 				FBB886D520B6909800E15CA5 /* ATMinCouponViewController.m in Sources */,
 				92ACD65520C0EDF700BA45D1 /* ATExamClasssifyListCell.m in Sources */,
-				FBB8853220B6908A00E15CA5 /* ATNetWorking.m in Sources */,
 				92ACD66820C0EDF700BA45D1 /* ATTestFrequencyCell.m in Sources */,
 				0B9881F020C68687001EEC8F /* SKTagButton.m in Sources */,
 				FBB8869B20B6909800E15CA5 /* ATHeaderBtn.m in Sources */,
@@ -3279,7 +3280,7 @@
 				92ACD63D20C0EDF700BA45D1 /* ATStudentRecommondCell.m in Sources */,
 				92ACD64C20C0EDF700BA45D1 /* ATMorePlanViewController.m in Sources */,
 				FBB886DC20B6909800E15CA5 /* ATMineVIPSecondCell.m in Sources */,
-				FBB884F320B6903100E15CA5 /* AppDelegate.m in Sources */,
+				0B1968E120CB63450039A699 /* ATLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

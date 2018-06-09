@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class medalModel,subjectVipModel;
+@class subjectVipModel;
 
-@interface ATMainModel : NSObject
+@interface ATMainModel : NSObject<NSCoding>
 
 /** 个性签名 */
 @property (nonatomic,copy) NSString * about;
@@ -34,8 +34,6 @@
 @property (nonatomic,copy) NSString * userguid;
 /** 用户等级 */
 @property (nonatomic,copy) NSString * level;
-/** 勋章列表 */
-@property (nonatomic,copy) NSArray<medalModel *> * medal;
 /** 名字 */
 @property (nonatomic,copy) NSString * name;
 /** 学霸值 */
@@ -76,28 +74,15 @@
 
 @end
 
-@interface medalModel : NSObject
+@interface subjectVipModel : NSObject<NSCoding>
 
-/** 勋章id */
-@property (nonatomic,copy) NSString * medal_id;
-/** 勋章图片 */
-@property (nonatomic,copy) NSString * img;
-/** 级别 */
-@property (nonatomic,copy) NSString * level;
-/** 勋章名称 */
-@property (nonatomic,copy) NSString * name;
-
-@end
-
-@interface subjectVipModel : NSObject
-
-/** 勋章id */
+/** 科目id */
 @property (nonatomic,copy) NSString * subject_id;
-/** 勋章图片 */
+/** 单科VIP到期时间 */
 @property (nonatomic,copy) NSString * deadline;
-/** 级别 */
+/** 科目名称 */
 @property (nonatomic,copy) NSString * name;
-/** 勋章名称 */
+/** 剩余天数 */
 @property (nonatomic,copy) NSString * day;
 
 @end

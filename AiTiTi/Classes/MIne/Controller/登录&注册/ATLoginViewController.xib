@@ -162,20 +162,36 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QQ" translatesAutoresizingMaskIntoConstraints="NO" id="5Dy-3Z-0tS">
                             <rect key="frame" x="271.5" y="53.5" width="43" height="43"/>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGa-qv-cq0">
+                            <rect key="frame" x="67.5" y="102" width="29" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAv-Kh-NZw">
+                            <rect key="frame" x="280.5" y="101.5" width="25" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="IGa-qv-cq0" firstAttribute="top" secondItem="hls-NA-SoP" secondAttribute="bottom" constant="5" id="41J-Tl-oSv"/>
                         <constraint firstItem="u28-p6-pF4" firstAttribute="top" secondItem="BhA-73-GDE" secondAttribute="top" constant="10" id="5fg-sK-IIM"/>
                         <constraint firstItem="u28-p6-pF4" firstAttribute="leading" secondItem="BhA-73-GDE" secondAttribute="leading" constant="20" id="EcR-iC-68U"/>
                         <constraint firstItem="64Z-nC-wtm" firstAttribute="top" secondItem="BhA-73-GDE" secondAttribute="top" constant="10" id="FdF-rg-lGi"/>
                         <constraint firstItem="Nzo-z9-Dh0" firstAttribute="leading" secondItem="u28-p6-pF4" secondAttribute="trailing" constant="10" id="K3m-Ej-NSX"/>
                         <constraint firstItem="Nzo-z9-Dh0" firstAttribute="centerX" secondItem="BhA-73-GDE" secondAttribute="centerX" id="POn-Mt-HBP"/>
+                        <constraint firstItem="iAv-Kh-NZw" firstAttribute="centerX" secondItem="5Dy-3Z-0tS" secondAttribute="centerX" id="RMv-2z-QxT"/>
                         <constraint firstItem="hls-NA-SoP" firstAttribute="centerX" secondItem="u28-p6-pF4" secondAttribute="centerX" id="RQ4-VU-Ie7"/>
                         <constraint firstAttribute="trailing" secondItem="64Z-nC-wtm" secondAttribute="trailing" constant="20" id="Wye-o2-4VI"/>
                         <constraint firstItem="5Dy-3Z-0tS" firstAttribute="centerX" secondItem="64Z-nC-wtm" secondAttribute="centerX" id="akc-Dp-LsE"/>
                         <constraint firstItem="hls-NA-SoP" firstAttribute="centerY" secondItem="BhA-73-GDE" secondAttribute="centerY" id="cAA-0t-Nxq"/>
+                        <constraint firstItem="IGa-qv-cq0" firstAttribute="centerX" secondItem="hls-NA-SoP" secondAttribute="centerX" id="ema-yj-QyV"/>
                         <constraint firstItem="64Z-nC-wtm" firstAttribute="leading" secondItem="Nzo-z9-Dh0" secondAttribute="trailing" constant="10" id="fgW-q5-k6U"/>
                         <constraint firstItem="Nzo-z9-Dh0" firstAttribute="top" secondItem="BhA-73-GDE" secondAttribute="top" constant="5" id="mx2-EA-9s8"/>
+                        <constraint firstItem="iAv-Kh-NZw" firstAttribute="top" secondItem="5Dy-3Z-0tS" secondAttribute="bottom" constant="5" id="tE4-ZL-d2n"/>
                         <constraint firstAttribute="height" constant="150" id="y9P-uo-th5"/>
                         <constraint firstItem="5Dy-3Z-0tS" firstAttribute="centerY" secondItem="BhA-73-GDE" secondAttribute="centerY" id="yKl-FI-6KU"/>
                     </constraints>
